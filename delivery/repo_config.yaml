@@ -1,0 +1,15 @@
+# repo_config.yaml
+hibernate/hibernate-search:
+  dockerfile: "../docker/Dockerfile-java-21"
+
+DependencyTrack/dependency-track:
+  dockerfile: "../docker/Dockerfile-java-21"
+
+ta4j/ta4j:
+  dockerfile: "../docker/Dockerfile-java-21"
+
+portfolio-performance/portfolio:
+  dockerfile: "../docker/Dockerfile-java-21"
+
+cdapio/cdap:
+  dockerfile: "../docker/Dockerfile-java-8"

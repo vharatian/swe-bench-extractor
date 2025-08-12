@@ -1,0 +1,31 @@
+###############################################################################
+# Added automatically by build_images_from_jsonl.py
+###############################################################################
+ARG REPO
+ARG COMMIT
+
+# the base image may already be non-root (e.g. circleci), so escalate
+USER root
+
+# make /testbed and give it wide-open perms so whatever user the base
+# image uses can write its build artefacts there later
+RUN mkdir -p /testbed
+
+# clone and checkout
+RUN git init /testbed \
+ && cd /testbed \
+ && git remote add origin https://github.com/${REPO}.git \
+ && git fetch --no-tags --depth 1 origin ${COMMIT} \
+ && git checkout --detach ${COMMIT}
+
+RUN chmod 777 -R /testbed
+RUN cd /testbed && \
+    git config --global user.email "swe@turing.com" &&  \
+    git config --global user.name "swe agent test" && \
+    git commit -am "Changing permissions" && \
+    cd ..
+
+
+
+# (optional) drop back to the original user if the image had one
+#USER circleci

@@ -1,0 +1,6 @@
+files/
+.venv/
+venv/
+.idea/
+useful_commands.md
+**/.env

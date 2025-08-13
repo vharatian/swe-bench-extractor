@@ -111,7 +111,11 @@ for (repo, prnum), rec in useful.items():
         print(f"[ERROR] No Docker config for {repo}; skipping task {repo}#{prnum}")
         continue
 
-    docker_path = Path(cfg["dockerfile"]).expanduser().resolve()
+    docker_path = cfg["dockerfile"]
+    if "/docker/" in docker_path:
+        docker_path = docker_path.replace("/docker/", "/docker_files/")
+    docker_path = Path(docker_path).expanduser().resolve()
+
     try:
         docker_text = docker_path.read_text(encoding="utf-8")
     except FileNotFoundError:

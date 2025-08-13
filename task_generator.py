@@ -13,7 +13,7 @@ from itertools import count
 from pathlib import Path
 
 # ── configuration ─────────────────────────────────────────────────────────────
-INPUT_DIR    = Path("files/run-camel")   # folder to scan
+INPUT_DIR    = Path("files/run-debezium")   # folder to scan
 PATTERN      = "final*.jsonl"                      # filename pattern
 OUT_DIR      = Path("files/tasks")                 # where results go
 OUTPUT_CSV   = OUT_DIR / "batch7.csv"

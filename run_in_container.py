@@ -119,14 +119,14 @@ def parse(repo: Path, patterns):
             for tc in tree.iterfind(".//testcase"):
                 ident = f"{tc.get('classname', '?')}#{tc.get('name', '?').split('[', 1)[0]}"
                 all_t.add(ident)
-                if tc.find("<failure") is not None or tc.find("<error") is not None:
+                if tc.find("failure") is not None or tc.find("error") is not None:
                     fail.add(ident)
     return all_t, fail
 
 
 def run(repo: Path, sha: str, cmd: str, patterns):
-    sh(["git", "reset", "--hard", "--quiet"], cwd=repo)
-    sh(["git", "checkout", "--quiet", sha], cwd=repo)
+    sh(["git", "clean", "-ffd"], cwd=repo)
+    sh(["git", "reset", "--hard", "--quiet", sha], cwd=repo)
     clean(repo, patterns)
     proc = sh(cmd, cwd=repo)
     _, fail = parse(repo, patterns)

@@ -1,7 +1,7 @@
 {
   "info": {
-    "repo": "apache/camel",
-    "test_command": "mvn clean verify -DskipTests -DskipITs -Drat.skip=true && mvn clean verify -Dmaven.test.failure.ignore=true -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
+    "repo": "apache/incubator-seata",
+    "test_command": "./mvnw clean verify -DskipTests -DskipITs -Drat.skip=true && ./mvnw clean verify -Dmaven.test.failure.ignore=true -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
     "test_files": [
       "**/surefire-reports/*",
       "**/failsafe-reports/*"

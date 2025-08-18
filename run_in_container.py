@@ -17,7 +17,7 @@ REPOS_ROOT = Path("/tmp/repos")
 # ── logging: console + file ----------------------------------------------
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 log_format = "%(asctime)s %(levelname)s │ %(message)s"
-max_bytes = 10 * 1024 * 1024  # 10 MB
+max_bytes = 10 * 1024 * 1024
 backup_cnt = 2  # keep at most one old file <file>.1
 
 handler = RotatingFileHandler(

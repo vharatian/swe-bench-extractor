@@ -1,0 +1,1026 @@
+{
+  "info": {
+    "repo": "apache/camel",
+    "test_command": "mvn clean verify -DskipTests -DskipITs -Drat.skip=true && mvn clean verify -Dmaven.test.failure.ignore=true -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
+    "test_files": [
+      "**/surefire-reports/*",
+      "**/failsafe-reports/*"
+    ],
+    "Dockerfile": "docker_files/Dockerfile-java-21"
+  },
+  "prs": [
+    {
+      "pr_number": 7578,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-08-09T08:44:07Z",
+      "created_at": "2025-08-08T05:54:27Z",
+      "updated_at": "2025-08-09T08:44:15Z",
+      "base_commit": "26d7c15c15bc1e2c3846b55513bd1cb94bf3710d",
+      "head_commit": "5a8b73e09d6f97057c0807b91e20ab322dbbadb2",
+      "merge_commit": "c83ab1f8c32d68fd54d266d426981590eb5bc18b",
+      "modified_test": [
+        "compressor/seata-compressor-zstd/src/test/java/org/apache/seata/compressor/zstd/ZstdUtilTest.java"
+      ],
+      "modified_source": [
+        "compressor/seata-compressor-zstd/src/main/java/org/apache/seata/compressor/zstd/ZstdUtil.java"
+      ]
+    },
+    {
+      "pr_number": 7577,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-08-08T01:02:22Z",
+      "created_at": "2025-08-07T07:24:40Z",
+      "updated_at": "2025-08-10T04:10:22Z",
+      "base_commit": "92c3d9c78f4411223a2993e456c958be1eb764b0",
+      "head_commit": "088d93536ad18267b36b1e5e87728ca4a5b155f2",
+      "merge_commit": "26d7c15c15bc1e2c3846b55513bd1cb94bf3710d",
+      "modified_test": [
+        "compressor/seata-compressor-zstd/src/test/java/org/apache/seata/compressor/zstd/ZstdUtilTest.java"
+      ],
+      "modified_source": [
+        "compressor/seata-compressor-zstd/src/main/java/org/apache/seata/compressor/zstd/ZstdUtil.java"
+      ]
+    },
+    {
+      "pr_number": 7563,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-07-30T01:13:22Z",
+      "created_at": "2025-07-29T11:26:19Z",
+      "updated_at": "2025-07-30T01:13:30Z",
+      "base_commit": "61d6cb7a2f2b5a2bdbdcf2a0c11f1de1aa5b272b",
+      "head_commit": "d01347b27bf78153b7df0ad5b4107c16957b675c",
+      "merge_commit": "fa80a257c3e93ce20fe2299c22e9871c4002e0b4",
+      "modified_test": [
+        "core/src/test/java/org/apache/seata/core/rpc/netty/http/filter/HttpRequestFilterManagerTest.java"
+      ],
+      "modified_source": [
+        "core/src/main/java/org/apache/seata/core/rpc/netty/http/filter/HttpRequestFilterManager.java"
+      ]
+    },
+    {
+      "pr_number": 7549,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-07-19T02:51:35Z",
+      "created_at": "2025-07-18T16:16:32Z",
+      "updated_at": "2025-07-19T02:51:36Z",
+      "base_commit": "14802ba4583bc5c8c2deb2e9a12154e2cec0f6c1",
+      "head_commit": "624e0f82125605fd6b0a9a70424cd7e7a9cb9686",
+      "merge_commit": "989db47c77fcfdc60879821962be619ecbe6b70a",
+      "modified_test": [
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-server/src/test/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessorTest.java",
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-core/src/test/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessorTest.java"
+      ],
+      "modified_source": [
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-server/src/main/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessor.java",
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-core/src/main/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessor.java"
+      ]
+    },
+    {
+      "pr_number": 7546,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-07-18T16:11:00Z",
+      "created_at": "2025-07-17T14:19:53Z",
+      "updated_at": "2025-07-18T16:11:15Z",
+      "base_commit": "88bba2f579a753f26e5fdb62861eaa40fc0ed5fd",
+      "head_commit": "fc4a2cc667404eb17feb8a3f527151507d455934",
+      "merge_commit": "608785fa859b8901b5c7e3e8e558c89f96b508cf",
+      "modified_test": [
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-server/src/test/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessorTest.java",
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-core/src/test/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessorTest.java"
+      ],
+      "modified_source": [
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-server/src/main/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessor.java",
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-core/src/main/java/org/apache/seata/spring/boot/autoconfigure/http/RestControllerBeanPostProcessor.java"
+      ]
+    },
+    {
+      "pr_number": 7538,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-07-23T02:29:38Z",
+      "created_at": "2025-07-14T15:25:08Z",
+      "updated_at": "2025-07-23T02:29:47Z",
+      "base_commit": "2e8a4721e82c8fc966634d982802d96a2e412982",
+      "head_commit": "eb058e7f1dbb80d33026dbb9ee44e70e48658d0c",
+      "merge_commit": "9f39706fb81a4dc48092ebf79c5e153aedecf3b3",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/undo/parser/JacksonUndoLogParserTest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/DataCompareUtils.java"
+      ]
+    },
+    {
+      "pr_number": 7505,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-07-24T01:59:48Z",
+      "created_at": "2025-07-06T22:14:56Z",
+      "updated_at": "2025-07-24T01:59:55Z",
+      "base_commit": "9f39706fb81a4dc48092ebf79c5e153aedecf3b3",
+      "head_commit": "2a82afb14d736f50fd026d3cd3bdd720e25737b4",
+      "merge_commit": "61d6cb7a2f2b5a2bdbdcf2a0c11f1de1aa5b272b",
+      "modified_test": [
+        "core/src/test/java/org/apache/seata/core/rpc/netty/ResourceCleanupTest.java"
+      ],
+      "modified_source": [
+        "core/src/main/java/org/apache/seata/core/rpc/netty/AbstractNettyRemotingClient.java"
+      ]
+    },
+    {
+      "pr_number": 7504,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-07-09T05:39:26Z",
+      "created_at": "2025-07-06T09:57:34Z",
+      "updated_at": "2025-07-09T05:39:38Z",
+      "base_commit": "243d523a352377409950163fc28c8c2de0dc4b6a",
+      "head_commit": "df4c8c2af3f0b0c49eebe2e07819655249899d71",
+      "merge_commit": "a18e999b2bc351c3603ec13ae5445ae8c6d6b45c",
+      "modified_test": [
+        "server/src/test/java/org/apache/seata/server/store/db/AbstractDataSourceProviderTest.java"
+      ],
+      "modified_source": [
+        "server/src/main/java/org/apache/seata/server/store/HikariDataSourceProvider.java"
+      ]
+    },
+    {
+      "pr_number": 7464,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-06-25T01:19:16Z",
+      "created_at": "2025-06-24T10:05:49Z",
+      "updated_at": "2025-06-25T01:19:16Z",
+      "base_commit": "cbc6ac5ad0aa89e0085d06817f995b6bf949d767",
+      "head_commit": "39fae2b6d5811a588d5e37ceaa648d7c03ad9ca6",
+      "merge_commit": "208c2cd8a6202d313af700257ac530b9c07c7983",
+      "modified_test": [
+        "integration/grpc/src/test/java/org/apache/seata/integration/grpc/interceptor/client/ClientTransactionInterceptorTest.java",
+        "integration/grpc/src/test/java/org/apache/seata/integration/grpc/interceptor/server/ServerListenerProxyTest.java",
+        "integration/grpc/src/test/java/org/apache/seata/integration/grpc/interceptor/server/ServerTransactionInterceptorTest.java"
+      ],
+      "modified_source": [
+        "integration/grpc/src/main/java/org/apache/seata/integration/grpc/interceptor/server/ServerListenerProxy.java",
+        "integration/grpc/src/main/java/org/apache/seata/integration/grpc/interceptor/server/ServerTransactionInterceptor.java"
+      ]
+    },
+    {
+      "pr_number": 7456,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-06-23T06:46:13Z",
+      "created_at": "2025-06-20T09:03:32Z",
+      "updated_at": "2025-06-23T06:46:37Z",
+      "base_commit": "13546e82ea5e9c6d90da8c81968208b6959b4039",
+      "head_commit": "179f2df615dff379187c62a3e73d053f4bac607b",
+      "merge_commit": "cbc6ac5ad0aa89e0085d06817f995b6bf949d767",
+      "modified_test": [
+        "sqlparser/seata-sqlparser-druid/src/test/java/org/apache/seata/sqlparser/druid/DruidSQLRecognizerFactoryTest.java"
+      ],
+      "modified_source": [
+        "sqlparser/seata-sqlparser-druid/src/main/java/org/apache/seata/sqlparser/druid/DruidSQLRecognizerFactoryImpl.java"
+      ]
+    },
+    {
+      "pr_number": 7436,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-06-13T13:19:37Z",
+      "created_at": "2025-06-13T07:50:38Z",
+      "updated_at": "2025-06-13T13:19:51Z",
+      "base_commit": "22945a83ac68f0e3629425aafaec99f368497c63",
+      "head_commit": "bb4223d9381f21beacee9cd0880430519c8da00f",
+      "merge_commit": "5164f9b364cc5a1b9a6192348a803c6124e54691",
+      "modified_test": [
+        "server/src/test/java/org/apache/seata/server/store/SessionStoreTest.java"
+      ],
+      "modified_source": [
+        "namingserver/src/main/java/org/apache/seata/namingserver/manager/NamingManager.java"
+      ]
+    },
+    {
+      "pr_number": 7360,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-05-24T13:14:54Z",
+      "created_at": "2025-05-23T06:20:39Z",
+      "updated_at": "2025-05-24T13:15:51Z",
+      "base_commit": "152a7f948953ed7245b426fa75d599391861c570",
+      "head_commit": "1a93d9bf1077a8b9377cea4ec0e4b8b63056e286",
+      "merge_commit": "5cbc48862364b8959dae4c14531a64afff2626d7",
+      "modified_test": [
+        "core/src/test/java/org/apache/seata/core/rpc/netty/ChannelEventHandlerIntegrationTest.java",
+        "core/src/test/java/org/apache/seata/core/rpc/netty/ResourceCleanupTest.java"
+      ],
+      "modified_source": [
+        "core/src/main/java/org/apache/seata/core/rpc/netty/AbstractNettyRemotingClient.java"
+      ]
+    },
+    {
+      "pr_number": 7349,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-05-19T15:03:09Z",
+      "created_at": "2025-05-19T10:47:13Z",
+      "updated_at": "2025-05-19T15:03:56Z",
+      "base_commit": "c5efbd92d97b63ef382c17fcab84719ab3b41a77",
+      "head_commit": "a0ed27ff5f88a14eb0e56aefdd28281e17ee7245",
+      "merge_commit": "766be773e00b7db9361e5b411e85367770883841",
+      "modified_test": [
+        "discovery/seata-discovery-etcd3/src/test/java/org/apache/seata/discovery/registry/etcd/EtcdRegistryServiceImplMockTest.java"
+      ],
+      "modified_source": [
+        "discovery/seata-discovery-etcd3/src/main/java/org/apache/seata/discovery/registry/etcd3/EtcdRegistryServiceImpl.java"
+      ]
+    },
+    {
+      "pr_number": 7321,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-04-28T03:18:33Z",
+      "created_at": "2025-04-27T10:43:23Z",
+      "updated_at": "2025-04-28T03:18:45Z",
+      "base_commit": "d58fa2d0c512dcf0d857a332d560212381e51960",
+      "head_commit": "239a920aab31c514a8dc0e7fb005b0e10121ff71",
+      "merge_commit": "b7e4856bfcf03fed8d34aedbfa3e7f2e2dbf325d",
+      "modified_test": [
+        "ext/apm-seata-skywalking-plugin/src/test/java/org/apache/seata/apm/skywalking/plugin/DefaultCoreDoGlobalCommitInterceptorTest.java",
+        "ext/apm-seata-skywalking-plugin/src/test/java/org/apache/seata/apm/skywalking/plugin/NettyRemotingClientSendSyncInterceptorTest.java",
+        "ext/apm-seata-skywalking-plugin/src/test/java/org/apache/seata/apm/skywalking/plugin/RemotingProcessorProcessInterceptorTest.java",
+        "ext/apm-seata-skywalking-plugin/src/test/java/org/apache/seata/apm/skywalking/plugin/define/AbstractNettyRemotingInstrumentationTest.java",
+        "ext/apm-seata-skywalking-plugin/src/test/java/org/apache/seata/apm/skywalking/plugin/define/DefaultCoreInstrumentationTest.java",
+        "ext/apm-seata-skywalking-plugin/src/test/java/org/apache/seata/apm/skywalking/plugin/define/RemotingProcessorInstrumentationTest.java"
+      ],
+      "modified_source": [
+        "ext/apm-seata-skywalking-plugin/src/main/java/org/apache/seata/apm/skywalking/plugin/common/SWSeataUtils.java"
+      ]
+    },
+    {
+      "pr_number": 7299,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-04-17T09:19:56Z",
+      "created_at": "2025-04-17T08:06:03Z",
+      "updated_at": "2025-04-17T09:19:56Z",
+      "base_commit": "ade19dd90164f35674a1c6af8cd79744958a2913",
+      "head_commit": "60956988cc4a1964dbd2ed87d170b3308a237674",
+      "merge_commit": "8532beb4f61aa54324a01b6beea54a0987f0e887",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/xa/DataSourceProxyXATest.java"
+      ],
+      "modified_source": [
+        "server/src/main/java/org/apache/seata/server/console/impl/AbstractGlobalService.java",
+        "server/src/main/java/org/apache/seata/server/console/impl/AbstractService.java"
+      ]
+    },
+    {
+      "pr_number": 7282,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-04-25T15:04:44Z",
+      "created_at": "2025-04-12T08:46:47Z",
+      "updated_at": "2025-04-25T15:04:45Z",
+      "base_commit": "748abd599789083ce63a6f0def0fcbb56f8a1f54",
+      "head_commit": "5ed1edb70311f64665ad616b674c60a87acde40e",
+      "merge_commit": "5d60520e788252118f34eb769be6bd1c5ecf0871",
+      "modified_test": [
+        "common/src/test/java/org/apache/seata/common/util/NetUtilTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/util/NetUtil.java",
+        "discovery/seata-discovery-core/src/main/java/org/apache/seata/discovery/registry/FileRegistryServiceImpl.java"
+      ]
+    },
+    {
+      "pr_number": 7261,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-05-11T14:37:01Z",
+      "created_at": "2025-03-31T10:36:40Z",
+      "updated_at": "2025-05-11T14:37:11Z",
+      "base_commit": "ad072516621d87b168e3d4f3869a689f0fa85f9c",
+      "head_commit": "2d8105071e445984eaf0b49d10926b9cc3894f38",
+      "merge_commit": "50d7003694d79dc61dc1f15945cbd153596f47e3",
+      "modified_test": [
+        "namingserver/src/test/java/org/apache/seata/namingserver/AuthControllerWithCustomPropertiesTest.java",
+        "namingserver/src/test/java/org/apache/seata/namingserver/AuthControllerWithRandomPasswordTest.java",
+        "namingserver/src/test/java/org/apache/seata/namingserver/smoke/NamingControllerLoggerPrintSmokeTest.java",
+        "namingserver/src/test/java/org/apache/seata/namingserver/smoke/NamingControllerPropertiesSmokeTest.java",
+        "namingserver/src/test/resources/application.yml"
+      ],
+      "modified_source": [
+        "console/src/main/java/org/apache/seata/console/security/CustomUserDetailsServiceImpl.java",
+        "console/src/main/java/org/apache/seata/console/security/User.java"
+      ]
+    },
+    {
+      "pr_number": 7230,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-03-18T06:02:07Z",
+      "created_at": "2025-03-18T04:17:21Z",
+      "updated_at": "2025-03-18T06:02:30Z",
+      "base_commit": "4be8878b80f9a4512789b4f9808b8e27de608381",
+      "head_commit": "eb26ca28d01faad95cff85e4c6558c9300e1fddc",
+      "merge_commit": "9c57b2eeddf3cbabb865f0f78ce4056b23b1590a",
+      "modified_test": [
+        "compatible/src/test/java/io/seata/rm/tcc/interceptor/ProxyUtilsTccTest.java",
+        "compatible/src/test/java/io/seata/rm/tcc/interceptor/parser/TccActionInterceptorParserTest.java",
+        "compatible/src/test/java/io/seata/tm/api/DefaultFailureHandlerImplTest.java",
+        "core/src/test/java/org/apache/seata/core/context/RootContextTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/interceptor/parser/ProxyUtilsGlobalTransactionalTest.java",
+        "server/src/test/java/org/apache/seata/server/raft/RaftServerTest.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/interceptor/ProxyUtilsTccTest.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/interceptor/parser/TccActionInterceptorParserTest.java",
+        "test/pom.xml",
+        "test/src/test/java/org/apache/seata/saga/annotation/rm/interceptor/parser/SagaActionInterceptorParserTest.java",
+        "test/src/test/java/org/apache/seata/saga/engine/db/StateMachineDBTests.java",
+        "tm/src/test/java/org/apache/seata/tm/TransactionManagerHolderTest.java",
+        "tm/src/test/java/org/apache/seata/tm/api/APITest.java",
+        "tm/src/test/java/org/apache/seata/tm/api/DefaultFailureHandlerImplTest.java",
+        "tm/src/test/java/org/apache/seata/tm/api/DefaultGlobalTransactionTest.java",
+        "tm/src/test/java/org/apache/seata/tm/api/GlobalTransactionContextTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/ConfigurationKeys.java",
+        "core/src/main/java/org/apache/seata/core/model/BranchType.java"
+      ]
+    },
+    {
+      "pr_number": 7227,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-03-17T16:27:55Z",
+      "created_at": "2025-03-17T14:46:15Z",
+      "updated_at": "2025-03-17T16:28:48Z",
+      "base_commit": "d3007963776ad08f88bb14bf58b156abb37cf2fa",
+      "head_commit": "128167d816fb6b93edade0a8ee390b79d93ed8a4",
+      "merge_commit": "3e4bc616984f76db20d7a87b758bd22b1bffa77e",
+      "modified_test": [
+        "discovery/seata-discovery-consul/src/test/java/org/apache/seata/discovery/registry/consul/ConsulRegistryServiceImplTest.java"
+      ],
+      "modified_source": [
+        "discovery/seata-discovery-consul/src/main/java/org/apache/seata/discovery/registry/consul/ConsulRegistryServiceImpl.java"
+      ]
+    },
+    {
+      "pr_number": 7213,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-03-15T13:17:17Z",
+      "created_at": "2025-03-12T06:18:11Z",
+      "updated_at": "2025-03-15T14:01:32Z",
+      "base_commit": "baf43646da42728e94af9692cf8f7fa8c0e387b2",
+      "head_commit": "4e8120254ee7ed6a7a51be336f00b6bd69abad09",
+      "merge_commit": "8e519fce3bd8fc673cc584c78dbb92f2a652ab96",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/xa/DataSourceProxyXATest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/util/XAUtils.java"
+      ]
+    },
+    {
+      "pr_number": 7197,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-03-18T06:04:31Z",
+      "created_at": "2025-03-09T09:44:16Z",
+      "updated_at": "2025-03-18T06:05:11Z",
+      "base_commit": "4be8878b80f9a4512789b4f9808b8e27de608381",
+      "head_commit": "72a30a0185dfcc39843bd081066cf0aa33cf702b",
+      "merge_commit": "06abba7b5de03cd745a9e5bb6414443046ddcfbb",
+      "modified_test": [
+        "config/seata-config-apollo/src/test/java/org/apache/seata/config/apollo/ApolloConfigurationTest.java",
+        "config/seata-config-apollo/src/test/resources/registry-test.conf",
+        "config/seata-config-consul/src/test/java/org/apache/seata/config/consul/ConsulConfigurationTest.java",
+        "config/seata-config-consul/src/test/resources/registry-test.conf"
+      ],
+      "modified_source": [
+        "config/seata-config-apollo/src/main/java/org/apache/seata/config/apollo/ApolloConfiguration.java",
+        "config/seata-config-consul/src/main/java/org/apache/seata/config/consul/ConsulConfiguration.java"
+      ]
+    },
+    {
+      "pr_number": 7170,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-02-19T08:20:49Z",
+      "created_at": "2025-02-19T06:06:08Z",
+      "updated_at": "2025-02-19T10:03:11Z",
+      "base_commit": "46c9b63728e47af2b0a0fab5deb9baef66b1d36a",
+      "head_commit": "02885a18581acb7fa5d70ab79491affe01aab971",
+      "merge_commit": "aba742df117f24c4526690e253076d884a3154c4",
+      "modified_test": [
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-core/src/test/java/org/apache/seata/spring/boot/autoconfigure/CorePropertiesTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/DefaultValues.java",
+        "core/src/main/java/org/apache/seata/core/rpc/netty/NettyClientConfig.java"
+      ]
+    },
+    {
+      "pr_number": 7112,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-01-16T03:22:50Z",
+      "created_at": "2025-01-15T07:55:35Z",
+      "updated_at": "2025-01-16T03:22:50Z",
+      "base_commit": "6799dc974ff78fc55e53b2acf41b1bbd5754dac8",
+      "head_commit": "d3312eaeb4be3469f22d944078e6b2c183f4caf0",
+      "merge_commit": "dd94d71709f7c60da9bd5c918f1bd4556ef6c15f",
+      "modified_test": [
+        "common/src/test/java/org/apache/seata/common/util/NetAddressValidatorUtilTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/util/NetAddressValidatorUtil.java"
+      ]
+    },
+    {
+      "pr_number": 7107,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-01-21T06:00:11Z",
+      "created_at": "2025-01-13T09:11:37Z",
+      "updated_at": "2025-01-21T06:00:58Z",
+      "base_commit": "02e1514012315b87d0693201898a76d6ab66d6b4",
+      "head_commit": "e53629c78ffd2c0c8e387bcd68367db8913defd2",
+      "merge_commit": "f02d0fe469bd4ada5a046d87fc3aea1b7867781a",
+      "modified_test": [
+        "spring/src/test/java/org/apache/seata/spring/SpringLocalTccTest.java",
+        "spring/src/test/java/org/apache/seata/spring/tcc/TccAnnoAtInterAction.java",
+        "spring/src/test/java/org/apache/seata/spring/tcc/TccAnnoAtInterActionImpl.java",
+        "spring/src/test/java/org/apache/seata/spring/tcc/TccAnnoAtInterImplAction.java",
+        "spring/src/test/java/org/apache/seata/spring/tcc/TccAnnoAtInterImplActionImpl.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/interceptor/parser/TccActionInterceptorParserTest.java"
+      ],
+      "modified_source": [
+        "tcc/src/main/java/org/apache/seata/rm/tcc/interceptor/TccActionInterceptorHandler.java",
+        "tcc/src/main/java/org/apache/seata/rm/tcc/interceptor/parser/TccActionInterceptorParser.java"
+      ]
+    },
+    {
+      "pr_number": 7102,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-02-15T10:01:24Z",
+      "created_at": "2025-01-11T04:27:06Z",
+      "updated_at": "2025-02-15T10:01:31Z",
+      "base_commit": "6b25b21b6de91c9a9c47d7373943cdf2549c55af",
+      "head_commit": "02fc25efa6a382b373fdf043aafa5fdfd57b2442",
+      "merge_commit": "56a2f1458ed1c4528c17a1f2be18689b9c8f171c",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/xa/ConnectionProxyXATest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/xa/ConnectionProxyXA.java"
+      ]
+    },
+    {
+      "pr_number": 7075,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-12-26T01:17:36Z",
+      "created_at": "2024-12-25T07:44:25Z",
+      "updated_at": "2024-12-26T01:17:44Z",
+      "base_commit": "340ea9218cf2616d4cea3fc74e75632fcd284137",
+      "head_commit": "01d776dd5ad786e26a02796ccc229f83826f693d",
+      "merge_commit": "c0a2e9269904edb21e954f4613113deef7a3facf",
+      "modified_test": [
+        "core/src/test/java/org/apache/seata/core/rpc/netty/RmNettyClientTest.java"
+      ],
+      "modified_source": [
+        "core/src/main/java/org/apache/seata/core/rpc/netty/AbstractNettyRemotingClient.java"
+      ]
+    },
+    {
+      "pr_number": 7072,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-03-07T02:10:19Z",
+      "created_at": "2024-12-23T10:09:25Z",
+      "updated_at": "2025-03-07T02:23:42Z",
+      "base_commit": "117e57ac54180b8b5ba3cd5d858c00902047a6c3",
+      "head_commit": "507573f576700d1cbad95267b1d0b24b1db0a870",
+      "merge_commit": "efa341a0720084e5bf62fbdfa2271453cc3a4468",
+      "modified_test": [
+        "discovery/seata-discovery-core/src/test/java/org/apache/seata/discovery/loadbalance/LoadBalanceTest.java"
+      ],
+      "modified_source": [
+        "discovery/seata-discovery-core/src/main/java/org/apache/seata/discovery/loadbalance/ConsistentHashLoadBalance.java"
+      ]
+    },
+    {
+      "pr_number": 7043,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-12-05T02:20:04Z",
+      "created_at": "2024-12-03T08:15:53Z",
+      "updated_at": "2024-12-05T02:20:04Z",
+      "base_commit": "6cdb847d66c40802325172defc105a1d7393c2ae",
+      "head_commit": "921a08af16e00057b34dc729c97495ee07d44c38",
+      "merge_commit": "c95bd08bf1c139bbac323a0e2190cb6bbca2dba3",
+      "modified_test": [
+        "rocketmq/src/test/java/org/apache/seata/integration/rocketmq/TCCRocketMQImplTest.java"
+      ],
+      "modified_source": [
+        "rocketmq/src/main/java/org/apache/seata/integration/rocketmq/TCCRocketMQ.java",
+        "rocketmq/src/main/java/org/apache/seata/integration/rocketmq/TCCRocketMQImpl.java"
+      ]
+    },
+    {
+      "pr_number": 7037,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2025-01-03T02:23:09Z",
+      "created_at": "2024-11-30T08:22:59Z",
+      "updated_at": "2025-01-03T02:23:09Z",
+      "base_commit": "6310ce3307a8154f61060f2fb2b051693f5e360d",
+      "head_commit": "6456dc492a23d9bb1731770c28c458f4eb632b73",
+      "merge_commit": "8de9730171aebdc75f0ffd8e97f7aabc9169efa7",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/undo/parser/FuryUndoLogParserTest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/undo/parser/FuryUndoLogParser.java"
+      ]
+    },
+    {
+      "pr_number": 7033,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-11-29T09:15:58Z",
+      "created_at": "2024-11-29T05:38:30Z",
+      "updated_at": "2024-11-29T09:16:18Z",
+      "base_commit": "3b7e887d4c5ab0f70e98cb9b90a408295b0c6be9",
+      "head_commit": "ecbf07084cc34772e6c577d9203edb70dc708df9",
+      "merge_commit": "3bfc206a0783acbb44cbe952504572b8b7d7bde9",
+      "modified_test": [
+        "compressor/seata-compressor-zstd/src/test/java/org/apache/seata/compressor/zstd/ZstdUtilTest.java"
+      ],
+      "modified_source": [
+        "compressor/seata-compressor-zstd/src/main/java/org/apache/seata/compressor/zstd/ZstdUtil.java"
+      ]
+    },
+    {
+      "pr_number": 7030,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-11-28T12:31:54Z",
+      "created_at": "2024-11-28T10:58:16Z",
+      "updated_at": "2024-11-28T12:32:46Z",
+      "base_commit": "556a7347ce46b130a1f544aa4a7ebaf9888c633f",
+      "head_commit": "f5de07e010d9e7cd11cde5e75a0c0e39efbb6c9a",
+      "merge_commit": "9a6ece1e3739bb81013c0a07cc646352b3715db4",
+      "modified_test": [
+        "common/src/test/java/org/apache/seata/common/exception/ExceptionUtilTest.java",
+        "common/src/test/java/org/apache/seata/common/metadata/namingserver/InstanceTest.java",
+        "common/src/test/java/org/apache/seata/common/metadata/namingserver/NamingServerNodeTest.java",
+        "common/src/test/java/org/apache/seata/common/util/UUIDGeneratorTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/LockStrategyMode.java"
+      ]
+    },
+    {
+      "pr_number": 6994,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-11-11T06:38:54Z",
+      "created_at": "2024-11-10T16:38:11Z",
+      "updated_at": "2024-11-11T06:39:02Z",
+      "base_commit": "4fae0626a8c9bfe0a48232d4cce00f79c820df2d",
+      "head_commit": "9aaa6583656492033f34bfd2048b969797925414",
+      "merge_commit": "7930f31b0b3810288fb1fed4faae69445b172903",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/exec/UpdateJoinExecutorTest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/exec/mysql/MySQLUpdateJoinExecutor.java"
+      ]
+    },
+    {
+      "pr_number": 6974,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-11-04T01:33:59Z",
+      "created_at": "2024-11-02T11:21:01Z",
+      "updated_at": "2024-11-04T01:34:06Z",
+      "base_commit": "5d2b1390e938190494358068c4e8a9d9b0ec91d2",
+      "head_commit": "38a20ccf764ce067423e0d801cd0a802d804d5b7",
+      "merge_commit": "363e1792ba52e1dfeea049842ca5b71d373d49fe",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/undo/parser/Fastjson2UndoLogParserTest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/undo/parser/Fastjson2UndoLogParser.java"
+      ]
+    },
+    {
+      "pr_number": 6943,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-10-24T07:05:42Z",
+      "created_at": "2024-10-23T03:27:30Z",
+      "updated_at": "2024-10-26T02:58:32Z",
+      "base_commit": "dbeba6120ba36851f884271132df6b6363a843d0",
+      "head_commit": "b02dd7fe7d64fa2c87872c13232f57fb339fe93b",
+      "merge_commit": "ab4f44e2257bb29e2954261aab955c63df5e9fb1",
+      "modified_test": [
+        "server/src/test/java/org/apache/seata/server/storage/SessionConverterTest.java"
+      ],
+      "modified_source": [
+        "server/src/main/java/org/apache/seata/server/storage/SessionConverter.java"
+      ]
+    },
+    {
+      "pr_number": 6927,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-10-23T10:24:10Z",
+      "created_at": "2024-10-15T11:27:29Z",
+      "updated_at": "2024-10-26T02:58:31Z",
+      "base_commit": "4223b8529e6e8bb1a4c1f7c5bd2312cd7cd7ab79",
+      "head_commit": "895f2dcc64b0a3bebb3f646670f8725e98ad52ca",
+      "merge_commit": "dbeba6120ba36851f884271132df6b6363a843d0",
+      "modified_test": [
+        "rocketmq/src/test/java/org/apache/seata/integration/rocketmq/SeataMQProducerTest.java",
+        "rocketmq/src/test/java/org/apache/seata/integration/rocketmq/TCCRocketMQImplTest.java"
+      ],
+      "modified_source": [
+        "rocketmq/src/main/java/org/apache/seata/integration/rocketmq/SeataMQProducer.java"
+      ]
+    },
+    {
+      "pr_number": 6896,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-09-30T02:48:13Z",
+      "created_at": "2024-09-29T17:13:34Z",
+      "updated_at": "2024-09-30T02:48:13Z",
+      "base_commit": "0db8c366ceb402d3336f6a7bee9e40123adf3a8d",
+      "head_commit": "1d95b4b93186248f4397c805578abe8fb091a596",
+      "merge_commit": "851e5de2e4b30d0ac59c847f4c0b2ec91dff2fdd",
+      "modified_test": [
+        "server/src/test/java/org/apache/seata/server/raft/RaftSyncMessageTest.java"
+      ],
+      "modified_source": [
+        "server/src/main/java/org/apache/seata/server/cluster/raft/snapshot/RaftSnapshotSerializer.java"
+      ]
+    },
+    {
+      "pr_number": 6833,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-09-11T01:30:27Z",
+      "created_at": "2024-09-09T03:49:14Z",
+      "updated_at": "2024-09-11T01:30:51Z",
+      "base_commit": "fde59c10237d9ad788eba006528a39b9857d8d95",
+      "head_commit": "942091a406ae9b5f5d97c102e73a991b66eaddca",
+      "merge_commit": "b2f9c3a9cdf515c6cbba0e7186ba0547a0113488",
+      "modified_test": [
+        "server/src/test/java/org/apache/seata/server/lock/db/DataBaseLockStoreDAOTest.java"
+      ],
+      "modified_source": [
+        "server/src/main/java/org/apache/seata/server/storage/db/lock/LockStoreDataBaseDAO.java"
+      ]
+    },
+    {
+      "pr_number": 6831,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-09-12T08:16:42Z",
+      "created_at": "2024-09-08T13:37:09Z",
+      "updated_at": "2024-09-12T08:16:55Z",
+      "base_commit": "be01fb010c176886adf795c8226f9fb603c90309",
+      "head_commit": "23329bdc487498393db48adf7a81784227e1d351",
+      "merge_commit": "c0f7b820c64796a3678823ba26493e4c977bcdee",
+      "modified_test": [
+        "discovery/seata-discovery-zk/src/test/java/org/apache/seata/discovery/registry/zk/ZookeeperRegisterServiceImplTest.java"
+      ],
+      "modified_source": [
+        "discovery/seata-discovery-zk/src/main/java/org/apache/seata/discovery/registry/zk/ZookeeperRegisterServiceImpl.java"
+      ]
+    },
+    {
+      "pr_number": 6826,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-09-21T14:10:13Z",
+      "created_at": "2024-09-07T11:52:38Z",
+      "updated_at": "2024-09-21T14:10:14Z",
+      "base_commit": "0562e9f457017cbb92c9eeab31ce615d5e8e2cea",
+      "head_commit": "de53008f2e22e8e7f2ed3157b69ec4c51587bdb1",
+      "merge_commit": "f5b897eeb5a4a3fa947a28dd3d8d17c4f84ab41f",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/xa/ConnectionProxyXATest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/xa/ConnectionProxyXA.java"
+      ]
+    },
+    {
+      "pr_number": 6780,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-08-26T03:49:39Z",
+      "created_at": "2024-08-25T14:02:35Z",
+      "updated_at": "2024-08-26T03:49:50Z",
+      "base_commit": "8288a5750acff48c4f7bb9e6a45225095994a823",
+      "head_commit": "8a2fcd793fb2852c6ad4195ca2e31be077a0dcff",
+      "merge_commit": "8af2d8448b7958eef2c69f6c3ffd99ac7ca23dc5",
+      "modified_test": [
+        "common/src/test/java/org/apache/seata/common/util/ReflectionUtilTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/util/ReflectionUtil.java",
+        "core/src/main/java/org/apache/seata/core/serializer/SerializerServiceLoader.java"
+      ]
+    },
+    {
+      "pr_number": 6765,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-08-25T14:43:19Z",
+      "created_at": "2024-08-18T12:14:06Z",
+      "updated_at": "2024-08-25T14:43:37Z",
+      "base_commit": "eba3e34fd6640e2706ff609eb0648191c41c4a00",
+      "head_commit": "eb586be0d6609423fdde87938891a6534aad9862",
+      "merge_commit": "8288a5750acff48c4f7bb9e6a45225095994a823",
+      "modified_test": [
+        "server/src/test/java/org/apache/seata/server/store/db/AbstractDataSourceProviderTest.java"
+      ],
+      "modified_source": [
+        "core/src/main/java/org/apache/seata/core/store/db/AbstractDataSourceProvider.java"
+      ]
+    },
+    {
+      "pr_number": 6763,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-08-18T16:30:41Z",
+      "created_at": "2024-08-18T07:29:01Z",
+      "updated_at": "2024-08-18T16:31:21Z",
+      "base_commit": "b7fc0c15fc26a20e46e4c9b97343d01bff92d25e",
+      "head_commit": "abc51209666b2cbb697db10f5c64dedf6ceb096d",
+      "merge_commit": "ff1fa8fe1b599da6554985ed5d24ca4b5902a459",
+      "modified_test": [
+        "config/seata-config-nacos/src/test/java/io/seata/config/extend/NacosConfiguration.java",
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/NacosConfiguration.java",
+        "config/seata-config-nacos/src/test/java/io/seata/config/extend/NacosConfigurationProvider.java",
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/NacosConfigurationProvider.java",
+        "config/seata-config-nacos/src/test/java/io/seata/config/extend/TestConfigFromExtendSPI.java",
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/TestConfigCustomSPI.java",
+        "config/seata-config-nacos/src/test/java/org/apache/seata/config/nacos/NacosConfigurationTest.java",
+        "config/seata-config-nacos/src/test/java/org/apache/seata/config/nacos/NacosMockTest.java",
+        "config/seata-config-nacos/src/test/resources/META-INF/services/io.seata.config.ConfigurationProvider",
+        "config/seata-config-nacos/src/test/resources/META-INF/services/org.apache.seata.config.ConfigurationProvider",
+        "config/seata-config-nacos/src/test/resources/registry-mock.conf",
+        "config/seata-config-nacos/src/test/resources/registry.conf"
+      ],
+      "modified_source": [
+        "config/seata-config-core/src/main/java/org/apache/seata/config/Dispose.java",
+        "config/seata-config-nacos/src/main/java/org/apache/seata/config/nacos/NacosConfiguration.java"
+      ]
+    },
+    {
+      "pr_number": 6728,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-08-11T16:05:59Z",
+      "created_at": "2024-08-03T10:53:18Z",
+      "updated_at": "2024-08-11T16:05:59Z",
+      "base_commit": "005ac0b1ebd11b246166e796db88124a1c994cc1",
+      "head_commit": "dca46102fa2854d0d989ae2d14eaa6b02a9b3fed",
+      "merge_commit": "35820c095ef3c8b66255ed5145a259edabdc789e",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/undo/parser/JacksonUndoLogParserTest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/undo/parser/JacksonUndoLogParser.java"
+      ]
+    },
+    {
+      "pr_number": 6702,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-07-27T15:27:03Z",
+      "created_at": "2024-07-26T13:56:35Z",
+      "updated_at": "2024-09-30T09:21:58Z",
+      "base_commit": "b34cfff77424072cf2b71778787c4eb3027db8c3",
+      "head_commit": "2cc3fe1e5cd22f69ff087e68ac89ac24fdb13f02",
+      "merge_commit": "20cd9625d23f99b71fefc83b8db96c14092a9950",
+      "modified_test": [
+        "server/src/test/java/org/apache/seata/server/raft/RaftSyncMessageTest.java",
+        "server/src/test/java/org/apache/seata/server/raft/TestSecurity.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/exception/ErrorCode.java",
+        "server/src/main/java/org/apache/seata/server/cluster/raft/sync/RaftSyncMessageSerializer.java"
+      ]
+    },
+    {
+      "pr_number": 6647,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-07-06T14:05:36Z",
+      "created_at": "2024-07-06T09:16:28Z",
+      "updated_at": "2024-07-06T14:05:36Z",
+      "base_commit": "4d5133282cae8dc10bf5dc1e913ae0048c6d4d69",
+      "head_commit": "2590f374ba09462725d174a4ed44462aecfda645",
+      "merge_commit": "238cf3ab8e0c6f781e52f8efec19d54bab40cef0",
+      "modified_test": [
+        "saga/seata-saga-processctrl/src/test/java/org/apache/seata/saga/proctrl/handler/DefaultRouterHandlerTest.java",
+        "saga/seata-saga-processctrl/src/test/java/org/apache/seata/saga/proctrl/impl/ProcessContextImplTest.java",
+        "saga/seata-saga-processctrl/src/test/java/org/apache/seata/saga/proctrl/mock/MockProcessRouter.java",
+        "saga/seata-saga-processctrl/src/test/java/org/apache/seata/saga/proctrl/process/impl/CustomizeBusinessProcessorTest.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/config/DbStateMachineConfigTest.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/config/MockDataSource.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/expression/spel/SpringELExpressionFactoryTest.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/expression/spel/SpringELExpressionObject.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/expression/spel/SpringELExpressionTest.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/invoker/impl/MockService.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/invoker/impl/SpringBeanServiceInvokerTest.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/store/db/DbAndReportTcStateLogStoreTest.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/store/db/MockSagaTransactionTemplate.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/tm/DefaultSagaTransactionalTemplateTest.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/tm/MockGlobalTransaction.java",
+        "saga/seata-saga-spring/src/test/java/org/apache/seata/saga/engine/tm/MockTransactionHook.java",
+        "saga/seata-saga-spring/src/test/resources/file.conf",
+        "saga/seata-saga-spring/src/test/resources/registry.conf",
+        "saga/seata-saga-statelang/src/test/java/org/apache/seata/saga/statelang/parser/StateParserTests.java"
+      ],
+      "modified_source": [
+        "saga/seata-saga-engine-store/src/main/java/org/apache/seata/saga/engine/store/db/AbstractStore.java",
+        "saga/seata-saga-engine/src/main/java/org/apache/seata/saga/engine/pcext/utils/LoopTaskUtils.java"
+      ]
+    },
+    {
+      "pr_number": 6576,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-05-24T09:07:00Z",
+      "created_at": "2024-05-24T08:01:18Z",
+      "updated_at": "2024-05-24T09:07:00Z",
+      "base_commit": "02d3a0807640fc5d380cf10dde1b86c28909ca7f",
+      "head_commit": "1ed97fb60b82627b2b93359a2b46e791e1fb04c9",
+      "merge_commit": "cd1a61d4fcb92f344d27a3c864f153e0781e9a90",
+      "modified_test": [
+        "seata-plugin/seata-jackson-parser-oracle/src/test/java/io/seata/plugin/jackson/parser/oracle/OracleTimestampJacksonSerializerTest.java"
+      ],
+      "modified_source": [
+        "seata-plugin/seata-jackson-parser-oracle/src/main/java/org/apache/seata/plugin/jackson/parser/oracle/OracleTimestampJacksonSerializer.java"
+      ]
+    },
+    {
+      "pr_number": 6560,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-05-20T09:22:41Z",
+      "created_at": "2024-05-20T02:40:47Z",
+      "updated_at": "2024-05-20T09:22:41Z",
+      "base_commit": "e497609b806da27a0eb483d17c3133ce300844d5",
+      "head_commit": "92f7245b54dbf936bc283e8287f167bf912552ee",
+      "merge_commit": "3445656881bc2e80b0e1bb4c9d486fb397cc4aed",
+      "modified_test": [
+        "test/src/test/java/org/apache/seata/core/rpc/netty/mockserver/ProtocolTestConstants.java"
+      ],
+      "modified_source": [
+        "test-mock-server/src/main/java/org/apache/seata/mockserver/MockServer.java"
+      ]
+    },
+    {
+      "pr_number": 6550,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-05-16T02:35:06Z",
+      "created_at": "2024-05-16T01:53:38Z",
+      "updated_at": "2024-05-16T02:35:06Z",
+      "base_commit": "8b58f857867fef2d251d34f176c2eb813967f4c9",
+      "head_commit": "ec47baa861c68dc8d7c9c8ae250314ba300ffde9",
+      "merge_commit": "a061e78c5c494c378fd721cc423e9ca04dd6c55c",
+      "modified_test": [
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/NacosConfiguration.java",
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/TestConfigCustomSPI.java",
+        "config/seata-config-nacos/src/test/resources/registry-test.conf"
+      ],
+      "modified_source": [
+        "config/seata-config-core/src/main/java/org/apache/seata/config/ConfigurationFactory.java"
+      ]
+    },
+    {
+      "pr_number": 6548,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-05-15T12:16:52Z",
+      "created_at": "2024-05-15T07:43:19Z",
+      "updated_at": "2024-05-15T12:16:52Z",
+      "base_commit": "2943e0946cd90e1c297e93b7984425ac7d1c680c",
+      "head_commit": "16eb092fed98172050b77e842e9de16d6eac564c",
+      "merge_commit": "424c82620829e807e823495ec05c2fc781515403",
+      "modified_test": [
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/NacosConfiguration.java",
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/TestConfigCustomSPI.java",
+        "config/seata-config-nacos/src/test/resources/registry-test.conf"
+      ],
+      "modified_source": [
+        "config/seata-config-core/src/main/java/org/apache/seata/config/ConfigurationFactory.java"
+      ]
+    },
+    {
+      "pr_number": 6533,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-07-29T09:40:25Z",
+      "created_at": "2024-05-12T08:23:40Z",
+      "updated_at": "2024-07-29T09:40:36Z",
+      "base_commit": "20cd9625d23f99b71fefc83b8db96c14092a9950",
+      "head_commit": "3ebc46d247884c2b1f784645610e9db8d9629c63",
+      "merge_commit": "7d3cf99caea7ce46e77d9248827d0fde5537551e",
+      "modified_test": [
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/interceptor/TwoPhaseBusinessActionParamTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/interceptor/parser/IfNeedEnhanceBeanTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/json/JsonParserImpl.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/json/JsonParserWrapTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/remoting/TwoPhaseResultTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/remoting/parser/DefaultRemotingParserTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/remoting/parser/RemoteBean.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/remoting/parser/SimpleBean.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/remoting/parser/SimpleRemoteBean.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/remoting/parser/SimpleRemotingParser.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/util/ClassUtilsTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/util/DubboUtilTest.java",
+        "integration-tx-api/src/test/java/org/apache/seata/integration/tx/api/util/SimpleDubboProxy.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/json/JsonParserFactoryTest.java"
+      ],
+      "modified_source": [
+        "integration-tx-api/src/main/java/org/apache/seata/integration/tx/api/remoting/TwoPhaseResult.java"
+      ]
+    },
+    {
+      "pr_number": 6518,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-05-06T05:39:33Z",
+      "created_at": "2024-05-01T15:52:51Z",
+      "updated_at": "2024-05-06T05:39:34Z",
+      "base_commit": "37e7746ee6412d1f33e315ce1abd961413fb8fb4",
+      "head_commit": "26778e9f05f3c409d21883c708e6d5e17dab8111",
+      "merge_commit": "2f1994142f57d38768ae1cd7825624258f2acbcb",
+      "modified_test": [
+        "config/seata-config-nacos/src/test/java/io/seata/config/nacos/TestConfigCustomSPI.java"
+      ],
+      "modified_source": [
+        "config/seata-config-core/src/main/java/org/apache/seata/config/ConfigurationCache.java"
+      ]
+    },
+    {
+      "pr_number": 6484,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-04-22T07:35:56Z",
+      "created_at": "2024-04-18T02:04:39Z",
+      "updated_at": "2024-04-29T08:16:24Z",
+      "base_commit": "bd7ad855d1d9a2e8c306427c86a1f80d404ef669",
+      "head_commit": "8552d7f392983ffe7eadf3dcf915a4a8197afbb8",
+      "merge_commit": "1ee83136c3d637106e9d3cc86e55b6ebc9e649ff",
+      "modified_test": [
+        "config/seata-config-core/src/test/java/org/apache/seata/config/FileConfigurationTest.java",
+        "server/src/test/java/org/apache/seata/server/session/redis/RedisDistributedLockerTest.java",
+        "test/src/test/java/org/apache/seata/common/ConfigurationTestHelper.java",
+        "test/src/test/java/org/apache/seata/core/rpc/netty/TmNettyClientTest.java",
+        "test/src/test/java/org/apache/seata/core/rpc/netty/mockserver/MockServerTest.java",
+        "test/src/test/java/org/apache/seata/integration/rocketmq/SeataMQProducerSendTest.java"
+      ],
+      "modified_source": [
+        "config/seata-config-core/src/main/java/org/apache/seata/config/FileConfiguration.java",
+        "test-mock-server/src/main/java/org/apache/seata/mockserver/MockServer.java"
+      ]
+    },
+    {
+      "pr_number": 6429,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-03-25T05:49:12Z",
+      "created_at": "2024-03-16T14:06:00Z",
+      "updated_at": "2024-03-25T05:52:10Z",
+      "base_commit": "73708fd2f3df918a0c6236d1b255c125d263ef9e",
+      "head_commit": "77713233f99b15e114ad4198a4a617c283861dac",
+      "merge_commit": "33d688b8bb6315af2cd523e12514808b62d353ca",
+      "modified_test": [
+        "compatible/src/test/java/io/seata/rm/datasource/DataSourceProxyTest.java",
+        "rm-datasource/src/test/java/org/apache/seata/rm/datasource/DataSourceProxyTest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/DataSourceProxy.java"
+      ]
+    },
+    {
+      "pr_number": 6391,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-03-05T13:33:30Z",
+      "created_at": "2024-03-04T16:23:59Z",
+      "updated_at": "2024-03-05T13:33:30Z",
+      "base_commit": "13a5adad8b3e725d79f0760fdd93366c1e16b540",
+      "head_commit": "5b4fc772fb00712e8bf203e37fe589b5a20c44df",
+      "merge_commit": "1076e2b3c07e01b88cc5b99dc45f68e168356587",
+      "modified_test": [
+        "spring/src/test/java/org/apache/seata/spring/annotation/AdapterSpringSeataInterceptorTest.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/NestTccAction.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/NormalTccAction.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/interceptor/ProxyUtilsTccTest.java",
+        "tcc/src/test/java/org/apache/seata/rm/tcc/interceptor/parser/TccActionInterceptorParserTest.java",
+        "test/src/test/java/org/apache/seata/core/rpc/netty/mockserver/RmClientTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/exception/RepeatRegistrationException.java",
+        "tcc/src/main/java/org/apache/seata/rm/tcc/TCCResourceManager.java"
+      ]
+    },
+    {
+      "pr_number": 6350,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-02-19T04:54:38Z",
+      "created_at": "2024-02-19T04:12:21Z",
+      "updated_at": "2024-02-19T05:16:19Z",
+      "base_commit": "d4cbdf412f5104a7ba18d12b7153369ce6d353d7",
+      "head_commit": "5c577b8b5175b5f6c282d88ae3a14c45b7839477",
+      "merge_commit": "e5fab2d64ac8c44d7a3b669deb188c82c1c8b341",
+      "modified_test": [
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-client/src/test/java/org/apache/seata/spring/boot/autoconfigure/ClientPropertiesTest.java"
+      ],
+      "modified_source": [
+        "common/src/main/java/org/apache/seata/common/ConfigurationKeys.java",
+        "seata-spring-autoconfigure/seata-spring-autoconfigure-client/src/main/java/org/apache/seata/spring/boot/autoconfigure/properties/client/ServiceProperties.java"
+      ]
+    },
+    {
+      "pr_number": 6330,
+      "repo": "apache/incubator-seata",
+      "merged_at": "2024-02-05T07:18:43Z",
+      "created_at": "2024-02-04T13:40:50Z",
+      "updated_at": "2024-02-05T08:56:57Z",
+      "base_commit": "843d2a4b2fc19c381d4321438f4a1cf98bad7274",
+      "head_commit": "7a77301a7d2f977ac031711bfc0ffad6db70d21d",
+      "merge_commit": "c3da4d85b1c181b10570dbfdd1d98afb952decbd",
+      "modified_test": [
+        "rm-datasource/src/test/java/org/apache/seata/rm/xa/DataSourceProxyXATest.java"
+      ],
+      "modified_source": [
+        "rm-datasource/src/main/java/org/apache/seata/rm/datasource/util/XAUtils.java"
+      ]
+    }
+  ]
+}

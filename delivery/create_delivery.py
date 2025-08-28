@@ -105,6 +105,7 @@ for (repo, prnum), rec in useful.items():
 
     if not pr:
         stats["missing_payload"] += 1
+        print(f"[ERROR] No payload for {repo}#{prnum}; skipping")
         continue
     if not cfg:
         stats["missing_cfg"] += 1
@@ -123,7 +124,11 @@ for (repo, prnum), rec in useful.items():
         print(f"[ERROR] Dockerfile not found at {docker_path}; skipping {repo}#{prnum}")
         continue
 
-    modified_code, modified_test = get_modified_files(pr["files"])
+    if "files" in pr:
+        modified_code, modified_test = get_modified_files(pr["files"])
+    else:
+        modified_code = pr["modified_source"]
+        modified_test = pr["modified_test"]
 
     prepared.append({
         "task_id"          : f"{repo}#{prnum}",

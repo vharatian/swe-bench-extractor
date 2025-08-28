@@ -1,1 +1,1 @@
-BATCH_NAME = "non-ibm-samples"
+BATCH_NAME = "test_patch"

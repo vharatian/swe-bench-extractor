@@ -13,10 +13,10 @@ from itertools import count
 from pathlib import Path
 
 # ── configuration ─────────────────────────────────────────────────────────────
-INPUT_DIR    = Path("files/run-debezium")   # folder to scan
+INPUT_DIR    = Path("files/run-debezium-new")   # folder to scan
 PATTERN      = "final*.jsonl"                      # filename pattern
 OUT_DIR      = Path("files/tasks")                 # where results go
-OUTPUT_CSV   = OUT_DIR / "batch7.csv"
+OUTPUT_CSV   = OUT_DIR / "batch8.csv"
 MAX_NUMBER   = 30
 # ──────────────────────────────────────────────────────────────────────────────
 
@@ -58,6 +58,9 @@ def main() -> None:
 
         # Walk through every matching input file
         for infile in input_files:
+            if count > MAX_NUMBER:
+                break
+
             with infile.open("r", encoding="utf-8") as fin:
                 for line in fin:
                     if not line.strip():
@@ -73,6 +76,8 @@ def main() -> None:
 
                     if count > MAX_NUMBER:
                         break
+
+    print(f"Collected {count} records from {len(input_files)} files.")
 
 if __name__ == "__main__":
     main()

@@ -1,7 +1,7 @@
 from pathlib import Path
 
-input_folder = Path("files/run-dp")
-output_file = Path("files/finals/final-dependencyTrack.jsonl")
+input_folder = Path("files/run-camel-new")
+output_file = Path("files/finals/final-camel.jsonl")
 
 def merge_jsonl_files(input_folder: Path, output_file: Path) -> None:
     with output_file.open("w", encoding="utf-8") as outfile:

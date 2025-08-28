@@ -1,15 +1,24 @@
 # repo_config.yaml
 hibernate/hibernate-search:
-  dockerfile: "../docker/Dockerfile-java-21"
+  dockerfile: "../docker_files/Dockerfile-java-21"
 
 DependencyTrack/dependency-track:
-  dockerfile: "../docker/Dockerfile-java-21"
+  dockerfile: "../docker_files/Dockerfile-java-21"
 
 ta4j/ta4j:
-  dockerfile: "../docker/Dockerfile-java-21"
+  dockerfile: "../docker_files/Dockerfile-java-21"
 
 portfolio-performance/portfolio:
-  dockerfile: "../docker/Dockerfile-java-21"
+  dockerfile: "../docker_files/Dockerfile-java-21"
 
 cdapio/cdap:
-  dockerfile: "../docker/Dockerfile-java-8"
+  dockerfile: "../docker_files/Dockerfile-java-8"
+
+apache/camel:
+  dockerfile: "../docker_files/Dockerfile-java-21"
+
+debezium/debezium:
+  dockerfile: "../docker_files/Dockerfile-java-21"
+
+apache/incubator-seata:
+  dockerfile: "../docker_files/Dockerfile-java-21"

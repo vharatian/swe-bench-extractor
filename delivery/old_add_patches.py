@@ -29,7 +29,7 @@ from delivery.config import BATCH_NAME
 DEL_ROOT     = Path("../files/delivery") / BATCH_NAME
 REPOS_ROOT   = Path("../files/repos")
 IN_FILE      = DEL_ROOT / f"{BATCH_NAME}.json"
-OUT_FILE     = DEL_ROOT / f"{BATCH_NAME}-patched.json"
+OUT_FILE     = DEL_ROOT / f"{BATCH_NAME}-patched-old.json"
 
 WORKTREE_DIR = REPOS_ROOT / "__worktrees__"
 

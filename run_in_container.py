@@ -117,7 +117,7 @@ def parse(repo: Path, patterns):
             except ET.ParseError:
                 continue
             for tc in tree.iterfind(".//testcase"):
-                ident = f"{tc.get('classname', '?')}#{tc.get('name', '?').split('[', 1)[0]}"
+                ident = f"{tc.get('classname', '?')}#{tc.get('name', '?')}"
                 all_t.add(ident)
                 if tc.find("failure") is not None or tc.find("error") is not None:
                     fail.add(ident)

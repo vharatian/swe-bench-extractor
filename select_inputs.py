@@ -3,7 +3,7 @@ from pathlib import Path
 
 from numpy.ma.core import count
 
-DELIVERY = Path("files/delivery/batch_5/batch_5-final.jsonl")
+DELIVERY = Path("files/delivery/batch_5/batch_5-final.filtered_unresolved.jsonl")
 INPUT_FOLDER = Path("files/fixed_inputs")
 OUTPUT_FOLDER = Path("files/selected_inputs")
 

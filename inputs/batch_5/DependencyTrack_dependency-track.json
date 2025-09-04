@@ -6,7 +6,7 @@
       "**/surefire-reports/*",
       "**/failsafe-reports/*"
     ],
-    "Dockerfile": "docker/Dockerfile-java-21"
+    "Dockerfile": "docker_files/Dockerfile-java-21"
   },
   "prs": [
     {

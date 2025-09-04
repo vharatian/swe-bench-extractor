@@ -1,85 +1,96 @@
-[
+{
+  "info": {
+    "repo": "DependencyTrack/dependency-track",
+    "test_command": "mvn clean verify -DskipTests -DskipITs -P enhance && mvn clean verify -P enhance -Dmaven.test.failure.ignore=true",
+    "test_files": [
+      "**/surefire-reports/*",
+      "**/failsafe-reports/*"
+    ],
+    "Dockerfile": "docker/Dockerfile-java-21"
+  },
+  "prs": [
     {
-        "pr_number": 5106,
-        "repo": "DependencyTrack/dependency-track",
-        "merged_at": "2025-07-08T15:18:01Z",
-        "created_at": "2025-07-08T14:51:07Z",
-        "updated_at": "2025-08-08T10:04:24Z",
-        "base_commit": "2c16bf3efc420ab73d840c7570a97266497c2080",
-        "head_commit": "9d052cf9be5fe9763f946f18dcda546c708e2204",
-        "merge_commit": "b169510ddf678a954acb70bec3ba3b3a1d367183",
-        "modified_test": [
-            "src/test/java/org/dependencytrack/parser/osv/OsvAdvisoryParserTest.java",
-            "src/test/java/org/dependencytrack/tasks/OsvDownloadTaskTest.java",
-            "src/test/resources/unit/osv.jsons/osv-UBUNTU-CVE-2025-6297.json"
-        ],
-        "modified_source": [
-            "src/main/java/org/dependencytrack/parser/osv/OsvAdvisoryParser.java"
-        ]
+      "pr_number": 5106,
+      "repo": "DependencyTrack/dependency-track",
+      "merged_at": "2025-07-08T15:18:01Z",
+      "created_at": "2025-07-08T14:51:07Z",
+      "updated_at": "2025-08-08T10:04:24Z",
+      "base_commit": "2c16bf3efc420ab73d840c7570a97266497c2080",
+      "head_commit": "9d052cf9be5fe9763f946f18dcda546c708e2204",
+      "merge_commit": "b169510ddf678a954acb70bec3ba3b3a1d367183",
+      "modified_test": [
+        "src/test/java/org/dependencytrack/parser/osv/OsvAdvisoryParserTest.java",
+        "src/test/java/org/dependencytrack/tasks/OsvDownloadTaskTest.java",
+        "src/test/resources/unit/osv.jsons/osv-UBUNTU-CVE-2025-6297.json"
+      ],
+      "modified_source": [
+        "src/main/java/org/dependencytrack/parser/osv/OsvAdvisoryParser.java"
+      ]
     },
     {
-        "pr_number": 5019,
-        "repo": "DependencyTrack/dependency-track",
-        "merged_at": "2025-06-13T11:53:29Z",
-        "created_at": "2025-06-03T12:49:00Z",
-        "updated_at": "2025-07-14T10:04:26Z",
-        "base_commit": "6e3b0aae13fb415225ea98fb6eb3ead39ebdea19",
-        "head_commit": "4440c8eed9c2727ae27fb056b871a9128b1f8aab",
-        "merge_commit": "e57361a74f9cef483ba7aef128144ab391d92200",
-        "modified_test": [
-            "src/test/java/org/dependencytrack/tasks/repositories/ComposerMetaAnalyzerTest.java",
-            "src/test/resources/unit/tasks/repositories/https---composer.include.com.metadata-galaxy-cow-arrayentry.json"
-        ],
-        "modified_source": [
-            "src/main/java/org/dependencytrack/tasks/repositories/ComposerMetaAnalyzer.java"
-        ]
+      "pr_number": 5019,
+      "repo": "DependencyTrack/dependency-track",
+      "merged_at": "2025-06-13T11:53:29Z",
+      "created_at": "2025-06-03T12:49:00Z",
+      "updated_at": "2025-07-14T10:04:26Z",
+      "base_commit": "6e3b0aae13fb415225ea98fb6eb3ead39ebdea19",
+      "head_commit": "4440c8eed9c2727ae27fb056b871a9128b1f8aab",
+      "merge_commit": "e57361a74f9cef483ba7aef128144ab391d92200",
+      "modified_test": [
+        "src/test/java/org/dependencytrack/tasks/repositories/ComposerMetaAnalyzerTest.java",
+        "src/test/resources/unit/tasks/repositories/https---composer.include.com.metadata-galaxy-cow-arrayentry.json"
+      ],
+      "modified_source": [
+        "src/main/java/org/dependencytrack/tasks/repositories/ComposerMetaAnalyzer.java"
+      ]
     },
     {
-        "pr_number": 4513,
-        "repo": "DependencyTrack/dependency-track",
-        "merged_at": "2025-01-03T17:08:22Z",
-        "created_at": "2025-01-03T16:27:13Z",
-        "updated_at": "2025-02-26T10:04:07Z",
-        "base_commit": "d97e37a17c8c07ca029538e62fcec47f49676d3a",
-        "head_commit": "19e24f5c8c4ecfcc8488dedf3db6dae02ea09b5f",
-        "merge_commit": "aefd50a3564f7e4c0719ce2b1fdddd5fba069c3e",
-        "modified_test": [
-            "src/test/java/org/dependencytrack/resources/v1/ComponentResourceTest.java"
-        ],
-        "modified_source": [
-            "src/main/java/org/dependencytrack/persistence/ComponentQueryManager.java"
-        ]
+      "pr_number": 4513,
+      "repo": "DependencyTrack/dependency-track",
+      "merged_at": "2025-01-03T17:08:22Z",
+      "created_at": "2025-01-03T16:27:13Z",
+      "updated_at": "2025-02-26T10:04:07Z",
+      "base_commit": "d97e37a17c8c07ca029538e62fcec47f49676d3a",
+      "head_commit": "19e24f5c8c4ecfcc8488dedf3db6dae02ea09b5f",
+      "merge_commit": "aefd50a3564f7e4c0719ce2b1fdddd5fba069c3e",
+      "modified_test": [
+        "src/test/java/org/dependencytrack/resources/v1/ComponentResourceTest.java"
+      ],
+      "modified_source": [
+        "src/main/java/org/dependencytrack/persistence/ComponentQueryManager.java"
+      ]
     },
     {
-        "pr_number": 4222,
-        "repo": "DependencyTrack/dependency-track",
-        "merged_at": "2024-10-07T15:19:43Z",
-        "created_at": "2024-10-07T05:56:07Z",
-        "updated_at": "2024-11-07T10:03:42Z",
-        "base_commit": "2eea86f44374af4cfb6fadf742d503eede0b2ee7",
-        "head_commit": "ddf097fef3ec21b5f015b5f0d524125786c7fca4",
-        "merge_commit": "d84ee0f12e95c7aaae6dbcab773d7473f5c0cc93",
-        "modified_test": [
-            "src/test/java/org/dependencytrack/resources/v1/UserResourceAuthenticatedTest.java"
-        ],
-        "modified_source": [
-            "src/main/java/org/dependencytrack/resources/v1/UserResource.java"
-        ]
+      "pr_number": 4222,
+      "repo": "DependencyTrack/dependency-track",
+      "merged_at": "2024-10-07T15:19:43Z",
+      "created_at": "2024-10-07T05:56:07Z",
+      "updated_at": "2024-11-07T10:03:42Z",
+      "base_commit": "2eea86f44374af4cfb6fadf742d503eede0b2ee7",
+      "head_commit": "ddf097fef3ec21b5f015b5f0d524125786c7fca4",
+      "merge_commit": "d84ee0f12e95c7aaae6dbcab773d7473f5c0cc93",
+      "modified_test": [
+        "src/test/java/org/dependencytrack/resources/v1/UserResourceAuthenticatedTest.java"
+      ],
+      "modified_source": [
+        "src/main/java/org/dependencytrack/resources/v1/UserResource.java"
+      ]
     },
     {
-        "pr_number": 3871,
-        "repo": "DependencyTrack/dependency-track",
-        "merged_at": "2024-06-23T19:59:14Z",
-        "created_at": "2024-06-23T19:36:52Z",
-        "updated_at": "2024-07-24T10:03:31Z",
-        "base_commit": "f7d3b94faf8e9e199d8461781bdfb8469d7229ce",
-        "head_commit": "e9b8ec0ec0af2664280600a8ec978d8902115a88",
-        "merge_commit": "79f9b06b802db0bcc6563dfebf26eca7f45f4537",
-        "modified_test": [
-            "src/test/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidatorTest.java"
-        ],
-        "modified_source": [
-            "src/main/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidator.java"
-        ]
+      "pr_number": 3871,
+      "repo": "DependencyTrack/dependency-track",
+      "merged_at": "2024-06-23T19:59:14Z",
+      "created_at": "2024-06-23T19:36:52Z",
+      "updated_at": "2024-07-24T10:03:31Z",
+      "base_commit": "f7d3b94faf8e9e199d8461781bdfb8469d7229ce",
+      "head_commit": "e9b8ec0ec0af2664280600a8ec978d8902115a88",
+      "merge_commit": "79f9b06b802db0bcc6563dfebf26eca7f45f4537",
+      "modified_test": [
+        "src/test/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidatorTest.java"
+      ],
+      "modified_source": [
+        "src/main/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidator.java"
+      ]
     }
-]
+  ]
+}

@@ -1,491 +1,502 @@
-[
+{
+  "info": {
+    "repo": "debezium/debezium",
+    "test_command": "mvn clean verify -DskipTests -DskipITs && mvn verify -Dmaven.test.failure.ignore=true -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
+    "test_files": [
+      "**/surefire-reports/*",
+      "**/failsafe-reports/*"
+    ],
+    "Dockerfile": "docker_files/Dockerfile-java-21-docker"
+  },
+  "prs": [
     {
-        "pr_number": 6545,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-07-03T11:16:11Z",
-        "created_at": "2025-07-03T02:05:48Z",
-        "updated_at": "2025-07-03T11:16:26Z",
-        "base_commit": "6693ba99f70be85f2d545d9b03f6b6b3bb232c64",
-        "head_commit": "6da5765cffb458be473c2fcdb92783b0845a75c4",
-        "merge_commit": "1922dba64e506ae9d5c9c6ba40acb0ce9ab86765",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/LogMinerDmlParserTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/parser/LogMinerDmlParser.java"
-        ]
+      "pr_number": 6545,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-07-03T11:16:11Z",
+      "created_at": "2025-07-03T02:05:48Z",
+      "updated_at": "2025-07-03T11:16:26Z",
+      "base_commit": "6693ba99f70be85f2d545d9b03f6b6b3bb232c64",
+      "head_commit": "6da5765cffb458be473c2fcdb92783b0845a75c4",
+      "merge_commit": "1922dba64e506ae9d5c9c6ba40acb0ce9ab86765",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/LogMinerDmlParserTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/parser/LogMinerDmlParser.java"
+      ]
     },
     {
-        "pr_number": 6488,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-06-12T11:09:21Z",
-        "created_at": "2025-06-05T12:41:52Z",
-        "updated_at": "2025-06-13T12:18:26Z",
-        "base_commit": "42e27799ec35da3bd5c0e076e37c6f35ea7dbbb6",
-        "head_commit": "215fe91e0853a029bc163e61f103452583b48abd",
-        "merge_commit": "ba7677947ffb156ca29a72bee2cbf7a96ef6cfe9",
-        "modified_test": [
-            "debezium-connector-postgres/src/test/java/io/debezium/connector/postgresql/PostgresConnectorIT.java",
-            "debezium-connector-postgres/src/test/java/io/debezium/connector/postgresql/PostgresMoneyIT.java",
-            "debezium-core/src/test/java/io/debezium/connector/common/BaseSourceTaskSnapshotModesValidationTest.java",
-            "debezium-embedded/src/test/java/io/debezium/pipeline/notification/AbstractNotificationsIT.java"
-        ],
-        "modified_source": [
-            "debezium-connector-mongodb/src/main/java/io/debezium/connector/mongodb/MongoDbConnectorTask.java",
-            "debezium-core/src/main/java/io/debezium/connector/common/BaseSourceTask.java"
-        ]
+      "pr_number": 6488,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-06-12T11:09:21Z",
+      "created_at": "2025-06-05T12:41:52Z",
+      "updated_at": "2025-06-13T12:18:26Z",
+      "base_commit": "42e27799ec35da3bd5c0e076e37c6f35ea7dbbb6",
+      "head_commit": "215fe91e0853a029bc163e61f103452583b48abd",
+      "merge_commit": "ba7677947ffb156ca29a72bee2cbf7a96ef6cfe9",
+      "modified_test": [
+        "debezium-connector-postgres/src/test/java/io/debezium/connector/postgresql/PostgresConnectorIT.java",
+        "debezium-connector-postgres/src/test/java/io/debezium/connector/postgresql/PostgresMoneyIT.java",
+        "debezium-core/src/test/java/io/debezium/connector/common/BaseSourceTaskSnapshotModesValidationTest.java",
+        "debezium-embedded/src/test/java/io/debezium/pipeline/notification/AbstractNotificationsIT.java"
+      ],
+      "modified_source": [
+        "debezium-connector-mongodb/src/main/java/io/debezium/connector/mongodb/MongoDbConnectorTask.java",
+        "debezium-core/src/main/java/io/debezium/connector/common/BaseSourceTask.java"
+      ]
     },
     {
-        "pr_number": 6479,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-06-04T08:41:05Z",
-        "created_at": "2025-06-03T14:30:15Z",
-        "updated_at": "2025-06-04T08:41:26Z",
-        "base_commit": "cdb42c81a441189ebcb35229957b2986f320c333",
-        "head_commit": "f272b6b80f793990eaf1aeb343fe8037b09fa4ea",
-        "merge_commit": "a62fdd5f41c71c993c1446e71fd6450a202dd601",
-        "modified_test": [
-            "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/transforms/FieldNameTransformationTest.java",
-            "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/util/SinkRecordBuilder.java"
-        ],
-        "modified_source": [
-            "debezium-connector-jdbc/src/main/java/io/debezium/connector/jdbc/transforms/FieldNameTransformation.java"
-        ]
+      "pr_number": 6479,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-06-04T08:41:05Z",
+      "created_at": "2025-06-03T14:30:15Z",
+      "updated_at": "2025-06-04T08:41:26Z",
+      "base_commit": "cdb42c81a441189ebcb35229957b2986f320c333",
+      "head_commit": "f272b6b80f793990eaf1aeb343fe8037b09fa4ea",
+      "merge_commit": "a62fdd5f41c71c993c1446e71fd6450a202dd601",
+      "modified_test": [
+        "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/transforms/FieldNameTransformationTest.java",
+        "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/util/SinkRecordBuilder.java"
+      ],
+      "modified_source": [
+        "debezium-connector-jdbc/src/main/java/io/debezium/connector/jdbc/transforms/FieldNameTransformation.java"
+      ]
     },
     {
-        "pr_number": 6471,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-06-04T08:17:05Z",
-        "created_at": "2025-06-02T10:14:26Z",
-        "updated_at": "2025-06-04T08:31:23Z",
-        "base_commit": "88420dcb92068045130127ee2fef2f9784b641b1",
-        "head_commit": "8802798f8645ef71b625de3bb4b7fe41c94c4b52",
-        "merge_commit": "f1e5b029553dab256620507feff2f9c51614b5a4",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/jdbc/JdbcConnectionTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/jdbc/JdbcConnection.java"
-        ]
+      "pr_number": 6471,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-06-04T08:17:05Z",
+      "created_at": "2025-06-02T10:14:26Z",
+      "updated_at": "2025-06-04T08:31:23Z",
+      "base_commit": "88420dcb92068045130127ee2fef2f9784b641b1",
+      "head_commit": "8802798f8645ef71b625de3bb4b7fe41c94c4b52",
+      "merge_commit": "f1e5b029553dab256620507feff2f9c51614b5a4",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/jdbc/JdbcConnectionTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/jdbc/JdbcConnection.java"
+      ]
     },
     {
-        "pr_number": 6452,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-05-27T15:08:50Z",
-        "created_at": "2025-05-26T13:30:43Z",
-        "updated_at": "2025-05-27T15:09:12Z",
-        "base_commit": "257cd41e2a0d48ad599a995429ebf1809fdd1f18",
-        "head_commit": "2cd615d4bac4ce3dd42a79a240ec3ca5118f650f",
-        "merge_commit": "25229567c4a4e6e71dfcecec6611e58d89197619",
-        "modified_test": [
-            "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/JdbcSinkConnectorConfigTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/config/Field.java"
-        ]
+      "pr_number": 6452,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-05-27T15:08:50Z",
+      "created_at": "2025-05-26T13:30:43Z",
+      "updated_at": "2025-05-27T15:09:12Z",
+      "base_commit": "257cd41e2a0d48ad599a995429ebf1809fdd1f18",
+      "head_commit": "2cd615d4bac4ce3dd42a79a240ec3ca5118f650f",
+      "merge_commit": "25229567c4a4e6e71dfcecec6611e58d89197619",
+      "modified_test": [
+        "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/JdbcSinkConnectorConfigTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/config/Field.java"
+      ]
     },
     {
-        "pr_number": 6434,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-05-21T10:51:06Z",
-        "created_at": "2025-05-21T03:37:19Z",
-        "updated_at": "2025-05-21T10:51:06Z",
-        "base_commit": "34d4c3420f1a72957c88ae73f0877a02ee16d084",
-        "head_commit": "7a3c8e2bf1e7ba30f703170ec3bf9baed980adf0",
-        "merge_commit": "77ce5cd8c07ab7ee828439e6f94185a948bf1a9b",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/SqlUtilsTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnection.java",
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/SqlUtils.java"
-        ]
+      "pr_number": 6434,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-05-21T10:51:06Z",
+      "created_at": "2025-05-21T03:37:19Z",
+      "updated_at": "2025-05-21T10:51:06Z",
+      "base_commit": "34d4c3420f1a72957c88ae73f0877a02ee16d084",
+      "head_commit": "7a3c8e2bf1e7ba30f703170ec3bf9baed980adf0",
+      "merge_commit": "77ce5cd8c07ab7ee828439e6f94185a948bf1a9b",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/SqlUtilsTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnection.java",
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/SqlUtils.java"
+      ]
     },
     {
-        "pr_number": 6427,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-05-19T05:00:07Z",
-        "created_at": "2025-05-17T04:52:40Z",
-        "updated_at": "2025-05-19T05:00:16Z",
-        "base_commit": "23f8f56bfd015caeec3fe3dbda33f1a4cb21f407",
-        "head_commit": "e94ffc4812fcfa337a0d069efff55316482dd0f5",
-        "merge_commit": "0b97fb94d3fdb47a5aca0e530ed0279f92b34050",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/pipeline/signal/KafkaSignalChannelTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/pipeline/signal/channels/KafkaSignalChannel.java"
-        ]
+      "pr_number": 6427,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-05-19T05:00:07Z",
+      "created_at": "2025-05-17T04:52:40Z",
+      "updated_at": "2025-05-19T05:00:16Z",
+      "base_commit": "23f8f56bfd015caeec3fe3dbda33f1a4cb21f407",
+      "head_commit": "e94ffc4812fcfa337a0d069efff55316482dd0f5",
+      "merge_commit": "0b97fb94d3fdb47a5aca0e530ed0279f92b34050",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/pipeline/signal/KafkaSignalChannelTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/pipeline/signal/channels/KafkaSignalChannel.java"
+      ]
     },
     {
-        "pr_number": 6404,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-05-19T05:05:27Z",
-        "created_at": "2025-05-13T07:46:55Z",
-        "updated_at": "2025-05-19T05:33:30Z",
-        "base_commit": "2fd5c29f6cc9d2eff06b978579dc81f11d398133",
-        "head_commit": "3c861d498be6643544ec632aa9c830e122af370e",
-        "merge_commit": "5d9aa99968f8b8b28f8a7fbc574848fa01b95a8e",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/transforms/ExtractNewRecordStateTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/transforms/ExtractNewRecordStateConfigDefinition.java",
-            "debezium-core/src/main/java/io/debezium/transforms/extractnewstate/DefaultDeleteHandlingStrategy.java",
-            "documentation/modules/ROOT/pages/transformations/event-flattening.adoc"
-        ]
+      "pr_number": 6404,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-05-19T05:05:27Z",
+      "created_at": "2025-05-13T07:46:55Z",
+      "updated_at": "2025-05-19T05:33:30Z",
+      "base_commit": "2fd5c29f6cc9d2eff06b978579dc81f11d398133",
+      "head_commit": "3c861d498be6643544ec632aa9c830e122af370e",
+      "merge_commit": "5d9aa99968f8b8b28f8a7fbc574848fa01b95a8e",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/transforms/ExtractNewRecordStateTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/transforms/ExtractNewRecordStateConfigDefinition.java",
+        "debezium-core/src/main/java/io/debezium/transforms/extractnewstate/DefaultDeleteHandlingStrategy.java",
+        "documentation/modules/ROOT/pages/transformations/event-flattening.adoc"
+      ]
     },
     {
-        "pr_number": 6378,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-05-05T08:30:08Z",
-        "created_at": "2025-05-02T15:40:33Z",
-        "updated_at": "2025-05-05T08:30:19Z",
-        "base_commit": "6d972164b892b635342e3db67ffa4b9b446fbcf4",
-        "head_commit": "7e51e34abd8eea357af6d8b05508e94cbe6cba89",
-        "merge_commit": "09648c4f957f36fea9eeb98df14fb7f25811e2d8",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleConnectorConfigTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnectorConfig.java"
-        ]
+      "pr_number": 6378,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-05-05T08:30:08Z",
+      "created_at": "2025-05-02T15:40:33Z",
+      "updated_at": "2025-05-05T08:30:19Z",
+      "base_commit": "6d972164b892b635342e3db67ffa4b9b446fbcf4",
+      "head_commit": "7e51e34abd8eea357af6d8b05508e94cbe6cba89",
+      "merge_commit": "09648c4f957f36fea9eeb98df14fb7f25811e2d8",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleConnectorConfigTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnectorConfig.java"
+      ]
     },
     {
-        "pr_number": 6347,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-04-16T11:03:17Z",
-        "created_at": "2025-04-14T12:17:15Z",
-        "updated_at": "2025-04-16T11:03:29Z",
-        "base_commit": "6a37d34f627f878280f692d51e498c1c64840605",
-        "head_commit": "d00c9a79290ab9af17791b7ef602727aa3cddf7c",
-        "merge_commit": "7b8cceec8ada6b6a72122c17f0fa74985c1dae22",
-        "modified_test": [
-            "debezium-connector-postgres/src/test/java/io/debezium/connector/postgresql/DebeziumEngineIT.java",
-            "debezium-embedded/src/test/java/io/debezium/embedded/ConnectorOutputTest.java",
-            "debezium-embedded/src/test/java/io/debezium/embedded/EmbeddedEngineTest.java",
-            "debezium-embedded/src/test/java/io/debezium/embedded/async/AsyncEmbeddedEngineTest.java"
-        ],
-        "modified_source": [
-            "debezium-api/src/main/java/io/debezium/engine/DebeziumEngine.java"
-        ]
+      "pr_number": 6347,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-04-16T11:03:17Z",
+      "created_at": "2025-04-14T12:17:15Z",
+      "updated_at": "2025-04-16T11:03:29Z",
+      "base_commit": "6a37d34f627f878280f692d51e498c1c64840605",
+      "head_commit": "d00c9a79290ab9af17791b7ef602727aa3cddf7c",
+      "merge_commit": "7b8cceec8ada6b6a72122c17f0fa74985c1dae22",
+      "modified_test": [
+        "debezium-connector-postgres/src/test/java/io/debezium/connector/postgresql/DebeziumEngineIT.java",
+        "debezium-embedded/src/test/java/io/debezium/embedded/ConnectorOutputTest.java",
+        "debezium-embedded/src/test/java/io/debezium/embedded/EmbeddedEngineTest.java",
+        "debezium-embedded/src/test/java/io/debezium/embedded/async/AsyncEmbeddedEngineTest.java"
+      ],
+      "modified_source": [
+        "debezium-api/src/main/java/io/debezium/engine/DebeziumEngine.java"
+      ]
     },
     {
-        "pr_number": 6343,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-04-16T00:37:00Z",
-        "created_at": "2025-04-13T16:53:14Z",
-        "updated_at": "2025-04-16T00:37:00Z",
-        "base_commit": "050f031b31db483d34ea527049111473597ac999",
-        "head_commit": "1be485290b715453419a525a4c63e58e101c4fc0",
-        "merge_commit": "867b485b6d8e8531df7248b466609750eea2d949",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/LogMinerQueryBuilderTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/LogMinerQueryBuilder.java"
-        ]
+      "pr_number": 6343,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-04-16T00:37:00Z",
+      "created_at": "2025-04-13T16:53:14Z",
+      "updated_at": "2025-04-16T00:37:00Z",
+      "base_commit": "050f031b31db483d34ea527049111473597ac999",
+      "head_commit": "1be485290b715453419a525a4c63e58e101c4fc0",
+      "merge_commit": "867b485b6d8e8531df7248b466609750eea2d949",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/LogMinerQueryBuilderTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/LogMinerQueryBuilder.java"
+      ]
     },
     {
-        "pr_number": 6333,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-04-11T13:34:47Z",
-        "created_at": "2025-04-11T08:04:08Z",
-        "updated_at": "2025-04-11T13:34:54Z",
-        "base_commit": "3c9ce6e4fc807a5eb3b405517f54e54e60d9ed5e",
-        "head_commit": "39e4ad408ef8032b38fc53cc359c0750328b1bf1",
-        "merge_commit": "08acf67257045e247a9c8349ea3843187130845b",
-        "modified_test": [
-            "debezium-ai/debezium-ai-embeddings/src/test/java/io/debezium/ai/embeddings/FieldToEmbeddingTest.java",
-            "debezium-core/src/test/java/io/debezium/transforms/ConnectRecordUtilTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/transforms/ConnectRecordUtil.java"
-        ]
+      "pr_number": 6333,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-04-11T13:34:47Z",
+      "created_at": "2025-04-11T08:04:08Z",
+      "updated_at": "2025-04-11T13:34:54Z",
+      "base_commit": "3c9ce6e4fc807a5eb3b405517f54e54e60d9ed5e",
+      "head_commit": "39e4ad408ef8032b38fc53cc359c0750328b1bf1",
+      "merge_commit": "08acf67257045e247a9c8349ea3843187130845b",
+      "modified_test": [
+        "debezium-ai/debezium-ai-embeddings/src/test/java/io/debezium/ai/embeddings/FieldToEmbeddingTest.java",
+        "debezium-core/src/test/java/io/debezium/transforms/ConnectRecordUtilTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/transforms/ConnectRecordUtil.java"
+      ]
     },
     {
-        "pr_number": 6330,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-04-11T14:10:17Z",
-        "created_at": "2025-04-10T13:43:47Z",
-        "updated_at": "2025-04-11T14:23:51Z",
-        "base_commit": "c7842b767c9a5773b95a4212b02f36f9c24d14f8",
-        "head_commit": "982843e3dcf1003862f0af7202284da42b1332b0",
-        "merge_commit": "01cc27a7a594af095aa77f187b545062a3577468",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleConnectorConfigTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnectorConfig.java"
-        ]
+      "pr_number": 6330,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-04-11T14:10:17Z",
+      "created_at": "2025-04-10T13:43:47Z",
+      "updated_at": "2025-04-11T14:23:51Z",
+      "base_commit": "c7842b767c9a5773b95a4212b02f36f9c24d14f8",
+      "head_commit": "982843e3dcf1003862f0af7202284da42b1332b0",
+      "merge_commit": "01cc27a7a594af095aa77f187b545062a3577468",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleConnectorConfigTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnectorConfig.java"
+      ]
     },
     {
-        "pr_number": 6301,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-04-05T22:11:12Z",
-        "created_at": "2025-04-05T10:28:00Z",
-        "updated_at": "2025-04-05T22:11:12Z",
-        "base_commit": "8b344791e93a63f50b4f1e663985c650e7021d0e",
-        "head_commit": "507701037fb9ae67e975e7c61917c40e70366304",
-        "merge_commit": "97afa4370c1a5ab02fe00558dae64ccaef21d93f",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleConnectorIT.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/processor/AbstractLogMinerEventProcessor.java"
-        ]
+      "pr_number": 6301,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-04-05T22:11:12Z",
+      "created_at": "2025-04-05T10:28:00Z",
+      "updated_at": "2025-04-05T22:11:12Z",
+      "base_commit": "8b344791e93a63f50b4f1e663985c650e7021d0e",
+      "head_commit": "507701037fb9ae67e975e7c61917c40e70366304",
+      "merge_commit": "97afa4370c1a5ab02fe00558dae64ccaef21d93f",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleConnectorIT.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/processor/AbstractLogMinerEventProcessor.java"
+      ]
     },
     {
-        "pr_number": 6290,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-04-03T10:06:02Z",
-        "created_at": "2025-04-03T01:10:49Z",
-        "updated_at": "2025-04-03T10:06:52Z",
-        "base_commit": "431df6e843e2ea0c456d1b5169348a4957f068b7",
-        "head_commit": "783c043915632d750d4335b66aa1ce8dc2c86e9f",
-        "merge_commit": "9c192f20c49a73d3e6b143dc1ae99ec336f59c52",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/LogMinerDmlParserTest.java"
-        ],
-        "modified_source": [
-            ".packit.yaml",
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/parser/LogMinerDmlParser.java"
-        ]
+      "pr_number": 6290,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-04-03T10:06:02Z",
+      "created_at": "2025-04-03T01:10:49Z",
+      "updated_at": "2025-04-03T10:06:52Z",
+      "base_commit": "431df6e843e2ea0c456d1b5169348a4957f068b7",
+      "head_commit": "783c043915632d750d4335b66aa1ce8dc2c86e9f",
+      "merge_commit": "9c192f20c49a73d3e6b143dc1ae99ec336f59c52",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/LogMinerDmlParserTest.java"
+      ],
+      "modified_source": [
+        ".packit.yaml",
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/parser/LogMinerDmlParser.java"
+      ]
     },
     {
-        "pr_number": 6270,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-03-31T06:44:58Z",
-        "created_at": "2025-03-28T17:18:06Z",
-        "updated_at": "2025-03-31T06:45:48Z",
-        "base_commit": "99e58201642d770ba4e385a26254526dfe21c2cb",
-        "head_commit": "e0136c4ebabc76c698ab9c7f241716542a1b35f1",
-        "merge_commit": "a7eb74810a92cbb8a054e71f1b0661d945f5a329",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/transforms/ExtractChangedRecordStateTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/transforms/ExtractChangedRecordState.java",
-            "documentation/modules/ROOT/pages/transformations/event-changes.adoc"
-        ]
+      "pr_number": 6270,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-03-31T06:44:58Z",
+      "created_at": "2025-03-28T17:18:06Z",
+      "updated_at": "2025-03-31T06:45:48Z",
+      "base_commit": "99e58201642d770ba4e385a26254526dfe21c2cb",
+      "head_commit": "e0136c4ebabc76c698ab9c7f241716542a1b35f1",
+      "merge_commit": "a7eb74810a92cbb8a054e71f1b0661d945f5a329",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/transforms/ExtractChangedRecordStateTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/transforms/ExtractChangedRecordState.java",
+        "documentation/modules/ROOT/pages/transformations/event-changes.adoc"
+      ]
     },
     {
-        "pr_number": 6243,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-03-24T11:47:26Z",
-        "created_at": "2025-03-21T14:55:05Z",
-        "updated_at": "2025-03-24T11:47:39Z",
-        "base_commit": "715d36617874a4e3cc76029de150323cfa686f28",
-        "head_commit": "6626a0266b5ef20c092e18ad38dcdfbde50117ce",
-        "merge_commit": "b1ef41001d7a30efb9faafe4f1dfee0f0848cc5c",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/config/FieldTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/config/Field.java"
-        ]
+      "pr_number": 6243,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-03-24T11:47:26Z",
+      "created_at": "2025-03-21T14:55:05Z",
+      "updated_at": "2025-03-24T11:47:39Z",
+      "base_commit": "715d36617874a4e3cc76029de150323cfa686f28",
+      "head_commit": "6626a0266b5ef20c092e18ad38dcdfbde50117ce",
+      "merge_commit": "b1ef41001d7a30efb9faafe4f1dfee0f0848cc5c",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/config/FieldTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/config/Field.java"
+      ]
     },
     {
-        "pr_number": 6212,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-03-05T11:55:04Z",
-        "created_at": "2025-03-04T16:07:05Z",
-        "updated_at": "2025-03-05T11:55:15Z",
-        "base_commit": "67d8fae31342920197d43daf552dc4509038c542",
-        "head_commit": "7c1bad9380e37cf27e1e2071d4400c45dcfd5ab7",
-        "merge_commit": "f507b6a27c22e9e874e4f6e1196b11a71f0f173a",
-        "modified_test": [
-            "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/JdbcSinkConnectorConfigTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-jdbc/src/main/java/io/debezium/connector/jdbc/JdbcSinkConnectorConfig.java"
-        ]
+      "pr_number": 6212,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-03-05T11:55:04Z",
+      "created_at": "2025-03-04T16:07:05Z",
+      "updated_at": "2025-03-05T11:55:15Z",
+      "base_commit": "67d8fae31342920197d43daf552dc4509038c542",
+      "head_commit": "7c1bad9380e37cf27e1e2071d4400c45dcfd5ab7",
+      "merge_commit": "f507b6a27c22e9e874e4f6e1196b11a71f0f173a",
+      "modified_test": [
+        "debezium-connector-jdbc/src/test/java/io/debezium/connector/jdbc/JdbcSinkConnectorConfigTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-jdbc/src/main/java/io/debezium/connector/jdbc/JdbcSinkConnectorConfig.java"
+      ]
     },
     {
-        "pr_number": 6205,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-05-20T06:26:21Z",
-        "created_at": "2025-02-28T10:40:47Z",
-        "updated_at": "2025-05-20T11:00:47Z",
-        "base_commit": "14fba56997807187362f611fbc471604e7e75bca",
-        "head_commit": "04fd6c523ac4c4a592be1e245e3532fa7ecfeb7a",
-        "merge_commit": "11c3f00a9f43fa8c222169a439f2eb10c10d41ae",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/SqlUtilsTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnection.java",
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/SqlUtils.java"
-        ]
+      "pr_number": 6205,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-05-20T06:26:21Z",
+      "created_at": "2025-02-28T10:40:47Z",
+      "updated_at": "2025-05-20T11:00:47Z",
+      "base_commit": "14fba56997807187362f611fbc471604e7e75bca",
+      "head_commit": "04fd6c523ac4c4a592be1e245e3532fa7ecfeb7a",
+      "merge_commit": "11c3f00a9f43fa8c222169a439f2eb10c10d41ae",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/SqlUtilsTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleConnection.java",
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/SqlUtils.java"
+      ]
     },
     {
-        "pr_number": 6201,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-02-28T08:29:56Z",
-        "created_at": "2025-02-27T15:54:43Z",
-        "updated_at": "2025-02-28T08:30:06Z",
-        "base_commit": "c2805bcad13303b7abca5f3ec5de09dc12eb8953",
-        "head_commit": "ba3910de090239958ddbb9b6687e1e92d62c7c43",
-        "merge_commit": "305edda9c649d43cb140215dd77294b7591013f3",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/config/ConfigurationTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/config/Configuration.java"
-        ]
+      "pr_number": 6201,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-02-28T08:29:56Z",
+      "created_at": "2025-02-27T15:54:43Z",
+      "updated_at": "2025-02-28T08:30:06Z",
+      "base_commit": "c2805bcad13303b7abca5f3ec5de09dc12eb8953",
+      "head_commit": "ba3910de090239958ddbb9b6687e1e92d62c7c43",
+      "merge_commit": "305edda9c649d43cb140215dd77294b7591013f3",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/config/ConfigurationTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/config/Configuration.java"
+      ]
     },
     {
-        "pr_number": 6193,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-03-03T09:41:17Z",
-        "created_at": "2025-02-25T15:42:13Z",
-        "updated_at": "2025-03-03T09:41:29Z",
-        "base_commit": "c2805bcad13303b7abca5f3ec5de09dc12eb8953",
-        "head_commit": "3c88423fd9e30eeaf9f41e72dad7fe3d26e3a0c2",
-        "merge_commit": "5a3fd2def0ec984f7b42de085012e2b3c60432fd",
-        "modified_test": [
-            "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/wasm/WasmFilterTest.java",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter8.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter8.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.mod",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.sum"
-        ],
-        "modified_source": [
-            "debezium-scripting/debezium-scripting/src/main/java/io/debezium/transforms/scripting/wasm/ChicoryEngine.java"
-        ]
+      "pr_number": 6193,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-03-03T09:41:17Z",
+      "created_at": "2025-02-25T15:42:13Z",
+      "updated_at": "2025-03-03T09:41:29Z",
+      "base_commit": "c2805bcad13303b7abca5f3ec5de09dc12eb8953",
+      "head_commit": "3c88423fd9e30eeaf9f41e72dad7fe3d26e3a0c2",
+      "merge_commit": "5a3fd2def0ec984f7b42de085012e2b3c60432fd",
+      "modified_test": [
+        "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/wasm/WasmFilterTest.java",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter8.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter8.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.mod",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.sum"
+      ],
+      "modified_source": [
+        "debezium-scripting/debezium-scripting/src/main/java/io/debezium/transforms/scripting/wasm/ChicoryEngine.java"
+      ]
     },
     {
-        "pr_number": 6185,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-02-25T07:03:26Z",
-        "created_at": "2025-02-24T16:03:04Z",
-        "updated_at": "2025-02-25T07:03:48Z",
-        "base_commit": "e7e2c219512b7b1b37165ba8c78aa1e6eb13311b",
-        "head_commit": "d04a3f970302f458c2736c39ee1aca573172545f",
-        "merge_commit": "941d8c628a74c223c00ef087b6793ff3b06f262c",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleDdlParserTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/antlr/listener/ColumnDefinitionParserListener.java"
-        ]
+      "pr_number": 6185,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-02-25T07:03:26Z",
+      "created_at": "2025-02-24T16:03:04Z",
+      "updated_at": "2025-02-25T07:03:48Z",
+      "base_commit": "e7e2c219512b7b1b37165ba8c78aa1e6eb13311b",
+      "head_commit": "d04a3f970302f458c2736c39ee1aca573172545f",
+      "merge_commit": "941d8c628a74c223c00ef087b6793ff3b06f262c",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleDdlParserTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/antlr/listener/ColumnDefinitionParserListener.java"
+      ]
     },
     {
-        "pr_number": 6180,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-02-22T23:36:22Z",
-        "created_at": "2025-02-22T10:10:14Z",
-        "updated_at": "2025-02-22T23:36:23Z",
-        "base_commit": "aa3d70c59c81a466e7163db275495730ca24a9f1",
-        "head_commit": "864f13345ddb344c2715fbe4e4058529dc592fc7",
-        "merge_commit": "ee9d3467111c73d8f337ef6bfee02f75c4df77ed",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/SqlUtilsTest.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/SqlUtils.java"
-        ]
+      "pr_number": 6180,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-02-22T23:36:22Z",
+      "created_at": "2025-02-22T10:10:14Z",
+      "updated_at": "2025-02-22T23:36:23Z",
+      "base_commit": "aa3d70c59c81a466e7163db275495730ca24a9f1",
+      "head_commit": "864f13345ddb344c2715fbe4e4058529dc592fc7",
+      "merge_commit": "ee9d3467111c73d8f337ef6bfee02f75c4df77ed",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/logminer/SqlUtilsTest.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/logminer/SqlUtils.java"
+      ]
     },
     {
-        "pr_number": 6178,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-02-24T07:51:07Z",
-        "created_at": "2025-02-21T13:47:36Z",
-        "updated_at": "2025-02-24T07:51:18Z",
-        "base_commit": "5b1ee96090f3ed080cb5a344f707423db875cfdb",
-        "head_commit": "5d439bd9dd4536274212c922913ca7398b0e9e26",
-        "merge_commit": "9f8c43a1acd0a6bca6d3a9f5ec0def6d6f48fada",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/transforms/ExtractChangedRecordStateTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/transforms/ExtractChangedRecordState.java"
-        ]
+      "pr_number": 6178,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-02-24T07:51:07Z",
+      "created_at": "2025-02-21T13:47:36Z",
+      "updated_at": "2025-02-24T07:51:18Z",
+      "base_commit": "5b1ee96090f3ed080cb5a344f707423db875cfdb",
+      "head_commit": "5d439bd9dd4536274212c922913ca7398b0e9e26",
+      "merge_commit": "9f8c43a1acd0a6bca6d3a9f5ec0def6d6f48fada",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/transforms/ExtractChangedRecordStateTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/transforms/ExtractChangedRecordState.java"
+      ]
     },
     {
-        "pr_number": 6139,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-02-03T12:26:13Z",
-        "created_at": "2025-01-31T09:36:47Z",
-        "updated_at": "2025-02-03T12:26:22Z",
-        "base_commit": "c83a38fe7e488f955365420d2629b74647f8be6a",
-        "head_commit": "1afa5e6c94b0eb28fd391ded276ef33d5b2c4afe",
-        "merge_commit": "23582f4d4acfc073dcc2eb6d4e43832a80383941",
-        "modified_test": [
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleBlobDataTypesIT.java",
-            "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleClobDataTypeIT.java"
-        ],
-        "modified_source": [
-            "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleValueConverters.java"
-        ]
+      "pr_number": 6139,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-02-03T12:26:13Z",
+      "created_at": "2025-01-31T09:36:47Z",
+      "updated_at": "2025-02-03T12:26:22Z",
+      "base_commit": "c83a38fe7e488f955365420d2629b74647f8be6a",
+      "head_commit": "1afa5e6c94b0eb28fd391ded276ef33d5b2c4afe",
+      "merge_commit": "23582f4d4acfc073dcc2eb6d4e43832a80383941",
+      "modified_test": [
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleBlobDataTypesIT.java",
+        "debezium-connector-oracle/src/test/java/io/debezium/connector/oracle/OracleClobDataTypeIT.java"
+      ],
+      "modified_source": [
+        "debezium-connector-oracle/src/main/java/io/debezium/connector/oracle/OracleValueConverters.java"
+      ]
     },
     {
-        "pr_number": 6102,
-        "repo": "debezium/debezium",
-        "merged_at": "2025-01-30T13:40:21Z",
-        "created_at": "2025-01-15T18:59:09Z",
-        "updated_at": "2025-01-30T15:54:28Z",
-        "base_commit": "873c6dccf82ec5ecda97b34f0c5d26145c9c823d",
-        "head_commit": "bfd1a5191bab228bd78725577fe2c7b6fb8a8bd6",
-        "merge_commit": "642fc20dee4bc32fc27b8e21b9b24e0ef4578a53",
-        "modified_test": [
-            "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/TransformsUtils.java",
-            "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/wasm/WasmFilterTest.java",
-            "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/wasm/WasmRouterTest.java",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/.gitignore",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter1.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter3.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter4.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter5.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter6.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter7.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/router1.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/router2.wasm",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter1.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter3.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter4.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter5.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter6.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter7.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.mod",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.sum",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/router1.go",
-            "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/router2.go"
-        ],
-        "modified_source": [
-            "debezium-scripting/debezium-scripting/src/main/java/io/debezium/transforms/scripting/wasm/ChicoryEngine.java"
-        ]
+      "pr_number": 6102,
+      "repo": "debezium/debezium",
+      "merged_at": "2025-01-30T13:40:21Z",
+      "created_at": "2025-01-15T18:59:09Z",
+      "updated_at": "2025-01-30T15:54:28Z",
+      "base_commit": "873c6dccf82ec5ecda97b34f0c5d26145c9c823d",
+      "head_commit": "bfd1a5191bab228bd78725577fe2c7b6fb8a8bd6",
+      "merge_commit": "642fc20dee4bc32fc27b8e21b9b24e0ef4578a53",
+      "modified_test": [
+        "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/TransformsUtils.java",
+        "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/wasm/WasmFilterTest.java",
+        "debezium-scripting/debezium-scripting/src/test/java/io/debezium/transforms/wasm/WasmRouterTest.java",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/.gitignore",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter1.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter3.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter4.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter5.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter6.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/filter7.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/router1.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/compiled/router2.wasm",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter1.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter3.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter4.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter5.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter6.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/filter7.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.mod",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/go.sum",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/router1.go",
+        "debezium-scripting/debezium-scripting/src/test/resources/wasm/go/router2.go"
+      ],
+      "modified_source": [
+        "debezium-scripting/debezium-scripting/src/main/java/io/debezium/transforms/scripting/wasm/ChicoryEngine.java"
+      ]
     },
     {
-        "pr_number": 6055,
-        "repo": "debezium/debezium",
-        "merged_at": "2024-12-16T08:46:18Z",
-        "created_at": "2024-12-15T22:39:08Z",
-        "updated_at": "2024-12-16T09:00:50Z",
-        "base_commit": "8ce74a328df6a6f99fb80826630a9d9b1d9022de",
-        "head_commit": "ea717c27fadf6a9c3bd8b1d7d60201f0d492f322",
-        "merge_commit": "63832c4f7c1f8d277a43aec3d0313ddf53b15dd8",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/transforms/TimezoneConverterTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/transforms/TimezoneConverter.java"
-        ]
+      "pr_number": 6055,
+      "repo": "debezium/debezium",
+      "merged_at": "2024-12-16T08:46:18Z",
+      "created_at": "2024-12-15T22:39:08Z",
+      "updated_at": "2024-12-16T09:00:50Z",
+      "base_commit": "8ce74a328df6a6f99fb80826630a9d9b1d9022de",
+      "head_commit": "ea717c27fadf6a9c3bd8b1d7d60201f0d492f322",
+      "merge_commit": "63832c4f7c1f8d277a43aec3d0313ddf53b15dd8",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/transforms/TimezoneConverterTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/transforms/TimezoneConverter.java"
+      ]
     },
     {
-        "pr_number": 6051,
-        "repo": "debezium/debezium",
-        "merged_at": "2024-12-16T08:50:14Z",
-        "created_at": "2024-12-13T06:37:57Z",
-        "updated_at": "2024-12-16T09:00:58Z",
-        "base_commit": "592ae83f2d4f20b7b769e800c1eb69e08e28a455",
-        "head_commit": "57910757d6f772676b6e640758ee5e9cae6c0a05",
-        "merge_commit": "199ec96a077a62e4ff80f414d5288281f05c3bfd",
-        "modified_test": [
-            "debezium-core/src/test/java/io/debezium/transforms/TimezoneConverterTest.java"
-        ],
-        "modified_source": [
-            "debezium-core/src/main/java/io/debezium/transforms/TimezoneConverter.java"
-        ]
+      "pr_number": 6051,
+      "repo": "debezium/debezium",
+      "merged_at": "2024-12-16T08:50:14Z",
+      "created_at": "2024-12-13T06:37:57Z",
+      "updated_at": "2024-12-16T09:00:58Z",
+      "base_commit": "592ae83f2d4f20b7b769e800c1eb69e08e28a455",
+      "head_commit": "57910757d6f772676b6e640758ee5e9cae6c0a05",
+      "merge_commit": "199ec96a077a62e4ff80f414d5288281f05c3bfd",
+      "modified_test": [
+        "debezium-core/src/test/java/io/debezium/transforms/TimezoneConverterTest.java"
+      ],
+      "modified_source": [
+        "debezium-core/src/main/java/io/debezium/transforms/TimezoneConverter.java"
+      ]
     }
-]
+  ]
+}

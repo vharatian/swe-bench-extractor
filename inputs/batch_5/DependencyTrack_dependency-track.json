@@ -1,7 +1,7 @@
 {
   "info": {
     "repo": "DependencyTrack/dependency-track",
-    "test_command": "mvn clean verify -DskipTests -DskipITs -P enhance && mvn clean verify -P enhance -Dmaven.test.failure.ignore=true",
+    "test_command": "mvn clean verify -DskipTests -DskipITs -P enhance && mvn clean verify -P enhance -Dmaven.test.failure.ignore=true -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
     "test_files": [
       "**/surefire-reports/*",
       "**/failsafe-reports/*"

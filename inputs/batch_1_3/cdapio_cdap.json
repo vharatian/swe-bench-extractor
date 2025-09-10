@@ -1,312 +1,322 @@
-[
+{
+  "info": {
+    "repo": "cdapio/cdap",
+    "test_command": "mvn clean verify -DskipTests -DskipITs -Dmaven.compiler.failOnWarning=false -Dmaven.compiler.werror=false && mvn verify -Dmaven.compiler.failOnWarning=false -pl '!cdap-elastic' -am -Dmaven.compiler.werror=false -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
+    "test_files": [
+      "**/surefire-reports/*"
+    ],
+    "Dockerfile": "docker_files/Dockerfile-java-8"
+  },
+  "prs": [
     {
-        "pr_number": 16019,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-07-22T11:50:46Z",
-        "created_at": "2025-07-22T09:59:45Z",
-        "updated_at": "2025-07-22T11:50:48Z",
-        "base_commit": "c30f863499d42e36fc912ae5e4846e47255d7045",
-        "head_commit": "201aacbe091311085c3045b1964eacdc968f7842",
-        "merge_commit": "94fb3fc6db2abfeb0025ad6a890e1dedd0de2221",
-        "modified_test": [
-            "cdap-app-templates/cdap-etl/cdap-etl-core/src/test/java/io/cdap/cdap/etl/batch/connector/ConnectorSourceTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-templates/cdap-etl/cdap-etl-core/pom.xml",
-            "cdap-app-templates/cdap-etl/cdap-etl-core/src/main/java/io/cdap/cdap/etl/batch/connector/ConnectorSource.java"
-        ]
+      "pr_number": 16019,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-07-22T11:50:46Z",
+      "created_at": "2025-07-22T09:59:45Z",
+      "updated_at": "2025-07-22T11:50:48Z",
+      "base_commit": "c30f863499d42e36fc912ae5e4846e47255d7045",
+      "head_commit": "201aacbe091311085c3045b1964eacdc968f7842",
+      "merge_commit": "94fb3fc6db2abfeb0025ad6a890e1dedd0de2221",
+      "modified_test": [
+        "cdap-app-templates/cdap-etl/cdap-etl-core/src/test/java/io/cdap/cdap/etl/batch/connector/ConnectorSourceTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-templates/cdap-etl/cdap-etl-core/pom.xml",
+        "cdap-app-templates/cdap-etl/cdap-etl-core/src/main/java/io/cdap/cdap/etl/batch/connector/ConnectorSource.java"
+      ]
     },
     {
-        "pr_number": 16012,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-07-18T13:58:44Z",
-        "created_at": "2025-07-16T22:11:13Z",
-        "updated_at": "2025-07-18T17:50:23Z",
-        "base_commit": "5f8676fd53c3855cf4eb0f8b31231f60fadf771d",
-        "head_commit": "2fb851a906739ab250964c0477fd493a522cd62c",
-        "merge_commit": "a9cf5e5841b590ebebd955aa8482e96529685aba",
-        "modified_test": [
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/test/java/io/cdap/cdap/datapipeline/service/ErrorHandlingGsonTypeAdapterFactoryTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/service/ErrorHandlingGsonTypeAdapterFactory.java",
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/service/OAuthHandler.java"
-        ]
+      "pr_number": 16012,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-07-18T13:58:44Z",
+      "created_at": "2025-07-16T22:11:13Z",
+      "updated_at": "2025-07-18T17:50:23Z",
+      "base_commit": "5f8676fd53c3855cf4eb0f8b31231f60fadf771d",
+      "head_commit": "2fb851a906739ab250964c0477fd493a522cd62c",
+      "merge_commit": "a9cf5e5841b590ebebd955aa8482e96529685aba",
+      "modified_test": [
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/test/java/io/cdap/cdap/datapipeline/service/ErrorHandlingGsonTypeAdapterFactoryTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/service/ErrorHandlingGsonTypeAdapterFactory.java",
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/service/OAuthHandler.java"
+      ]
     },
     {
-        "pr_number": 15928,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-03-06T18:29:35Z",
-        "created_at": "2025-03-05T19:46:25Z",
-        "updated_at": "2025-03-06T20:16:39Z",
-        "base_commit": "9d3dd80519bd1d2d6b71d2874a727474ad766cf6",
-        "head_commit": "19e1a5923c84bae1f3117f19eb9cded33cbfff2e",
-        "merge_commit": "916bf2edcc981684ac152340b7f727255d46c37a",
-        "modified_test": [
-            "cdap-security/src/test/java/io/cdap/cdap/security/authorization/DefaultAccessEnforcerTest.java"
-        ],
-        "modified_source": [
-            "cdap-security/src/main/java/io/cdap/cdap/security/authorization/SecurityMetricsService.java"
-        ]
+      "pr_number": 15928,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-03-06T18:29:35Z",
+      "created_at": "2025-03-05T19:46:25Z",
+      "updated_at": "2025-03-06T20:16:39Z",
+      "base_commit": "9d3dd80519bd1d2d6b71d2874a727474ad766cf6",
+      "head_commit": "19e1a5923c84bae1f3117f19eb9cded33cbfff2e",
+      "merge_commit": "916bf2edcc981684ac152340b7f727255d46c37a",
+      "modified_test": [
+        "cdap-security/src/test/java/io/cdap/cdap/security/authorization/DefaultAccessEnforcerTest.java"
+      ],
+      "modified_source": [
+        "cdap-security/src/main/java/io/cdap/cdap/security/authorization/SecurityMetricsService.java"
+      ]
     },
     {
-        "pr_number": 15924,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-03-05T05:36:17Z",
-        "created_at": "2025-03-04T17:08:11Z",
-        "updated_at": "2025-03-05T06:00:58Z",
-        "base_commit": "5270906dfb2018e246c121c510426c3f4c832008",
-        "head_commit": "cc8adf9bac8830ded78fd53e802490b714e17299",
-        "merge_commit": "956947cbd17d0d3db84be006583b4d3afcd413a1",
-        "modified_test": [
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/test/java/io/cdap/cdap/datapipeline/OAuthStoreTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/oauth/OAuthProvider.java",
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/oauth/OAuthStore.java",
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline3_2.12/pom.xml"
-        ]
+      "pr_number": 15924,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-03-05T05:36:17Z",
+      "created_at": "2025-03-04T17:08:11Z",
+      "updated_at": "2025-03-05T06:00:58Z",
+      "base_commit": "5270906dfb2018e246c121c510426c3f4c832008",
+      "head_commit": "cc8adf9bac8830ded78fd53e802490b714e17299",
+      "merge_commit": "956947cbd17d0d3db84be006583b4d3afcd413a1",
+      "modified_test": [
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/test/java/io/cdap/cdap/datapipeline/OAuthStoreTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/oauth/OAuthProvider.java",
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/oauth/OAuthStore.java",
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline3_2.12/pom.xml"
+      ]
     },
     {
-        "pr_number": 15904,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-19T18:41:10Z",
-        "created_at": "2025-02-19T13:44:03Z",
-        "updated_at": "2025-02-19T18:41:13Z",
-        "base_commit": "6b3ee17cf8e3f959b9d4c1c49c9bb8a2430af4f2",
-        "head_commit": "2c8e56ad161d461dc33cbe3e97bf0ab6142ec58a",
-        "merge_commit": "9e995c7b1643146f58b8239a59e29ae356de68b2",
-        "modified_test": [
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/AppWithMultipleSchedules.java",
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/ProgramStatusTriggerTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/queue/JobQueueTable.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/AndTrigger.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/NotificationContext.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/OrTrigger.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/PartitionTrigger.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/ProgramStatusTrigger.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/SatisfiableTrigger.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/TimeTrigger.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/workflow/BasicWorkflowToken.java"
-        ]
+      "pr_number": 15904,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-19T18:41:10Z",
+      "created_at": "2025-02-19T13:44:03Z",
+      "updated_at": "2025-02-19T18:41:13Z",
+      "base_commit": "6b3ee17cf8e3f959b9d4c1c49c9bb8a2430af4f2",
+      "head_commit": "2c8e56ad161d461dc33cbe3e97bf0ab6142ec58a",
+      "merge_commit": "9e995c7b1643146f58b8239a59e29ae356de68b2",
+      "modified_test": [
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/AppWithMultipleSchedules.java",
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/ProgramStatusTriggerTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/queue/JobQueueTable.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/AndTrigger.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/NotificationContext.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/OrTrigger.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/PartitionTrigger.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/ProgramStatusTrigger.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/SatisfiableTrigger.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/schedule/trigger/TimeTrigger.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/runtime/workflow/BasicWorkflowToken.java"
+      ]
     },
     {
-        "pr_number": 15894,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-18T08:53:00Z",
-        "created_at": "2025-02-17T07:15:47Z",
-        "updated_at": "2025-02-18T08:53:02Z",
-        "base_commit": "dcacc8036209c09ba2ebac6b6ef04184050ce92b",
-        "head_commit": "7dd641d9c73ec4042a693ed5214ea77a6821de33",
-        "merge_commit": "c9b5f52ec8049fa27dfffc2543757cfacb9c2704",
-        "modified_test": [
-            "cdap-common/src/test/java/io/cdap/cdap/common/metrics/MetricsReporterHookTest.java"
-        ],
-        "modified_source": [
-            "cdap-common/src/main/java/io/cdap/cdap/common/metrics/MetricsReporterHook.java"
-        ]
+      "pr_number": 15894,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-18T08:53:00Z",
+      "created_at": "2025-02-17T07:15:47Z",
+      "updated_at": "2025-02-18T08:53:02Z",
+      "base_commit": "dcacc8036209c09ba2ebac6b6ef04184050ce92b",
+      "head_commit": "7dd641d9c73ec4042a693ed5214ea77a6821de33",
+      "merge_commit": "c9b5f52ec8049fa27dfffc2543757cfacb9c2704",
+      "modified_test": [
+        "cdap-common/src/test/java/io/cdap/cdap/common/metrics/MetricsReporterHookTest.java"
+      ],
+      "modified_source": [
+        "cdap-common/src/main/java/io/cdap/cdap/common/metrics/MetricsReporterHook.java"
+      ]
     },
     {
-        "pr_number": 15885,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-13T17:02:44Z",
-        "created_at": "2025-02-13T08:55:19Z",
-        "updated_at": "2025-02-13T17:02:47Z",
-        "base_commit": "7f29f875198c508b19466be251e3a7627ca6f3c1",
-        "head_commit": "72e37cbd65e114ff479a27a7ae376885e1c792a3",
-        "merge_commit": "3f97e36dfab1c7ee48726f8f3e44db4e7b954ff6",
-        "modified_test": [
-            "cdap-watchdog/src/test/java/io/cdap/cdap/logging/ErrorLogsClassifierTest.java"
-        ],
-        "modified_source": [
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/ErrorLogsClassifier.java"
-        ]
+      "pr_number": 15885,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-13T17:02:44Z",
+      "created_at": "2025-02-13T08:55:19Z",
+      "updated_at": "2025-02-13T17:02:47Z",
+      "base_commit": "7f29f875198c508b19466be251e3a7627ca6f3c1",
+      "head_commit": "72e37cbd65e114ff479a27a7ae376885e1c792a3",
+      "merge_commit": "3f97e36dfab1c7ee48726f8f3e44db4e7b954ff6",
+      "modified_test": [
+        "cdap-watchdog/src/test/java/io/cdap/cdap/logging/ErrorLogsClassifierTest.java"
+      ],
+      "modified_source": [
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/ErrorLogsClassifier.java"
+      ]
     },
     {
-        "pr_number": 15870,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-17T10:53:12Z",
-        "created_at": "2025-02-10T13:54:13Z",
-        "updated_at": "2025-02-17T10:53:14Z",
-        "base_commit": "9907b996f53ea2d917a9c49cb6809a71be5c36ba",
-        "head_commit": "25c205a06346ecd79541693cfeddb3ac516f9f08",
-        "merge_commit": "225e263d3f017209c6ec4c23c8f0d72b926d6496",
-        "modified_test": [
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/MonitorHandlerTest.java",
-            "cdap-gateway/src/test/java/io/cdap/cdap/gateway/router/RouterPathLookupTest.java",
-            "cdap-support-bundle/src/test/java/io/cdap/cdap/support/tasks/SupportBundleSystemLogTaskTest.java",
-            "cdap-unit-test/src/main/java/io/cdap/cdap/test/TestBase.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/AppFabricServiceRuntimeModule.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/MonitorHandlerModule.java",
-            "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
-            "cdap-gateway/src/main/java/io/cdap/cdap/gateway/router/RouterPathLookup.java",
-            "cdap-master/src/main/java/io/cdap/cdap/common/MasterUtils.java",
-            "cdap-master/src/main/java/io/cdap/cdap/data/runtime/main/MetricsProcessorTwillRunnable.java",
-            "cdap-master/src/main/java/io/cdap/cdap/master/environment/k8s/MetricsServiceMain.java",
-            "cdap-standalone/src/main/java/io/cdap/cdap/StandaloneMain.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/appender/system/MetricsLogAppender.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/metrics/collect/LocalMetricsCollectionService.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/metrics/process/MetricsProcessorStatusService.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/metrics/runtime/MetricsProcessorStatusServiceManager.java"
-        ]
+      "pr_number": 15870,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-17T10:53:12Z",
+      "created_at": "2025-02-10T13:54:13Z",
+      "updated_at": "2025-02-17T10:53:14Z",
+      "base_commit": "9907b996f53ea2d917a9c49cb6809a71be5c36ba",
+      "head_commit": "25c205a06346ecd79541693cfeddb3ac516f9f08",
+      "merge_commit": "225e263d3f017209c6ec4c23c8f0d72b926d6496",
+      "modified_test": [
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/MonitorHandlerTest.java",
+        "cdap-gateway/src/test/java/io/cdap/cdap/gateway/router/RouterPathLookupTest.java",
+        "cdap-support-bundle/src/test/java/io/cdap/cdap/support/tasks/SupportBundleSystemLogTaskTest.java",
+        "cdap-unit-test/src/main/java/io/cdap/cdap/test/TestBase.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/AppFabricServiceRuntimeModule.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/MonitorHandlerModule.java",
+        "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
+        "cdap-gateway/src/main/java/io/cdap/cdap/gateway/router/RouterPathLookup.java",
+        "cdap-master/src/main/java/io/cdap/cdap/common/MasterUtils.java",
+        "cdap-master/src/main/java/io/cdap/cdap/data/runtime/main/MetricsProcessorTwillRunnable.java",
+        "cdap-master/src/main/java/io/cdap/cdap/master/environment/k8s/MetricsServiceMain.java",
+        "cdap-standalone/src/main/java/io/cdap/cdap/StandaloneMain.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/appender/system/MetricsLogAppender.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/metrics/collect/LocalMetricsCollectionService.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/metrics/process/MetricsProcessorStatusService.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/metrics/runtime/MetricsProcessorStatusServiceManager.java"
+      ]
     },
     {
-        "pr_number": 15867,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-10T13:43:08Z",
-        "created_at": "2025-02-10T08:12:17Z",
-        "updated_at": "2025-02-13T11:53:41Z",
-        "base_commit": "6d73fb89bc6c01fbc22a4fcf75adf52d97c4f095",
-        "head_commit": "86d62cc346548f4b4f9e6a082692fdada777a4cc",
-        "merge_commit": "6dda8a09e46fcdf16dfb5da692c70650e61d0731",
-        "modified_test": [
-            "cdap-watchdog/src/test/java/io/cdap/cdap/logging/ErrorLogsClassifierTest.java"
-        ],
-        "modified_source": [
-            "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
-            "cdap-runtime-ext-dataproc/src/main/java/io/cdap/cdap/runtime/spi/common/DataprocUtils.java",
-            "cdap-runtime-ext-dataproc/src/main/java/io/cdap/cdap/runtime/spi/runtimejob/DataprocRuntimeJobManager.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/ErrorLogsClassifier.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/appender/LogAppender.java"
-        ]
+      "pr_number": 15867,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-10T13:43:08Z",
+      "created_at": "2025-02-10T08:12:17Z",
+      "updated_at": "2025-02-13T11:53:41Z",
+      "base_commit": "6d73fb89bc6c01fbc22a4fcf75adf52d97c4f095",
+      "head_commit": "86d62cc346548f4b4f9e6a082692fdada777a4cc",
+      "merge_commit": "6dda8a09e46fcdf16dfb5da692c70650e61d0731",
+      "modified_test": [
+        "cdap-watchdog/src/test/java/io/cdap/cdap/logging/ErrorLogsClassifierTest.java"
+      ],
+      "modified_source": [
+        "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
+        "cdap-runtime-ext-dataproc/src/main/java/io/cdap/cdap/runtime/spi/common/DataprocUtils.java",
+        "cdap-runtime-ext-dataproc/src/main/java/io/cdap/cdap/runtime/spi/runtimejob/DataprocRuntimeJobManager.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/ErrorLogsClassifier.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/appender/LogAppender.java"
+      ]
     },
     {
-        "pr_number": 15860,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-18T09:20:00Z",
-        "created_at": "2025-02-07T04:01:57Z",
-        "updated_at": "2025-02-18T09:20:03Z",
-        "base_commit": "dcacc8036209c09ba2ebac6b6ef04184050ce92b",
-        "head_commit": "071cdcbaca0914194f85dff39be511614598df0a",
-        "merge_commit": "71fcb13cceaecb94906f4d050cb077bb8b629c3a",
-        "modified_test": [
-            "cdap-gateway/src/test/java/io/cdap/cdap/gateway/handlers/log/LogHttpHandlerTest.java",
-            "cdap-gateway/src/test/java/io/cdap/cdap/gateway/router/RouterPathLookupTest.java",
-            "cdap-master/src/test/java/io/cdap/cdap/master/environment/k8s/LogsServiceMainTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/AppFabricServiceRuntimeModule.java",
-            "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
-            "cdap-common/src/main/resources/cdap-default.xml",
-            "cdap-gateway/src/main/java/io/cdap/cdap/gateway/router/RouterPathLookup.java",
-            "cdap-master/src/main/java/io/cdap/cdap/master/environment/k8s/LogsServiceMain.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/gateway/handlers/RemoteLogsFetcher.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/logbuffer/LogBufferService.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/service/LogQueryService.java",
-            "cdap-watchdog/src/main/java/io/cdap/cdap/logging/service/LogSaverStatusService.java"
-        ]
+      "pr_number": 15860,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-18T09:20:00Z",
+      "created_at": "2025-02-07T04:01:57Z",
+      "updated_at": "2025-02-18T09:20:03Z",
+      "base_commit": "dcacc8036209c09ba2ebac6b6ef04184050ce92b",
+      "head_commit": "071cdcbaca0914194f85dff39be511614598df0a",
+      "merge_commit": "71fcb13cceaecb94906f4d050cb077bb8b629c3a",
+      "modified_test": [
+        "cdap-gateway/src/test/java/io/cdap/cdap/gateway/handlers/log/LogHttpHandlerTest.java",
+        "cdap-gateway/src/test/java/io/cdap/cdap/gateway/router/RouterPathLookupTest.java",
+        "cdap-master/src/test/java/io/cdap/cdap/master/environment/k8s/LogsServiceMainTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/AppFabricServiceRuntimeModule.java",
+        "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
+        "cdap-common/src/main/resources/cdap-default.xml",
+        "cdap-gateway/src/main/java/io/cdap/cdap/gateway/router/RouterPathLookup.java",
+        "cdap-master/src/main/java/io/cdap/cdap/master/environment/k8s/LogsServiceMain.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/gateway/handlers/RemoteLogsFetcher.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/logbuffer/LogBufferService.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/service/LogQueryService.java",
+        "cdap-watchdog/src/main/java/io/cdap/cdap/logging/service/LogSaverStatusService.java"
+      ]
     },
     {
-        "pr_number": 15856,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-05T15:07:43Z",
-        "created_at": "2025-02-05T13:39:07Z",
-        "updated_at": "2025-02-05T15:07:45Z",
-        "base_commit": "9474d53ba890ea9bf086a68094d715460e31a600",
-        "head_commit": "72b11ee0b7abbc938dba1d64685ad0be09105f87",
-        "merge_commit": "76961066eb26886947516e2f25f8f346c57dc23d",
-        "modified_test": [
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/AppFabricTestBase.java",
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/AppLifecycleHttpHandlerTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandler.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandlerInternal.java",
-            "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/oauth/OAuthStore.java"
-        ]
+      "pr_number": 15856,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-05T15:07:43Z",
+      "created_at": "2025-02-05T13:39:07Z",
+      "updated_at": "2025-02-05T15:07:45Z",
+      "base_commit": "9474d53ba890ea9bf086a68094d715460e31a600",
+      "head_commit": "72b11ee0b7abbc938dba1d64685ad0be09105f87",
+      "merge_commit": "76961066eb26886947516e2f25f8f346c57dc23d",
+      "modified_test": [
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/AppFabricTestBase.java",
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/AppLifecycleHttpHandlerTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandler.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandlerInternal.java",
+        "cdap-app-templates/cdap-etl/cdap-data-pipeline-base/src/main/java/io/cdap/cdap/datapipeline/oauth/OAuthStore.java"
+      ]
     },
     {
-        "pr_number": 15848,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-02-05T05:39:47Z",
-        "created_at": "2025-02-03T17:03:15Z",
-        "updated_at": "2025-02-05T05:39:49Z",
-        "base_commit": "33bdca1e4df7d90e9a4d0598b17c656dce98b5eb",
-        "head_commit": "8b6a6d9aac744006fcfbbf65d8585fd078620b39",
-        "merge_commit": "f3955add840357991973792ce35b23552d96b24b",
-        "modified_test": [
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/AppFabricTestBase.java",
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/AppLifecycleHttpHandlerTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandler.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandlerInternal.java"
-        ]
+      "pr_number": 15848,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-02-05T05:39:47Z",
+      "created_at": "2025-02-03T17:03:15Z",
+      "updated_at": "2025-02-05T05:39:49Z",
+      "base_commit": "33bdca1e4df7d90e9a4d0598b17c656dce98b5eb",
+      "head_commit": "8b6a6d9aac744006fcfbbf65d8585fd078620b39",
+      "merge_commit": "f3955add840357991973792ce35b23552d96b24b",
+      "modified_test": [
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/AppFabricTestBase.java",
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/AppLifecycleHttpHandlerTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandler.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandlerInternal.java"
+      ]
     },
     {
-        "pr_number": 15814,
-        "repo": "cdapio/cdap",
-        "merged_at": "2025-01-27T18:44:42Z",
-        "created_at": "2025-01-21T18:12:45Z",
-        "updated_at": "2025-01-27T18:44:44Z",
-        "base_commit": "436984ff2dd85e0eef5b46bafadfa9604f448bff",
-        "head_commit": "94237b4ee22b45e0758e001449dc369cbf533ba4",
-        "merge_commit": "7793b41bba837368ecd7e2aab1d923ffa241fe40",
-        "modified_test": [
-            "cdap-master/src/test/java/io/cdap/cdap/master/environment/k8s/MasterServiceMainTestBase.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/AppFabricServiceRuntimeModule.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/bootstrap/BootstrapService.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/bootstrap/guice/BootstrapModules.java"
-        ]
+      "pr_number": 15814,
+      "repo": "cdapio/cdap",
+      "merged_at": "2025-01-27T18:44:42Z",
+      "created_at": "2025-01-21T18:12:45Z",
+      "updated_at": "2025-01-27T18:44:44Z",
+      "base_commit": "436984ff2dd85e0eef5b46bafadfa9604f448bff",
+      "head_commit": "94237b4ee22b45e0758e001449dc369cbf533ba4",
+      "merge_commit": "7793b41bba837368ecd7e2aab1d923ffa241fe40",
+      "modified_test": [
+        "cdap-master/src/test/java/io/cdap/cdap/master/environment/k8s/MasterServiceMainTestBase.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/app/guice/AppFabricServiceRuntimeModule.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/bootstrap/BootstrapService.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/bootstrap/guice/BootstrapModules.java"
+      ]
     },
     {
-        "pr_number": 15746,
-        "repo": "cdapio/cdap",
-        "merged_at": "2024-11-27T16:52:57Z",
-        "created_at": "2024-11-27T15:26:47Z",
-        "updated_at": "2024-11-27T16:52:59Z",
-        "base_commit": "73994f8f53e7f8dfb92a3bb9d65c5a32eadca3ad",
-        "head_commit": "5e085aeba0b3fe122555ce1de36d1a8c2a76531a",
-        "merge_commit": "bd37c6d2d4eaa849206e8de770444617718b2384",
-        "modified_test": [
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/AppFabricTestBase.java",
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/AppLifecycleHttpHandlerTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandler.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandlerInternal.java",
-            "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
-            "cdap-common/src/main/resources/cdap-default.xml"
-        ]
+      "pr_number": 15746,
+      "repo": "cdapio/cdap",
+      "merged_at": "2024-11-27T16:52:57Z",
+      "created_at": "2024-11-27T15:26:47Z",
+      "updated_at": "2024-11-27T16:52:59Z",
+      "base_commit": "73994f8f53e7f8dfb92a3bb9d65c5a32eadca3ad",
+      "head_commit": "5e085aeba0b3fe122555ce1de36d1a8c2a76531a",
+      "merge_commit": "bd37c6d2d4eaa849206e8de770444617718b2384",
+      "modified_test": [
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/AppFabricTestBase.java",
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/http/handlers/AppLifecycleHttpHandlerTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandler.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/gateway/handlers/AppLifecycleHttpHandlerInternal.java",
+        "cdap-common/src/main/java/io/cdap/cdap/common/conf/Constants.java",
+        "cdap-common/src/main/resources/cdap-default.xml"
+      ]
     },
     {
-        "pr_number": 15744,
-        "repo": "cdapio/cdap",
-        "merged_at": "2024-11-26T11:52:27Z",
-        "created_at": "2024-11-26T09:00:37Z",
-        "updated_at": "2024-11-26T11:52:29Z",
-        "base_commit": "14645cbb3eda09cb23fe7754aeaad7538a9c9c7c",
-        "head_commit": "27db69f4389dfe7d7f38c96f1cc79f6c851310f4",
-        "merge_commit": "73994f8f53e7f8dfb92a3bb9d65c5a32eadca3ad",
-        "modified_test": [
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/AppFabricTestHelper.java",
-            "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/ProgramNotificationSubscriberServiceTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/services/ProgramNotificationSubscriberService.java",
-            "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/services/RunRecordMonitorService.java"
-        ]
+      "pr_number": 15744,
+      "repo": "cdapio/cdap",
+      "merged_at": "2024-11-26T11:52:27Z",
+      "created_at": "2024-11-26T09:00:37Z",
+      "updated_at": "2024-11-26T11:52:29Z",
+      "base_commit": "14645cbb3eda09cb23fe7754aeaad7538a9c9c7c",
+      "head_commit": "27db69f4389dfe7d7f38c96f1cc79f6c851310f4",
+      "merge_commit": "73994f8f53e7f8dfb92a3bb9d65c5a32eadca3ad",
+      "modified_test": [
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/AppFabricTestHelper.java",
+        "cdap-app-fabric/src/test/java/io/cdap/cdap/internal/app/services/ProgramNotificationSubscriberServiceTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/services/ProgramNotificationSubscriberService.java",
+        "cdap-app-fabric/src/main/java/io/cdap/cdap/internal/app/services/RunRecordMonitorService.java"
+      ]
     },
     {
-        "pr_number": 15546,
-        "repo": "cdapio/cdap",
-        "merged_at": "2024-02-09T19:20:43Z",
-        "created_at": "2024-02-09T14:52:47Z",
-        "updated_at": "2024-02-09T19:20:44Z",
-        "base_commit": "cab608198c35234b46459293f8cc6bca22dcfc5f",
-        "head_commit": "00b0aae562eb0eaab2526b934c197a342f0d8cf1",
-        "merge_commit": "f06bca15fb7443fad6763650dc6cecf26bf49e65",
-        "modified_test": [
-            "cdap-app-templates/cdap-etl/hydrator-spark-core-base/src/test/java/io/cdap/cdap/etl/spark/batch/BatchSQLEngineAdapterTest.java"
-        ],
-        "modified_source": [
-            "cdap-app-templates/cdap-etl/hydrator-spark-core-base/src/main/java/io/cdap/cdap/etl/spark/batch/BatchSQLEngineAdapter.java"
-        ]
+      "pr_number": 15546,
+      "repo": "cdapio/cdap",
+      "merged_at": "2024-02-09T19:20:43Z",
+      "created_at": "2024-02-09T14:52:47Z",
+      "updated_at": "2024-02-09T19:20:44Z",
+      "base_commit": "cab608198c35234b46459293f8cc6bca22dcfc5f",
+      "head_commit": "00b0aae562eb0eaab2526b934c197a342f0d8cf1",
+      "merge_commit": "f06bca15fb7443fad6763650dc6cecf26bf49e65",
+      "modified_test": [
+        "cdap-app-templates/cdap-etl/hydrator-spark-core-base/src/test/java/io/cdap/cdap/etl/spark/batch/BatchSQLEngineAdapterTest.java"
+      ],
+      "modified_source": [
+        "cdap-app-templates/cdap-etl/hydrator-spark-core-base/src/main/java/io/cdap/cdap/etl/spark/batch/BatchSQLEngineAdapter.java"
+      ]
     }
-]
+  ]
+}

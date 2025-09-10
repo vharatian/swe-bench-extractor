@@ -1,533 +1,544 @@
-[
+{
+  "info": {
+    "repo": "portfolio-performance/portfolio",
+    "test_command": "MAVEN_OPTS=\"-Xmx4g\" mvn -f portfolio-app/pom.xml clean verify -DskipTests -DskipITs -Dmaven.test.failure.ignore=true && MAVEN_OPTS=\"-Xmx4g\" mvn -f portfolio-app/pom.xml clean verify -Dmaven.test.failure.ignore=true -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
+    "test_files": [
+      "**/surefire-reports/*",
+      "**/failsafe-reports/*"
+    ],
+    "Dockerfile": "docker_files/Dockerfile-java-21"
+  },
+  "prs": [
     {
-        "pr_number": 4844,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-07-12T08:22:47Z",
-        "created_at": "2025-07-12T05:40:23Z",
-        "updated_at": "2025-07-12T08:23:18Z",
-        "base_commit": "7d67ae0b67c5226466ad9d0de1403d1e541e3f7a",
-        "head_commit": "86d90279e400a7201a65009f21259b449abc6f7d",
-        "merge_commit": "8e14af2df234de0d7d7c74c54576abeb5c027991",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/Buy03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/CashTransfer03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/SaxoBankPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SaxoBankPDFExtractor.java"
-        ]
+      "pr_number": 4844,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-07-12T08:22:47Z",
+      "created_at": "2025-07-12T05:40:23Z",
+      "updated_at": "2025-07-12T08:23:18Z",
+      "base_commit": "7d67ae0b67c5226466ad9d0de1403d1e541e3f7a",
+      "head_commit": "86d90279e400a7201a65009f21259b449abc6f7d",
+      "merge_commit": "8e14af2df234de0d7d7c74c54576abeb5c027991",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/Buy03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/CashTransfer03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/SaxoBankPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SaxoBankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4843,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-07-12T05:40:33Z",
-        "created_at": "2025-07-12T05:24:32Z",
-        "updated_at": "2025-07-12T05:40:43Z",
-        "base_commit": "2c9dfcd59f5cdaa3ccbbb2c95711760c04c6e44b",
-        "head_commit": "211cb23fe6b38fc7f4f933499501712bbe445ea9",
-        "merge_commit": "a0ee6fbdd9517cef45fd84fe28da105c1e66a037",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung04.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
-        ]
+      "pr_number": 4843,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-07-12T05:40:33Z",
+      "created_at": "2025-07-12T05:24:32Z",
+      "updated_at": "2025-07-12T05:40:43Z",
+      "base_commit": "2c9dfcd59f5cdaa3ccbbb2c95711760c04c6e44b",
+      "head_commit": "211cb23fe6b38fc7f4f933499501712bbe445ea9",
+      "merge_commit": "a0ee6fbdd9517cef45fd84fe28da105c1e66a037",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung04.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4836,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-07-07T19:12:28Z",
-        "created_at": "2025-07-07T18:58:37Z",
-        "updated_at": "2025-07-07T19:12:52Z",
-        "base_commit": "eba967b5bd0e642aae0c6160124bdd9901db08a2",
-        "head_commit": "37fd32ea6c6a1b71544ae4c0f7f149c64a083136",
-        "merge_commit": "4862db657887460af4b39b18c44273a4528deae1",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/Dividende29.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/Kauf17.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/TradeRepublicPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/TradeRepublicPDFExtractor.java"
-        ]
+      "pr_number": 4836,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-07-07T19:12:28Z",
+      "created_at": "2025-07-07T18:58:37Z",
+      "updated_at": "2025-07-07T19:12:52Z",
+      "base_commit": "eba967b5bd0e642aae0c6160124bdd9901db08a2",
+      "head_commit": "37fd32ea6c6a1b71544ae4c0f7f149c64a083136",
+      "merge_commit": "4862db657887460af4b39b18c44273a4528deae1",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/Dividende29.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/Kauf17.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/TradeRepublicPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/TradeRepublicPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4835,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-07-07T18:57:59Z",
-        "created_at": "2025-07-07T18:38:11Z",
-        "updated_at": "2025-07-07T18:58:02Z",
-        "base_commit": "e91b0a618a1382d4de0562de9caaf5876c077784",
-        "head_commit": "fbb3a8202a1c343c6441ff0d7137a64d9890ed91",
-        "merge_commit": "eba967b5bd0e642aae0c6160124bdd9901db08a2",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/CashTransfer02.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/SaxoBankPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SaxoBankPDFExtractor.java"
-        ]
+      "pr_number": 4835,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-07-07T18:57:59Z",
+      "created_at": "2025-07-07T18:38:11Z",
+      "updated_at": "2025-07-07T18:58:02Z",
+      "base_commit": "e91b0a618a1382d4de0562de9caaf5876c077784",
+      "head_commit": "fbb3a8202a1c343c6441ff0d7137a64d9890ed91",
+      "merge_commit": "eba967b5bd0e642aae0c6160124bdd9901db08a2",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/CashTransfer02.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/SaxoBankPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SaxoBankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4829,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-07-20T08:48:31Z",
-        "created_at": "2025-07-05T08:36:20Z",
-        "updated_at": "2025-07-20T08:52:19Z",
-        "base_commit": "44cfa6a0c9f5b95cc819e8d5f6465f85c1ac62c7",
-        "head_commit": "7fc921e7efd303c2d66ea39496220447b41a84a6",
-        "merge_commit": "998b815dc844aea3784510fb2fe8c7743284fe4f",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/AccountStatement09_late24.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/AccountStatement10_late24.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/AccountStatement11_late24.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/TigerBrokersPteLtdPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/TigerBrokersPteLtdPDFExtractor.java"
-        ]
+      "pr_number": 4829,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-07-20T08:48:31Z",
+      "created_at": "2025-07-05T08:36:20Z",
+      "updated_at": "2025-07-20T08:52:19Z",
+      "base_commit": "44cfa6a0c9f5b95cc819e8d5f6465f85c1ac62c7",
+      "head_commit": "7fc921e7efd303c2d66ea39496220447b41a84a6",
+      "merge_commit": "998b815dc844aea3784510fb2fe8c7743284fe4f",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/AccountStatement09_late24.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/AccountStatement10_late24.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/AccountStatement11_late24.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/tigerbrokerspteltd/TigerBrokersPteLtdPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/TigerBrokersPteLtdPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4821,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-07-03T13:01:25Z",
-        "created_at": "2025-07-02T20:18:52Z",
-        "updated_at": "2025-07-03T13:11:43Z",
-        "base_commit": "874eaf532067eb5fc85fdbca960974b7a588f8c5",
-        "head_commit": "0237ab92e22862a44b563bda08db63bcefd5b27b",
-        "merge_commit": "b4f48ce544ea2e813feba522c01d0797ba425fca",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FinTechGroupBankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FlatExDegiroKontoauszug08.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/FinTechGroupBankPDFExtractor.java"
-        ]
+      "pr_number": 4821,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-07-03T13:01:25Z",
+      "created_at": "2025-07-02T20:18:52Z",
+      "updated_at": "2025-07-03T13:11:43Z",
+      "base_commit": "874eaf532067eb5fc85fdbca960974b7a588f8c5",
+      "head_commit": "0237ab92e22862a44b563bda08db63bcefd5b27b",
+      "merge_commit": "b4f48ce544ea2e813feba522c01d0797ba425fca",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FinTechGroupBankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FlatExDegiroKontoauszug08.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/FinTechGroupBankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4816,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-30T17:08:51Z",
-        "created_at": "2025-06-30T17:03:58Z",
-        "updated_at": "2025-06-30T17:08:57Z",
-        "base_commit": "026cbac8c60058dba46729b91823c01bf5dfa9fc",
-        "head_commit": "17b9345686a25e3c95d3c0361aefe7b93a74ce20",
-        "merge_commit": "2dbf25f4deeb80e5e38e35ba518695aa63c10017",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/ConsorsbankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/Dividende28.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/Dividende29.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ConsorsbankPDFExtractor.java"
-        ]
+      "pr_number": 4816,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-30T17:08:51Z",
+      "created_at": "2025-06-30T17:03:58Z",
+      "updated_at": "2025-06-30T17:08:57Z",
+      "base_commit": "026cbac8c60058dba46729b91823c01bf5dfa9fc",
+      "head_commit": "17b9345686a25e3c95d3c0361aefe7b93a74ce20",
+      "merge_commit": "2dbf25f4deeb80e5e38e35ba518695aa63c10017",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/ConsorsbankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/Dividende28.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/Dividende29.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ConsorsbankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4808,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-24T18:21:18Z",
-        "created_at": "2025-06-24T18:10:07Z",
-        "updated_at": "2025-06-24T18:55:17Z",
-        "base_commit": "18a29e1f52b2cfe9c475acfa4367fdb04adea408",
-        "head_commit": "a98e0ea1592a78e293f444146257c87aa1343166",
-        "merge_commit": "afdf23ab8c29cea59332feec8e82ee9660979412",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Dividende03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Verkauf04.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
-        ]
+      "pr_number": 4808,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-24T18:21:18Z",
+      "created_at": "2025-06-24T18:10:07Z",
+      "updated_at": "2025-06-24T18:55:17Z",
+      "base_commit": "18a29e1f52b2cfe9c475acfa4367fdb04adea408",
+      "head_commit": "a98e0ea1592a78e293f444146257c87aa1343166",
+      "merge_commit": "afdf23ab8c29cea59332feec8e82ee9660979412",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Dividende03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Verkauf04.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4805,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-23T18:38:29Z",
-        "created_at": "2025-06-23T18:27:33Z",
-        "updated_at": "2025-06-23T19:45:51Z",
-        "base_commit": "bea20e37ed475d57da379461310dcfc58b208fc5",
-        "head_commit": "49a1147a6d06517fc4a467657cb8ddcf464bc083",
-        "merge_commit": "18b8dd6a1407e4774679ee882773d0fba04f7ba2",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FinTechGroupBankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FlatExDegiroKauf06.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/FinTechGroupBankPDFExtractor.java"
-        ]
+      "pr_number": 4805,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-23T18:38:29Z",
+      "created_at": "2025-06-23T18:27:33Z",
+      "updated_at": "2025-06-23T19:45:51Z",
+      "base_commit": "bea20e37ed475d57da379461310dcfc58b208fc5",
+      "head_commit": "49a1147a6d06517fc4a467657cb8ddcf464bc083",
+      "merge_commit": "18b8dd6a1407e4774679ee882773d0fba04f7ba2",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FinTechGroupBankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/fintechgroupbank/FlatExDegiroKauf06.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/FinTechGroupBankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4802,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-23T17:22:50Z",
-        "created_at": "2025-06-23T17:10:50Z",
-        "updated_at": "2025-06-23T17:23:50Z",
-        "base_commit": "a71e75c74b2c8495ad9af9d3bfb01f3c111c6289",
-        "head_commit": "ddd406ab3431514918bbd1578f0f41e1909f5e99",
-        "merge_commit": "3a035358074e228b34e3f9eaf9bbdbcc9c01dd82",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/ConsorsbankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/Dividende27.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ConsorsbankPDFExtractor.java"
-        ]
+      "pr_number": 4802,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-23T17:22:50Z",
+      "created_at": "2025-06-23T17:10:50Z",
+      "updated_at": "2025-06-23T17:23:50Z",
+      "base_commit": "a71e75c74b2c8495ad9af9d3bfb01f3c111c6289",
+      "head_commit": "ddd406ab3431514918bbd1578f0f41e1909f5e99",
+      "merge_commit": "3a035358074e228b34e3f9eaf9bbdbcc9c01dd82",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/ConsorsbankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/consorsbank/Dividende27.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ConsorsbankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4798,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-22T04:32:10Z",
-        "created_at": "2025-06-22T04:23:38Z",
-        "updated_at": "2025-06-22T04:32:15Z",
-        "base_commit": "c38e773649798df355c395e8e268d40884a0c289",
-        "head_commit": "ba762d227365887d0f86c4f1b0fc4fd9f1317afa",
-        "merge_commit": "94a9a1dc9c5e0246a061feed722ed46ea81d06d3",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Dividende04.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/KBCGroupNVPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Rekeninguittreksel06.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/KBCGroupNVPDFExtractor.java"
-        ]
+      "pr_number": 4798,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-22T04:32:10Z",
+      "created_at": "2025-06-22T04:23:38Z",
+      "updated_at": "2025-06-22T04:32:15Z",
+      "base_commit": "c38e773649798df355c395e8e268d40884a0c289",
+      "head_commit": "ba762d227365887d0f86c4f1b0fc4fd9f1317afa",
+      "merge_commit": "94a9a1dc9c5e0246a061feed722ed46ea81d06d3",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Dividende04.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/KBCGroupNVPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Rekeninguittreksel06.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/KBCGroupNVPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4795,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-21T04:46:07Z",
-        "created_at": "2025-06-20T16:56:16Z",
-        "updated_at": "2025-06-21T04:46:07Z",
-        "base_commit": "06ed4aecbbf4e605254ba307a321a9245b24e4e2",
-        "head_commit": "1ce266d7a65a2505c80cf3fd4f0c76b40a5b5cc6",
-        "merge_commit": "78c13f482537702b2e6db47ac6200ce6a50950b4",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/genobroker/GenoBrokerPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/genobroker/Kauf04.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/GenoBrokerPDFExtractor.java"
-        ]
+      "pr_number": 4795,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-21T04:46:07Z",
+      "created_at": "2025-06-20T16:56:16Z",
+      "updated_at": "2025-06-21T04:46:07Z",
+      "base_commit": "06ed4aecbbf4e605254ba307a321a9245b24e4e2",
+      "head_commit": "1ce266d7a65a2505c80cf3fd4f0c76b40a5b5cc6",
+      "merge_commit": "78c13f482537702b2e6db47ac6200ce6a50950b4",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/genobroker/GenoBrokerPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/genobroker/Kauf04.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/GenoBrokerPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4793,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-19T18:01:13Z",
-        "created_at": "2025-06-19T17:51:07Z",
-        "updated_at": "2025-06-21T04:57:32Z",
-        "base_commit": "49255153a66d01f860484b593854cf1bdbed77d9",
-        "head_commit": "a8b4b0415a8cd9101b3810bf945bc4ec950d52f5",
-        "merge_commit": "11f47e28e3fa988a06a651f8b8fc0328645ab5bd",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Dividende02.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
-        ]
+      "pr_number": 4793,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-19T18:01:13Z",
+      "created_at": "2025-06-19T17:51:07Z",
+      "updated_at": "2025-06-21T04:57:32Z",
+      "base_commit": "49255153a66d01f860484b593854cf1bdbed77d9",
+      "head_commit": "a8b4b0415a8cd9101b3810bf945bc4ec950d52f5",
+      "merge_commit": "11f47e28e3fa988a06a651f8b8fc0328645ab5bd",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Dividende02.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4787,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-15T05:30:04Z",
-        "created_at": "2025-06-13T17:42:26Z",
-        "updated_at": "2025-06-15T05:30:04Z",
-        "base_commit": "5153cf1400d354eb10460c0a826da988ab9bff8a",
-        "head_commit": "6163d3227f757984955cc1e8b2f60ea2e4e07ecf",
-        "merge_commit": "43dca2adf6ff6a04d046ff4c4bf9ddebb534fcdc",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kfintech/KFintechPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kfintech/consolidated_account_statement02.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/KFintechPDFExtractor.java"
-        ]
+      "pr_number": 4787,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-15T05:30:04Z",
+      "created_at": "2025-06-13T17:42:26Z",
+      "updated_at": "2025-06-15T05:30:04Z",
+      "base_commit": "5153cf1400d354eb10460c0a826da988ab9bff8a",
+      "head_commit": "6163d3227f757984955cc1e8b2f60ea2e4e07ecf",
+      "merge_commit": "43dca2adf6ff6a04d046ff4c4bf9ddebb534fcdc",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kfintech/KFintechPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kfintech/consolidated_account_statement02.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/KFintechPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4786,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-12T15:54:09Z",
-        "created_at": "2025-06-12T15:49:20Z",
-        "updated_at": "2025-06-12T15:54:13Z",
-        "base_commit": "42e266c719a5aece10d732a775d6e11b84293a83",
-        "head_commit": "1e36d25c7545577da09421279318d8af9b6e4570",
-        "merge_commit": "07d9de93fc21518f7885192e71afbf1e7e113800",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/Buy02.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/SaxoBankPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SaxoBankPDFExtractor.java"
-        ]
+      "pr_number": 4786,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-12T15:54:09Z",
+      "created_at": "2025-06-12T15:49:20Z",
+      "updated_at": "2025-06-12T15:54:13Z",
+      "base_commit": "42e266c719a5aece10d732a775d6e11b84293a83",
+      "head_commit": "1e36d25c7545577da09421279318d8af9b6e4570",
+      "merge_commit": "07d9de93fc21518f7885192e71afbf1e7e113800",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/Buy02.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/saxobank/SaxoBankPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SaxoBankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4776,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-09T18:22:26Z",
-        "created_at": "2025-06-09T18:14:07Z",
-        "updated_at": "2025-06-09T18:22:31Z",
-        "base_commit": "0324779416e3e19cb1b206e97a13a04eb47a8d24",
-        "head_commit": "120bd68531a29aa387884b144ec893dfff7a31a8",
-        "merge_commit": "9fc5453ec048a38f1e20c23b89916d25e55d00e7",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/Kontoauszug03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/ModenaEstoniaPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ModenaEstoniaPDFExtractor.java"
-        ]
+      "pr_number": 4776,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-09T18:22:26Z",
+      "created_at": "2025-06-09T18:14:07Z",
+      "updated_at": "2025-06-09T18:22:31Z",
+      "base_commit": "0324779416e3e19cb1b206e97a13a04eb47a8d24",
+      "head_commit": "120bd68531a29aa387884b144ec893dfff7a31a8",
+      "merge_commit": "9fc5453ec048a38f1e20c23b89916d25e55d00e7",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/Kontoauszug03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/ModenaEstoniaPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ModenaEstoniaPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4774,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-09T08:49:02Z",
-        "created_at": "2025-06-09T08:44:23Z",
-        "updated_at": "2025-06-09T08:49:06Z",
-        "base_commit": "20df9d35f2dee869a543d9ee23ad365ddf49b223",
-        "head_commit": "f504f602952d1d9c853308b2a96560ee888a2c7c",
-        "merge_commit": "026e488ed6ab06f2c3d5c375c4669e122b6d27ac",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Direkt1822BankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Verkauf04.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/Direkt1822BankPDFExtractor.java"
-        ]
+      "pr_number": 4774,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-09T08:49:02Z",
+      "created_at": "2025-06-09T08:44:23Z",
+      "updated_at": "2025-06-09T08:49:06Z",
+      "base_commit": "20df9d35f2dee869a543d9ee23ad365ddf49b223",
+      "head_commit": "f504f602952d1d9c853308b2a96560ee888a2c7c",
+      "merge_commit": "026e488ed6ab06f2c3d5c375c4669e122b6d27ac",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Direkt1822BankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Verkauf04.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/Direkt1822BankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4772,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-09T06:42:10Z",
-        "created_at": "2025-06-09T06:35:58Z",
-        "updated_at": "2025-06-09T06:42:13Z",
-        "base_commit": "5298674557870bd29c8668f647472f65b659c97c",
-        "head_commit": "4e4f473cc12ba8004b4ea9608d56c11557315a66",
-        "merge_commit": "8d7f850b42a37d89bd79d125f328eaae8498ef51",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Direkt1822BankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Kontoauszug01.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Kontoauszug02.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/Direkt1822BankPDFExtractor.java"
-        ]
+      "pr_number": 4772,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-09T06:42:10Z",
+      "created_at": "2025-06-09T06:35:58Z",
+      "updated_at": "2025-06-09T06:42:13Z",
+      "base_commit": "5298674557870bd29c8668f647472f65b659c97c",
+      "head_commit": "4e4f473cc12ba8004b4ea9608d56c11557315a66",
+      "merge_commit": "8d7f850b42a37d89bd79d125f328eaae8498ef51",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Direkt1822BankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Kontoauszug01.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/direkt1822bank/Kontoauszug02.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/Direkt1822BankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4771,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-09T06:33:11Z",
-        "created_at": "2025-06-09T05:58:28Z",
-        "updated_at": "2025-06-09T06:37:17Z",
-        "base_commit": "9d7d129f7e6eb115f215c22bd5c632f1d7af8d9c",
-        "head_commit": "8c64f61ace6feedae6d9bfa3d94278d8e75f09eb",
-        "merge_commit": "5298674557870bd29c8668f647472f65b659c97c",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Savingsplan01.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Savingsplan02.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung01.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf02.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung02.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf04.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf05.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
-        ]
+      "pr_number": 4771,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-09T06:33:11Z",
+      "created_at": "2025-06-09T05:58:28Z",
+      "updated_at": "2025-06-09T06:37:17Z",
+      "base_commit": "9d7d129f7e6eb115f215c22bd5c632f1d7af8d9c",
+      "head_commit": "8c64f61ace6feedae6d9bfa3d94278d8e75f09eb",
+      "merge_commit": "5298674557870bd29c8668f647472f65b659c97c",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Savingsplan01.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Savingsplan02.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/ScalableCapitalPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung01.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf02.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung02.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf04.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Sparplanausfuehrung03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/scalablecapital/Kauf05.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ScalableCapitalPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4767,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-09T05:58:42Z",
-        "created_at": "2025-06-06T20:13:47Z",
-        "updated_at": "2025-06-09T05:58:42Z",
-        "base_commit": "24ecfad9c48dcb51b84245f57560561a879de3de",
-        "head_commit": "62581737f73634de12728a00ca2c0067caf394b5",
-        "merge_commit": "244eb138b49e686683cc6b563ef15cd95f7a6b96",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/boursobank/AChat07.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/boursobank/BoursoBankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/boursobank/Vente04.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/BoursoBankPDFExtractor.java"
-        ]
+      "pr_number": 4767,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-09T05:58:42Z",
+      "created_at": "2025-06-06T20:13:47Z",
+      "updated_at": "2025-06-09T05:58:42Z",
+      "base_commit": "24ecfad9c48dcb51b84245f57560561a879de3de",
+      "head_commit": "62581737f73634de12728a00ca2c0067caf394b5",
+      "merge_commit": "244eb138b49e686683cc6b563ef15cd95f7a6b96",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/boursobank/AChat07.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/boursobank/BoursoBankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/boursobank/Vente04.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/BoursoBankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4765,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-04T14:34:15Z",
-        "created_at": "2025-06-04T14:28:51Z",
-        "updated_at": "2025-06-09T05:21:35Z",
-        "base_commit": "189f80cd9e0ef1f8195d5cf5670e5e9098e29619",
-        "head_commit": "ff6fe2968676c0be2494a7090284eadda906434a",
-        "merge_commit": "24ecfad9c48dcb51b84245f57560561a879de3de",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/ModenaEstoniaPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ModenaEstoniaPDFExtractor.java"
-        ]
+      "pr_number": 4765,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-04T14:34:15Z",
+      "created_at": "2025-06-04T14:28:51Z",
+      "updated_at": "2025-06-09T05:21:35Z",
+      "base_commit": "189f80cd9e0ef1f8195d5cf5670e5e9098e29619",
+      "head_commit": "ff6fe2968676c0be2494a7090284eadda906434a",
+      "merge_commit": "24ecfad9c48dcb51b84245f57560561a879de3de",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/ModenaEstoniaPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ModenaEstoniaPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4764,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-06-04T13:54:16Z",
-        "created_at": "2025-06-04T13:49:30Z",
-        "updated_at": "2025-06-04T13:54:20Z",
-        "base_commit": "ea860fd53840168ccd1cfc6cc69c484795776308",
-        "head_commit": "b0846045d54dcb438d9cb53cdf8fcff27b4274d5",
-        "merge_commit": "189f80cd9e0ef1f8195d5cf5670e5e9098e29619",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/Kontoauszug03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/ModenaEstoniaPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ModenaEstoniaPDFExtractor.java"
-        ]
+      "pr_number": 4764,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-06-04T13:54:16Z",
+      "created_at": "2025-06-04T13:49:30Z",
+      "updated_at": "2025-06-04T13:54:20Z",
+      "base_commit": "ea860fd53840168ccd1cfc6cc69c484795776308",
+      "head_commit": "b0846045d54dcb438d9cb53cdf8fcff27b4274d5",
+      "merge_commit": "189f80cd9e0ef1f8195d5cf5670e5e9098e29619",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/Kontoauszug03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/modenaestonia/ModenaEstoniaPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/ModenaEstoniaPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4756,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-05-29T03:51:41Z",
-        "created_at": "2025-05-29T03:47:10Z",
-        "updated_at": "2025-05-29T03:51:50Z",
-        "base_commit": "7a9a529a27cdc1988eb8ab0f0b95516311f0bfe2",
-        "head_commit": "8ff3082d31fc4a2a53961b21037c1778a64935c8",
-        "merge_commit": "dbc26ae0adc4f0a62494ae99969ed2a9eb98cd86",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/quirinbankag/Depotauszug10.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/quirinbankag/QuirinPrivatbankAGPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/QuirinBankAGPDFExtractor.java"
-        ]
+      "pr_number": 4756,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-05-29T03:51:41Z",
+      "created_at": "2025-05-29T03:47:10Z",
+      "updated_at": "2025-05-29T03:51:50Z",
+      "base_commit": "7a9a529a27cdc1988eb8ab0f0b95516311f0bfe2",
+      "head_commit": "8ff3082d31fc4a2a53961b21037c1778a64935c8",
+      "merge_commit": "dbc26ae0adc4f0a62494ae99969ed2a9eb98cd86",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/quirinbankag/Depotauszug10.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/quirinbankag/QuirinPrivatbankAGPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/QuirinBankAGPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4751,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-05-25T08:09:47Z",
-        "created_at": "2025-05-25T08:05:08Z",
-        "updated_at": "2025-05-29T03:47:54Z",
-        "base_commit": "9231f9dd6d540bbf0a922b7757f0bd0739775766",
-        "head_commit": "26d3ab7e75e8a33f7438e1fa0e957cfa7ed1c7f1",
-        "merge_commit": "46f36c346b2529b119f9b583a1a59ad35c5c2995",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/swissquote/Dividende12.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/swissquote/SwissquotePDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SwissquotePDFExtractor.java"
-        ]
+      "pr_number": 4751,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-05-25T08:09:47Z",
+      "created_at": "2025-05-25T08:05:08Z",
+      "updated_at": "2025-05-29T03:47:54Z",
+      "base_commit": "9231f9dd6d540bbf0a922b7757f0bd0739775766",
+      "head_commit": "26d3ab7e75e8a33f7438e1fa0e957cfa7ed1c7f1",
+      "merge_commit": "46f36c346b2529b119f9b583a1a59ad35c5c2995",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/swissquote/Dividende12.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/swissquote/SwissquotePDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/SwissquotePDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4750,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-05-25T07:40:16Z",
-        "created_at": "2025-05-25T05:42:20Z",
-        "updated_at": "2025-06-04T13:38:24Z",
-        "base_commit": "fa08c370b94c4890fa644e70c362af31f70792dc",
-        "head_commit": "92363636c542e9d2adebcdbd7fd53c98f799c0b1",
-        "merge_commit": "9231f9dd6d540bbf0a922b7757f0bd0739775766",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Dividende03.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/KBCGroupNVPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/MultiblerAankoopVerkoop02.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Rekeninguittreksel05.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/KBCGroupNVPDFExtractor.java"
-        ]
+      "pr_number": 4750,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-05-25T07:40:16Z",
+      "created_at": "2025-05-25T05:42:20Z",
+      "updated_at": "2025-06-04T13:38:24Z",
+      "base_commit": "fa08c370b94c4890fa644e70c362af31f70792dc",
+      "head_commit": "92363636c542e9d2adebcdbd7fd53c98f799c0b1",
+      "merge_commit": "9231f9dd6d540bbf0a922b7757f0bd0739775766",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Dividende03.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/KBCGroupNVPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/MultiblerAankoopVerkoop02.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/kbcgroupnv/Rekeninguittreksel05.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/KBCGroupNVPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4747,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-05-24T13:04:12Z",
-        "created_at": "2025-05-24T12:59:20Z",
-        "updated_at": "2025-05-24T13:04:26Z",
-        "base_commit": "6245079836a1075304ff42bf0520cff76e5661aa",
-        "head_commit": "74413b1976406f27b8a5f1b83345e8161e79e041",
-        "merge_commit": "be347e5d2ae8f098cf4d2e36018855b777340cc8",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/bison/BisonPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/BisonPDFExtractor.java"
-        ]
+      "pr_number": 4747,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-05-24T13:04:12Z",
+      "created_at": "2025-05-24T12:59:20Z",
+      "updated_at": "2025-05-24T13:04:26Z",
+      "base_commit": "6245079836a1075304ff42bf0520cff76e5661aa",
+      "head_commit": "74413b1976406f27b8a5f1b83345e8161e79e041",
+      "merge_commit": "be347e5d2ae8f098cf4d2e36018855b777340cc8",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/bison/BisonPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/BisonPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4746,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-05-24T12:59:36Z",
-        "created_at": "2025-05-24T12:46:02Z",
-        "updated_at": "2025-05-24T12:59:44Z",
-        "base_commit": "1ae2ed6552c4b1bab6bbf7dbfd7bedd5c69de370",
-        "head_commit": "462659744bcc4bae833b71f5f72c37b1e696b1b4",
-        "merge_commit": "5f0e67814f299105351864c447760f2ca3f8ee3c",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/oldenburgischelandesbankag/Kauf05.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/oldenburgischelandesbankag/OldenburgischeLandesbankAGPDFExtractorTest.java"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/OldenburgischeLandesbankAGPDFExtractor.java"
-        ]
+      "pr_number": 4746,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-05-24T12:59:36Z",
+      "created_at": "2025-05-24T12:46:02Z",
+      "updated_at": "2025-05-24T12:59:44Z",
+      "base_commit": "1ae2ed6552c4b1bab6bbf7dbfd7bedd5c69de370",
+      "head_commit": "462659744bcc4bae833b71f5f72c37b1e696b1b4",
+      "merge_commit": "5f0e67814f299105351864c447760f2ca3f8ee3c",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/oldenburgischelandesbankag/Kauf05.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/oldenburgischelandesbankag/OldenburgischeLandesbankAGPDFExtractorTest.java"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/OldenburgischeLandesbankAGPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4744,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-05-24T09:05:11Z",
-        "created_at": "2025-05-24T09:00:37Z",
-        "updated_at": "2025-05-24T09:05:18Z",
-        "base_commit": "99d70effad90f7962a2a5792db6338647914113b",
-        "head_commit": "a93474a214d6a923583f50876c61e8d1c0169ca0",
-        "merge_commit": "1ae2ed6552c4b1bab6bbf7dbfd7bedd5c69de370",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/TradeRepublicPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/TransaccionesDeCuenta06.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/Zinsabrechnung09.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/TradeRepublicPDFExtractor.java"
-        ]
+      "pr_number": 4744,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-05-24T09:05:11Z",
+      "created_at": "2025-05-24T09:00:37Z",
+      "updated_at": "2025-05-24T09:05:18Z",
+      "base_commit": "99d70effad90f7962a2a5792db6338647914113b",
+      "head_commit": "a93474a214d6a923583f50876c61e8d1c0169ca0",
+      "merge_commit": "1ae2ed6552c4b1bab6bbf7dbfd7bedd5c69de370",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/TradeRepublicPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/TransaccionesDeCuenta06.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/traderepublic/Zinsabrechnung09.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/TradeRepublicPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4738,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-05-22T14:27:00Z",
-        "created_at": "2025-05-22T14:22:36Z",
-        "updated_at": "2025-05-22T14:27:10Z",
-        "base_commit": "eb42179dd025fe60c1f5212f885b9c817ea4bbd7",
-        "head_commit": "3d6ae54be9265a6085aeb531e9f9e408d52afcba",
-        "merge_commit": "ec2fe497c88011008617f7d905589f677c77d1aa",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/baaderbank/BaaderBankPDFExtractorTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/baaderbank/Kauf37.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/BaaderBankPDFExtractor.java"
-        ]
+      "pr_number": 4738,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-05-22T14:27:00Z",
+      "created_at": "2025-05-22T14:22:36Z",
+      "updated_at": "2025-05-22T14:27:10Z",
+      "base_commit": "eb42179dd025fe60c1f5212f885b9c817ea4bbd7",
+      "head_commit": "3d6ae54be9265a6085aeb531e9f9e408d52afcba",
+      "merge_commit": "ec2fe497c88011008617f7d905589f677c77d1aa",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/baaderbank/BaaderBankPDFExtractorTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/datatransfer/pdf/baaderbank/Kauf37.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/datatransfer/pdf/BaaderBankPDFExtractor.java"
+      ]
     },
     {
-        "pr_number": 4695,
-        "repo": "portfolio-performance/portfolio",
-        "merged_at": "2025-07-12T11:47:02Z",
-        "created_at": "2025-05-07T16:39:40Z",
-        "updated_at": "2025-07-12T11:47:02Z",
-        "base_commit": "96bffe09d2550224bf567a48c4c3ab24a3bfa707",
-        "head_commit": "83a3ab93f6fe569344abc1e85ad30ee62921f714",
-        "merge_commit": "6cda98dd70546dcf991e4ea059a9ed2a4c9954b7",
-        "modified_test": [
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/YahooFinanceQuoteFeedTest.java",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/response_yahoo_historical01.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/response_yahoo_historical.txt",
-            "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/response_yahoo_historical02.txt"
-        ],
-        "modified_source": [
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/online/impl/YahooFinanceAdjustedCloseQuoteFeed.java",
-            "name.abuchen.portfolio/src/name/abuchen/portfolio/online/impl/YahooFinanceQuoteFeed.java"
-        ]
+      "pr_number": 4695,
+      "repo": "portfolio-performance/portfolio",
+      "merged_at": "2025-07-12T11:47:02Z",
+      "created_at": "2025-05-07T16:39:40Z",
+      "updated_at": "2025-07-12T11:47:02Z",
+      "base_commit": "96bffe09d2550224bf567a48c4c3ab24a3bfa707",
+      "head_commit": "83a3ab93f6fe569344abc1e85ad30ee62921f714",
+      "merge_commit": "6cda98dd70546dcf991e4ea059a9ed2a4c9954b7",
+      "modified_test": [
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/YahooFinanceQuoteFeedTest.java",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/response_yahoo_historical01.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/response_yahoo_historical.txt",
+        "name.abuchen.portfolio.tests/src/name/abuchen/portfolio/online/impl/response_yahoo_historical02.txt"
+      ],
+      "modified_source": [
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/online/impl/YahooFinanceAdjustedCloseQuoteFeed.java",
+        "name.abuchen.portfolio/src/name/abuchen/portfolio/online/impl/YahooFinanceQuoteFeed.java"
+      ]
     }
-]
+  ]
+}

@@ -1,301 +1,312 @@
-[
+{
+  "info": {
+    "repo": "hibernate/hibernate-search",
+    "test_command": "./mvnw clean install -DskipTests -DskipITs -Dmaven.compiler.failOnWarning=false -Dmaven.compiler.werror=false && ./mvnw clean install -Dmaven.test.failure.ignore=true -Dmaven.compiler.failOnWarning=false -Dmaven.compiler.werror=false -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
+    "test_files": [
+      "**/surefire-reports/*",
+      "**/failsafe-reports/*"
+    ],
+    "Dockerfile": "docker_files/Dockerfile-java-21"
+  },
+  "prs": [
     {
-        "pr_number": 4563,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2025-04-14T13:11:14Z",
-        "created_at": "2025-04-09T20:50:38Z",
-        "updated_at": "2025-04-14T13:11:14Z",
-        "base_commit": "2b4fdeb5a30730f7fc39f16351f3ead1eb60ceba",
-        "head_commit": "ea34e81e7c74a8c386dfdc494c1c5132d966af07",
-        "merge_commit": "3366ab8b09e9d16fc8cd4b4c8aca23c29d3ae045",
-        "modified_test": [
-            "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/mapping/LuceneVectorFieldIT.java",
-            "integrationtest/mapper/pojo-standalone-realbackend/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/standalone/realbackend/mapping/VectorFieldIT.java"
-        ],
-        "modified_source": [
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/codec/impl/HibernateSearchKnnVectorsFormat.java",
-            "documentation/src/main/asciidoc/migration/index.adoc",
-            "documentation/src/main/asciidoc/public/reference/_mapping-directfieldmapping.adoc",
-            "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/codec/impl/HibernateSearchKnnVectorsFormat.java"
-        ]
+      "pr_number": 4563,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2025-04-14T13:11:14Z",
+      "created_at": "2025-04-09T20:50:38Z",
+      "updated_at": "2025-04-14T13:11:14Z",
+      "base_commit": "2b4fdeb5a30730f7fc39f16351f3ead1eb60ceba",
+      "head_commit": "ea34e81e7c74a8c386dfdc494c1c5132d966af07",
+      "merge_commit": "3366ab8b09e9d16fc8cd4b4c8aca23c29d3ae045",
+      "modified_test": [
+        "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/mapping/LuceneVectorFieldIT.java",
+        "integrationtest/mapper/pojo-standalone-realbackend/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/standalone/realbackend/mapping/VectorFieldIT.java"
+      ],
+      "modified_source": [
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/codec/impl/HibernateSearchKnnVectorsFormat.java",
+        "documentation/src/main/asciidoc/migration/index.adoc",
+        "documentation/src/main/asciidoc/public/reference/_mapping-directfieldmapping.adoc",
+        "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/codec/impl/HibernateSearchKnnVectorsFormat.java"
+      ]
     },
     {
-        "pr_number": 4526,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2025-03-17T13:36:20Z",
-        "created_at": "2025-03-14T14:42:08Z",
-        "updated_at": "2025-03-17T13:36:20Z",
-        "base_commit": "1f0f217908d72d4ee3e8feec47098f6e18ef3e6e",
-        "head_commit": "6f14cad9eb247f0cbab7e521147cefde1c9dc381",
-        "merge_commit": "db41b0ae3256abb35ad3aea4fd92b18806345bdb",
-        "modified_test": [
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/sort/FieldSortSpecificsIT.java"
-        ],
-        "modified_source": [
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/DoubleMultiValuesToSingleValuesSource.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/LongMultiValuesToSingleValuesSource.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/TextMultiValuesToSingleValuesSource.java",
-            "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/DoubleMultiValuesToSingleValuesSource.java",
-            "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/LongMultiValuesToSingleValuesSource.java",
-            "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/TextMultiValuesToSingleValuesSource.java"
-        ]
+      "pr_number": 4526,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2025-03-17T13:36:20Z",
+      "created_at": "2025-03-14T14:42:08Z",
+      "updated_at": "2025-03-17T13:36:20Z",
+      "base_commit": "1f0f217908d72d4ee3e8feec47098f6e18ef3e6e",
+      "head_commit": "6f14cad9eb247f0cbab7e521147cefde1c9dc381",
+      "merge_commit": "db41b0ae3256abb35ad3aea4fd92b18806345bdb",
+      "modified_test": [
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/sort/FieldSortSpecificsIT.java"
+      ],
+      "modified_source": [
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/DoubleMultiValuesToSingleValuesSource.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/LongMultiValuesToSingleValuesSource.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/TextMultiValuesToSingleValuesSource.java",
+        "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/DoubleMultiValuesToSingleValuesSource.java",
+        "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/LongMultiValuesToSingleValuesSource.java",
+        "lucene-next/backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/docvalues/impl/TextMultiValuesToSingleValuesSource.java"
+      ]
     },
     {
-        "pr_number": 4392,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-11-21T20:12:02Z",
-        "created_at": "2024-11-19T17:36:49Z",
-        "updated_at": "2024-11-21T20:12:02Z",
-        "base_commit": "41459731945a5d569c2f98e8abe176d4d0964c9e",
-        "head_commit": "ec5b1287ad22039a72a0fed5489c42d61de3c568",
-        "merge_commit": "05a65f9d17cafcd667fe24cc1f44ad384d3c574f",
-        "modified_test": [
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/projection/FieldProjectionBaseIT.java"
-        ],
-        "modified_source": [
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldProjection.java",
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/FieldProjectionRequestContext.java",
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ProjectionRequestContext.java",
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/query/impl/ElasticsearchSearchQueryRequestContext.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneDistanceToFieldProjection.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldProjection.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneObjectProjection.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/ProjectionRequestContext.java"
-        ]
+      "pr_number": 4392,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-11-21T20:12:02Z",
+      "created_at": "2024-11-19T17:36:49Z",
+      "updated_at": "2024-11-21T20:12:02Z",
+      "base_commit": "41459731945a5d569c2f98e8abe176d4d0964c9e",
+      "head_commit": "ec5b1287ad22039a72a0fed5489c42d61de3c568",
+      "merge_commit": "05a65f9d17cafcd667fe24cc1f44ad384d3c574f",
+      "modified_test": [
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/projection/FieldProjectionBaseIT.java"
+      ],
+      "modified_source": [
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ElasticsearchFieldProjection.java",
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/FieldProjectionRequestContext.java",
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/projection/impl/ProjectionRequestContext.java",
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/query/impl/ElasticsearchSearchQueryRequestContext.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneDistanceToFieldProjection.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneFieldProjection.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneObjectProjection.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/ProjectionRequestContext.java"
+      ]
     },
     {
-        "pr_number": 4328,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-10-07T11:55:53Z",
-        "created_at": "2024-09-23T08:55:43Z",
-        "updated_at": "2024-10-07T11:55:53Z",
-        "base_commit": "6000159fd7e64cd39217040085be70b9a9622b34",
-        "head_commit": "d128363e3c3a10c3be3b295a65b74c2efc2374a5",
-        "merge_commit": "7eec2990bcab4896732ac8cd69fb7ed916ddec6a",
-        "modified_test": [
-            "integrationtest/backend/elasticsearch/src/test/java/org/hibernate/search/integrationtest/backend/elasticsearch/testsupport/util/ElasticsearchTckBackendFeatures.java",
-            "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/testsupport/util/LuceneTckBackendFeatures.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/aggregation/MetricFieldAggregationsIT.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/aggregation/MetricNumericFieldsAggregationsIT.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/operations/MetricAggregationsTestCase.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/BigIntegerFieldTypeDescriptor.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/InstantFieldTypeDescriptor.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/LocalDateTimeFieldTypeDescriptor.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/OffsetDateTimeFieldTypeDescriptor.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/YearFieldTypeDescriptor.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/ZonedDateTimeFieldTypeDescriptor.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/values/MetricAggregationsValues.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/util/TckBackendFeatures.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/util/TypeAssertionHelper.java"
-        ],
-        "modified_source": [
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/aggregation/impl/ElasticsearchMetricFieldAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/AbstractLuceneMetricCompensatedSumAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/AbstractLuceneMetricNumericFieldAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneAvgCompensatedSumAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneAvgNumericFieldAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneMaxNumericFieldAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneMinNumericFieldAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneSumCompensatedSumAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneSumNumericFieldAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/AbstractLuceneNumericFieldCodec.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneBigDecimalFieldCodec.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneBigIntegerFieldCodec.java"
-        ]
+      "pr_number": 4328,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-10-07T11:55:53Z",
+      "created_at": "2024-09-23T08:55:43Z",
+      "updated_at": "2024-10-07T11:55:53Z",
+      "base_commit": "6000159fd7e64cd39217040085be70b9a9622b34",
+      "head_commit": "d128363e3c3a10c3be3b295a65b74c2efc2374a5",
+      "merge_commit": "7eec2990bcab4896732ac8cd69fb7ed916ddec6a",
+      "modified_test": [
+        "integrationtest/backend/elasticsearch/src/test/java/org/hibernate/search/integrationtest/backend/elasticsearch/testsupport/util/ElasticsearchTckBackendFeatures.java",
+        "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/testsupport/util/LuceneTckBackendFeatures.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/aggregation/MetricFieldAggregationsIT.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/search/aggregation/MetricNumericFieldsAggregationsIT.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/operations/MetricAggregationsTestCase.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/BigIntegerFieldTypeDescriptor.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/InstantFieldTypeDescriptor.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/LocalDateTimeFieldTypeDescriptor.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/OffsetDateTimeFieldTypeDescriptor.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/YearFieldTypeDescriptor.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/ZonedDateTimeFieldTypeDescriptor.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/types/values/MetricAggregationsValues.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/util/TckBackendFeatures.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/util/TypeAssertionHelper.java"
+      ],
+      "modified_source": [
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/aggregation/impl/ElasticsearchMetricFieldAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/AbstractLuceneMetricCompensatedSumAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/AbstractLuceneMetricNumericFieldAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneAvgCompensatedSumAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneAvgNumericFieldAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneMaxNumericFieldAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneMinNumericFieldAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneSumCompensatedSumAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/LuceneSumNumericFieldAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/AbstractLuceneNumericFieldCodec.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneBigDecimalFieldCodec.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneBigIntegerFieldCodec.java"
+      ]
     },
     {
-        "pr_number": 4284,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-08-14T19:21:11Z",
-        "created_at": "2024-08-14T16:22:45Z",
-        "updated_at": "2024-08-14T19:21:11Z",
-        "base_commit": "22b78f13612d4313b1baaf2792cf0aefeb484a0f",
-        "head_commit": "f30b4b0ae2a2ec586877d94ae6847c1a3b0aaea5",
-        "merge_commit": "801c8ac8ee9dd54bf8cd3269fa99a5d50f314f64",
-        "modified_test": [
-            "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/model/FormulaPropertyIT.java"
-        ],
-        "modified_source": [
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/mapping/impl/HibernateOrmMappingPropertiesMetadataContributor.java"
-        ]
+      "pr_number": 4284,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-08-14T19:21:11Z",
+      "created_at": "2024-08-14T16:22:45Z",
+      "updated_at": "2024-08-14T19:21:11Z",
+      "base_commit": "22b78f13612d4313b1baaf2792cf0aefeb484a0f",
+      "head_commit": "f30b4b0ae2a2ec586877d94ae6847c1a3b0aaea5",
+      "merge_commit": "801c8ac8ee9dd54bf8cd3269fa99a5d50f314f64",
+      "modified_test": [
+        "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/model/FormulaPropertyIT.java"
+      ],
+      "modified_source": [
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/mapping/impl/HibernateOrmMappingPropertiesMetadataContributor.java"
+      ]
     },
     {
-        "pr_number": 4195,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-06-17T06:28:45Z",
-        "created_at": "2024-06-12T16:01:22Z",
-        "updated_at": "2024-06-17T06:28:45Z",
-        "base_commit": "982b9d2c652ecb366fda43f70b5a3b4f4bccc2a8",
-        "head_commit": "7429263c6da8c6809a9e0695d24d9870dff984f6",
-        "merge_commit": "5c137406307f52e28310ebe96e937c4369b082ab",
-        "modified_test": [
-            "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/automaticindexing/association/bytype/AbstractAutomaticIndexingAssociationBaseIT.java"
-        ],
-        "modified_source": [
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/event/impl/HibernateSearchEventListener.java"
-        ]
+      "pr_number": 4195,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-06-17T06:28:45Z",
+      "created_at": "2024-06-12T16:01:22Z",
+      "updated_at": "2024-06-17T06:28:45Z",
+      "base_commit": "982b9d2c652ecb366fda43f70b5a3b4f4bccc2a8",
+      "head_commit": "7429263c6da8c6809a9e0695d24d9870dff984f6",
+      "merge_commit": "5c137406307f52e28310ebe96e937c4369b082ab",
+      "modified_test": [
+        "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/automaticindexing/association/bytype/AbstractAutomaticIndexingAssociationBaseIT.java"
+      ],
+      "modified_source": [
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/event/impl/HibernateSearchEventListener.java"
+      ]
     },
     {
-        "pr_number": 4181,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-06-05T10:09:20Z",
-        "created_at": "2024-06-04T09:13:10Z",
-        "updated_at": "2024-06-05T10:09:20Z",
-        "base_commit": "193c8cd4e178c1d5292f1e3dc4dc606045871658",
-        "head_commit": "b84af2183f54551ee4ce6fa8331a3136971f271f",
-        "merge_commit": "39c2d9cc44d4d5ba6bd3d02759bdb2f80e66dc7a",
-        "modified_test": [
-            "integrationtest/mapper/orm-jakarta-batch/src/test/java/org/hibernate/search/integrationtest/jakarta/batch/massindexing/MassIndexingJobIT.java",
-            "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/dynamicmap/DynamicMapBaseIT.java",
-            "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/massindexing/MassIndexingConditionalExpressionsIT.java"
-        ],
-        "modified_source": [
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/common/impl/HibernateOrmUtils.java",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/AbstractHibernateOrmLoadingStrategy.java",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/ConditionalExpressionQueryFactory.java",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/HibernateOrmQueryLoaderImpl.java",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/TypeQueryFactory.java"
-        ]
+      "pr_number": 4181,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-06-05T10:09:20Z",
+      "created_at": "2024-06-04T09:13:10Z",
+      "updated_at": "2024-06-05T10:09:20Z",
+      "base_commit": "193c8cd4e178c1d5292f1e3dc4dc606045871658",
+      "head_commit": "b84af2183f54551ee4ce6fa8331a3136971f271f",
+      "merge_commit": "39c2d9cc44d4d5ba6bd3d02759bdb2f80e66dc7a",
+      "modified_test": [
+        "integrationtest/mapper/orm-jakarta-batch/src/test/java/org/hibernate/search/integrationtest/jakarta/batch/massindexing/MassIndexingJobIT.java",
+        "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/dynamicmap/DynamicMapBaseIT.java",
+        "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/massindexing/MassIndexingConditionalExpressionsIT.java"
+      ],
+      "modified_source": [
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/common/impl/HibernateOrmUtils.java",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/AbstractHibernateOrmLoadingStrategy.java",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/ConditionalExpressionQueryFactory.java",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/HibernateOrmQueryLoaderImpl.java",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/TypeQueryFactory.java"
+      ]
     },
     {
-        "pr_number": 4176,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-05-31T07:39:02Z",
-        "created_at": "2024-05-29T10:15:36Z",
-        "updated_at": "2024-05-31T07:39:02Z",
-        "base_commit": "365642b391936cd2457bd344bde341243bb0d659",
-        "head_commit": "cdab678735bea7fddab4142f3ae14dc7262ed514",
-        "merge_commit": "64446b2dcc8d0b844dcfc0840e88992c879115e6",
-        "modified_test": [
-            "integrationtest/mapper/pojo-base/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/massindexing/MassIndexingBaseIT.java"
-        ],
-        "modified_source": [
-            "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/scope/impl/SearchScopeImpl.java"
-        ]
+      "pr_number": 4176,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-05-31T07:39:02Z",
+      "created_at": "2024-05-29T10:15:36Z",
+      "updated_at": "2024-05-31T07:39:02Z",
+      "base_commit": "365642b391936cd2457bd344bde341243bb0d659",
+      "head_commit": "cdab678735bea7fddab4142f3ae14dc7262ed514",
+      "merge_commit": "64446b2dcc8d0b844dcfc0840e88992c879115e6",
+      "modified_test": [
+        "integrationtest/mapper/pojo-base/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/massindexing/MassIndexingBaseIT.java"
+      ],
+      "modified_source": [
+        "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/scope/impl/SearchScopeImpl.java"
+      ]
     },
     {
-        "pr_number": 4022,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-03-18T06:43:28Z",
-        "created_at": "2024-03-07T07:49:16Z",
-        "updated_at": "2024-03-18T06:43:29Z",
-        "base_commit": "42bfdfa1704e3388ea66ad018f71c26d00b57694",
-        "head_commit": "5bbdb97714fac96fdfcaf543b662851a03154451",
-        "merge_commit": "e6171df475570cab580993805fa1b7169af240c3",
-        "modified_test": [
-            "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/mapping/LuceneVectorFieldCheckIT.java"
-        ],
-        "modified_source": [
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/logging/impl/Log.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneKnnPredicate.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/AbstractLuceneVectorFieldCodec.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneByteVectorCodec.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneFloatVectorCodec.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneVectorFieldCodec.java"
-        ]
+      "pr_number": 4022,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-03-18T06:43:28Z",
+      "created_at": "2024-03-07T07:49:16Z",
+      "updated_at": "2024-03-18T06:43:29Z",
+      "base_commit": "42bfdfa1704e3388ea66ad018f71c26d00b57694",
+      "head_commit": "5bbdb97714fac96fdfcaf543b662851a03154451",
+      "merge_commit": "e6171df475570cab580993805fa1b7169af240c3",
+      "modified_test": [
+        "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/mapping/LuceneVectorFieldCheckIT.java"
+      ],
+      "modified_source": [
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/logging/impl/Log.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneKnnPredicate.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/AbstractLuceneVectorFieldCodec.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneByteVectorCodec.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneFloatVectorCodec.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/codec/impl/LuceneVectorFieldCodec.java"
+      ]
     },
     {
-        "pr_number": 3977,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-02-21T15:53:33Z",
-        "created_at": "2024-02-21T14:28:25Z",
-        "updated_at": "2024-02-21T15:53:34Z",
-        "base_commit": "dd8d63bbd432cb09c6d4da20387013bc1179861c",
-        "head_commit": "135dfa447fd30548f271dc666cddcf12a84af285",
-        "merge_commit": "ec62cb70e5da60ce804310316c4bcafcf89190f3",
-        "modified_test": [
-            "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/bootstrap/HibernateOrmIntegrationBooterIT.java",
-            "integrationtest/mapper/pojo-base/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/bootstrap/StandalonePojoIntegrationBooterIT.java"
-        ],
-        "modified_source": [
-            "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/bootstrap/impl/StandalonePojoIntegrationPartialBuildState.java",
-            "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/mapping/impl/StandalonePojoMapperDelegate.java",
-            "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/mapping/impl/StandalonePojoMappingInitiator.java",
-            "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/mapping/impl/StandalonePojoMappingPartialBuildState.java"
-        ]
+      "pr_number": 3977,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-02-21T15:53:33Z",
+      "created_at": "2024-02-21T14:28:25Z",
+      "updated_at": "2024-02-21T15:53:34Z",
+      "base_commit": "dd8d63bbd432cb09c6d4da20387013bc1179861c",
+      "head_commit": "135dfa447fd30548f271dc666cddcf12a84af285",
+      "merge_commit": "ec62cb70e5da60ce804310316c4bcafcf89190f3",
+      "modified_test": [
+        "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/bootstrap/HibernateOrmIntegrationBooterIT.java",
+        "integrationtest/mapper/pojo-base/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/bootstrap/StandalonePojoIntegrationBooterIT.java"
+      ],
+      "modified_source": [
+        "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/bootstrap/impl/StandalonePojoIntegrationPartialBuildState.java",
+        "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/mapping/impl/StandalonePojoMapperDelegate.java",
+        "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/mapping/impl/StandalonePojoMappingInitiator.java",
+        "mapper/pojo-standalone/src/main/java/org/hibernate/search/mapper/pojo/standalone/mapping/impl/StandalonePojoMappingPartialBuildState.java"
+      ]
     },
     {
-        "pr_number": 3964,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-02-26T15:55:40Z",
-        "created_at": "2024-02-13T17:27:30Z",
-        "updated_at": "2024-02-26T15:57:57Z",
-        "base_commit": "ce16f5a3f8c74173f2cd6e296224f329c84642a6",
-        "head_commit": "9218c005e628b48184463cd31bbd1468e64dc9a6",
-        "merge_commit": "94f93567e91108d24226feedbe99e0030bed8981",
-        "modified_test": [
-            "integrationtest/backend/elasticsearch/src/test/java/org/hibernate/search/integrationtest/backend/elasticsearch/testsupport/util/ElasticsearchTckBackendFeatures.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/multitenancy/MultiTenancyBaseIT.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/sharding/RoutingVectorSearchIT.java",
-            "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/util/TckBackendFeatures.java"
-        ],
-        "modified_source": [
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/logging/impl/Log.java",
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/lowlevel/query/impl/Queries.java",
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/predicate/impl/ElasticsearchKnnPredicate.java",
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/predicate/impl/PredicateRequestContext.java",
-            "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/query/impl/ElasticsearchSearchQueryBuilder.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/aggregation/impl/AggregationExtractContext.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/AbstractLuceneNestablePredicate.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneKnnPredicate.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneNestedPredicate.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/PredicateRequestContext.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneObjectProjection.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/query/impl/LuceneExtractableSearchResult.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/query/impl/LuceneSearchQueryBuilder.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/query/impl/LuceneSearchQueryRequestContext.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/sort/impl/LuceneSearchSortCollector.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/sort/impl/SortRequestContext.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/spi/LuceneMigrationUtils.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/AbstractLuceneNestableAggregation.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/sort/impl/AbstractLuceneDocumentValueSort.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/sort/impl/LuceneGeoPointDistanceSort.java",
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/sort/impl/LuceneStandardFieldSort.java",
-            "documentation/src/main/asciidoc/public/reference/_search-dsl-predicate.adoc"
-        ]
+      "pr_number": 3964,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-02-26T15:55:40Z",
+      "created_at": "2024-02-13T17:27:30Z",
+      "updated_at": "2024-02-26T15:57:57Z",
+      "base_commit": "ce16f5a3f8c74173f2cd6e296224f329c84642a6",
+      "head_commit": "9218c005e628b48184463cd31bbd1468e64dc9a6",
+      "merge_commit": "94f93567e91108d24226feedbe99e0030bed8981",
+      "modified_test": [
+        "integrationtest/backend/elasticsearch/src/test/java/org/hibernate/search/integrationtest/backend/elasticsearch/testsupport/util/ElasticsearchTckBackendFeatures.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/multitenancy/MultiTenancyBaseIT.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/sharding/RoutingVectorSearchIT.java",
+        "integrationtest/backend/tck/src/main/java/org/hibernate/search/integrationtest/backend/tck/testsupport/util/TckBackendFeatures.java"
+      ],
+      "modified_source": [
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/logging/impl/Log.java",
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/lowlevel/query/impl/Queries.java",
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/predicate/impl/ElasticsearchKnnPredicate.java",
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/predicate/impl/PredicateRequestContext.java",
+        "backend/elasticsearch/src/main/java/org/hibernate/search/backend/elasticsearch/search/query/impl/ElasticsearchSearchQueryBuilder.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/aggregation/impl/AggregationExtractContext.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/AbstractLuceneNestablePredicate.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneKnnPredicate.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/LuceneNestedPredicate.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/predicate/impl/PredicateRequestContext.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/projection/impl/LuceneObjectProjection.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/query/impl/LuceneExtractableSearchResult.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/query/impl/LuceneSearchQueryBuilder.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/query/impl/LuceneSearchQueryRequestContext.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/sort/impl/LuceneSearchSortCollector.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/sort/impl/SortRequestContext.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/search/spi/LuceneMigrationUtils.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/aggregation/impl/AbstractLuceneNestableAggregation.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/sort/impl/AbstractLuceneDocumentValueSort.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/sort/impl/LuceneGeoPointDistanceSort.java",
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/types/sort/impl/LuceneStandardFieldSort.java",
+        "documentation/src/main/asciidoc/public/reference/_search-dsl-predicate.adoc"
+      ]
     },
     {
-        "pr_number": 3933,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-01-30T08:36:16Z",
-        "created_at": "2024-01-26T18:04:32Z",
-        "updated_at": "2024-01-30T08:36:16Z",
-        "base_commit": "5ddd54aed8549fc98c8027bd7264ab4baa4c71ab",
-        "head_commit": "b842cc3a9129e7dfd54d7af1cb5b6c1e0d1fa8f2",
-        "merge_commit": "5fbd3eae5f6e80170a1094a710b0af92005e2e89",
-        "modified_test": [
-            "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/mapping/LuceneVectorFieldIT.java",
-            "integrationtest/mapper/pojo-standalone-realbackend/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/standalone/realbackend/mapping/VectorFieldIT.java"
-        ],
-        "modified_source": [
-            "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/codec/impl/HibernateSearchKnnVectorsFormat.java",
-            "documentation/src/main/asciidoc/public/reference/_mapping-directfieldmapping.adoc"
-        ]
+      "pr_number": 3933,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-01-30T08:36:16Z",
+      "created_at": "2024-01-26T18:04:32Z",
+      "updated_at": "2024-01-30T08:36:16Z",
+      "base_commit": "5ddd54aed8549fc98c8027bd7264ab4baa4c71ab",
+      "head_commit": "b842cc3a9129e7dfd54d7af1cb5b6c1e0d1fa8f2",
+      "merge_commit": "5fbd3eae5f6e80170a1094a710b0af92005e2e89",
+      "modified_test": [
+        "integrationtest/backend/lucene/src/test/java/org/hibernate/search/integrationtest/backend/lucene/mapping/LuceneVectorFieldIT.java",
+        "integrationtest/mapper/pojo-standalone-realbackend/src/test/java/org/hibernate/search/integrationtest/mapper/pojo/standalone/realbackend/mapping/VectorFieldIT.java"
+      ],
+      "modified_source": [
+        "backend/lucene/src/main/java/org/hibernate/search/backend/lucene/lowlevel/codec/impl/HibernateSearchKnnVectorsFormat.java",
+        "documentation/src/main/asciidoc/public/reference/_mapping-directfieldmapping.adoc"
+      ]
     },
     {
-        "pr_number": 3920,
-        "repo": "hibernate/hibernate-search",
-        "merged_at": "2024-03-05T09:33:57Z",
-        "created_at": "2024-01-22T08:57:47Z",
-        "updated_at": "2024-03-05T13:16:44Z",
-        "base_commit": "7824ef89dbbc360f3868e4f8357afc2093aa8a2a",
-        "head_commit": "0779b734ed1ebb711c83b19b37618c3904ef4139",
-        "merge_commit": "07b162b046f56d9cacee834db164689cf979d051",
-        "modified_test": [
-            "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/massindexing/MassIndexingInheritanceIT.java"
-        ],
-        "modified_source": [
-            "build/config/src/main/resources/checkstyle.xml",
-            "documentation/src/main/asciidoc/migration/index.adoc",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/common/impl/HibernateOrmUtils.java",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/AbstractHibernateOrmLoadingStrategy.java",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/HibernateOrmEntityIdEntityLoadingStrategy.java",
-            "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/HibernateOrmNonEntityIdPropertyEntityLoadingStrategy.java",
-            "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/automaticindexing/building/impl/PojoImplicitReindexingResolverBuildingHelper.java",
-            "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/loading/spi/PojoLoadingTypeContext.java",
-            "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/mapping/building/impl/PojoMapper.java",
-            "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/mapping/impl/AbstractPojoTypeManager.java",
-            "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/mapping/impl/PojoTypeManagerContainer.java"
-        ]
+      "pr_number": 3920,
+      "repo": "hibernate/hibernate-search",
+      "merged_at": "2024-03-05T09:33:57Z",
+      "created_at": "2024-01-22T08:57:47Z",
+      "updated_at": "2024-03-05T13:16:44Z",
+      "base_commit": "7824ef89dbbc360f3868e4f8357afc2093aa8a2a",
+      "head_commit": "0779b734ed1ebb711c83b19b37618c3904ef4139",
+      "merge_commit": "07b162b046f56d9cacee834db164689cf979d051",
+      "modified_test": [
+        "integrationtest/mapper/orm/src/test/java/org/hibernate/search/integrationtest/mapper/orm/massindexing/MassIndexingInheritanceIT.java"
+      ],
+      "modified_source": [
+        "build/config/src/main/resources/checkstyle.xml",
+        "documentation/src/main/asciidoc/migration/index.adoc",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/common/impl/HibernateOrmUtils.java",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/AbstractHibernateOrmLoadingStrategy.java",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/HibernateOrmEntityIdEntityLoadingStrategy.java",
+        "mapper/orm/src/main/java/org/hibernate/search/mapper/orm/loading/impl/HibernateOrmNonEntityIdPropertyEntityLoadingStrategy.java",
+        "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/automaticindexing/building/impl/PojoImplicitReindexingResolverBuildingHelper.java",
+        "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/loading/spi/PojoLoadingTypeContext.java",
+        "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/mapping/building/impl/PojoMapper.java",
+        "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/mapping/impl/AbstractPojoTypeManager.java",
+        "mapper/pojo-base/src/main/java/org/hibernate/search/mapper/pojo/mapping/impl/PojoTypeManagerContainer.java"
+      ]
     }
-]
+  ]
+}

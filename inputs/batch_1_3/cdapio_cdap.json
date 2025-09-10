@@ -1,7 +1,7 @@
 {
   "info": {
     "repo": "cdapio/cdap",
-    "test_command": "mvn clean verify -pl '!cdap-elastic' -DskipTests -DskipITs -Dmaven.compiler.failOnWarning=false -Dmaven.compiler.werror=false && mvn verify -pl '!cdap-elastic' -Dmaven.compiler.failOnWarning=false -pl '!cdap-elastic' -am -Dmaven.compiler.werror=false -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
+    "test_command": "sed -i '/<module>[[:space:]]*cdap-ui[[:space:]]*<\\\\/module>/d' pom.xml && mvn clean verify -pl '!cdap-elastic' -DskipTests -DskipITs -Dmaven.compiler.failOnWarning=false -Dmaven.compiler.werror=false && mvn verify -pl '!cdap-elastic' -Dmaven.compiler.failOnWarning=false -pl '!cdap-elastic' -am -Dmaven.compiler.werror=false -Drat.skip=true -Dmaven.test.failure.ignore=true  -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoSpecifiedTests=false -Dfailsafe.failIfNoSpecifiedTests=false -DfailIfNoTests=false -fn -Dtest=<unit_tests> -Dit.test=<integration_tests>",
     "test_files": [
       "**/surefire-reports/*"
     ],

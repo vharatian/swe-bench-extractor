@@ -7,7 +7,8 @@ from delivery.config import BATCH_NAME
 from utils import is_test
 
 # ------------------------------------------------------------------ paths
-final_folder    = Path("../files/finals")
+# final_folder    = Path("../files/finals")
+final_folder    = Path("../files/finals-selected")
 delivery_folder = Path("../files/delivery")
 batch_folder    = delivery_folder / BATCH_NAME
 input_file      = batch_folder / "wrapped.json"

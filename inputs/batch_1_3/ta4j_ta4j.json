@@ -1,0 +1,167 @@
+[
+    {
+        "pr_number": 1291,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2025-06-30T16:43:14Z",
+        "created_at": "2025-06-27T05:18:12Z",
+        "updated_at": "2025-06-30T16:43:14Z",
+        "base_commit": "a5eb46ffdfcfa78a11906bb3d66b509c4918b421",
+        "head_commit": "07fa6fcaa69d0c0de7ed3ff0d91a8ab556b21bc3",
+        "merge_commit": "7c82c4c0755ffc4c979c455809b8cb52d88c5000",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/bars/TickBarBuilderTest.java",
+            "ta4j-core/src/test/java/org/ta4j/core/bars/TimeBarBuilderTest.java",
+            "ta4j-core/src/test/java/org/ta4j/core/bars/VolumeBarBuilderTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/bars/TickBarBuilder.java",
+            "ta4j-core/src/main/java/org/ta4j/core/bars/TimeBarBuilder.java",
+            "ta4j-core/src/main/java/org/ta4j/core/bars/VolumeBarBuilder.java"
+        ]
+    },
+    {
+        "pr_number": 1288,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2025-06-25T15:42:25Z",
+        "created_at": "2025-06-24T11:08:25Z",
+        "updated_at": "2025-06-25T15:42:45Z",
+        "base_commit": "b929c4112cf1b6861d25df97230347c833984e28",
+        "head_commit": "e9b7b192c2f78f8f6cd4ddc4a8444b2070918bb9",
+        "merge_commit": "a5eb46ffdfcfa78a11906bb3d66b509c4918b421",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/criteria/ReturnOverMaxDrawdownCriterionTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/criteria/ReturnOverMaxDrawdownCriterion.java"
+        ]
+    },
+    {
+        "pr_number": 1281,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2025-06-24T19:05:24Z",
+        "created_at": "2025-06-18T11:21:03Z",
+        "updated_at": "2025-06-24T19:05:24Z",
+        "base_commit": "c1d9d3bc7122dca4127b798e4303baf11dfa62b2",
+        "head_commit": "640ea3df7b44a3f16d530031c4053986f456f4cf",
+        "merge_commit": "001c1b4a35e6fe423f216d0ea9bc9f2ae00a3c4e",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/criteria/ReturnOverMaxDrawdownCriterionTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/criteria/ReturnOverMaxDrawdownCriterion.java",
+            "ta4j-core/src/main/java/org/ta4j/core/criteria/pnl/NetReturnCriterion.java"
+        ]
+    },
+    {
+        "pr_number": 1279,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2025-06-18T16:56:02Z",
+        "created_at": "2025-06-18T08:47:48Z",
+        "updated_at": "2025-06-18T16:56:02Z",
+        "base_commit": "676e3645b0ff65489c94b78d2b666262ba40fdb1",
+        "head_commit": "2472cac0b221b90447a36495066ec4d9761fdf30",
+        "merge_commit": "4ef47226d6815130a4c00fe70fb781bdbf588688",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/indicators/helpers/ConvergenceDivergenceIndicatorTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/indicators/helpers/ConvergenceDivergenceIndicator.java"
+        ]
+    },
+    {
+        "pr_number": 1273,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2025-06-02T16:29:57Z",
+        "created_at": "2025-06-01T19:52:27Z",
+        "updated_at": "2025-06-03T12:42:03Z",
+        "base_commit": "f3aca41d9bcfca86faeec67bb7d2853d1aa8c476",
+        "head_commit": "47d1ffbb18f4900b4dd9777737abebe98e7620b8",
+        "merge_commit": "2f39dbc00759dc4400b7857e0117a995c93604b7",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/criteria/pnl/ProfitLossPercentageCriterionTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/criteria/pnl/ProfitLossPercentageCriterion.java"
+        ]
+    },
+    {
+        "pr_number": 1267,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2025-05-27T18:35:03Z",
+        "created_at": "2025-05-26T14:22:12Z",
+        "updated_at": "2025-05-28T13:23:32Z",
+        "base_commit": "545e8435cd7e6e2f6954e9947949a032b4413684",
+        "head_commit": "76cd53c3eff4800c47e3753dc3a926bbaef5a209",
+        "merge_commit": "78fe3d6d8919bb15bed9013744860d652215d087",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/criteria/EnterAndHoldCriterionTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/criteria/EnterAndHoldCriterion.java"
+        ]
+    },
+    {
+        "pr_number": 1260,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2025-06-09T13:29:04Z",
+        "created_at": "2025-05-14T17:29:01Z",
+        "updated_at": "2025-06-09T13:29:05Z",
+        "base_commit": "a9955915b51a332b0904902e0fc60a2f889199e5",
+        "head_commit": "be5244c97be0ec8c12d456ef515736220f61b83f",
+        "merge_commit": "3639c47491cc57ce3c560ec59afb36c884e95747",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/TestUtils.java",
+            "ta4j-core/src/test/java/org/ta4j/core/indicators/RSIIndicatorTest.java",
+            "ta4j-core/src/test/java/org/ta4j/core/indicators/StochasticRSIIndicatorTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/indicators/RSIIndicator.java",
+            "ta4j-core/src/main/java/org/ta4j/core/indicators/StochasticOscillatorKIndicator.java",
+            "ta4j-core/src/main/java/org/ta4j/core/indicators/StochasticRSIIndicator.java"
+        ]
+    },
+    {
+        "pr_number": 1138,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2024-03-19T16:50:54Z",
+        "created_at": "2024-03-17T18:26:44Z",
+        "updated_at": "2024-03-19T16:50:55Z",
+        "base_commit": "3c4c544b87812379f6e666a023a413789c5f55bb",
+        "head_commit": "89e82957f8587cc2190a5ca5bb8e12bc13d0fe8f",
+        "merge_commit": "4a637c0551a1b8acb84f4c4b47e66b79fc02a875",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/rules/CrossedDownIndicatorRuleTest.java",
+            "ta4j-core/src/test/java/org/ta4j/core/rules/CrossedUpIndicatorRuleTest.java"
+        ],
+        "modified_source": [
+            "ta4j-core/src/main/java/org/ta4j/core/indicators/helpers/CrossIndicator.java"
+        ]
+    },
+    {
+        "pr_number": 1127,
+        "repo": "ta4j/ta4j",
+        "merged_at": "2024-01-05T19:51:49Z",
+        "created_at": "2024-01-05T14:04:03Z",
+        "updated_at": "2024-01-05T19:51:49Z",
+        "base_commit": "a361c9b46a4cbabc863bb11d30d9c7f21256f883",
+        "head_commit": "4dd439aed673f5e42eeb517d414e73a547afa277",
+        "merge_commit": "709d191a89cb4dde9e15afd677c33643957980d7",
+        "modified_test": [
+            "ta4j-core/src/test/java/org/ta4j/core/num/NumTest.java"
+        ],
+        "modified_source": [
+            "CHANGELOG.md",
+            "ta4j-core/src/main/java/org/ta4j/core/num/DecimalNum.java",
+            "ta4j-core/src/main/java/org/ta4j/core/num/DoubleNum.java",
+            "ta4j-core/src/main/java/org/ta4j/core/num/NaN.java",
+            "ta4j-core/src/main/java/org/ta4j/core/num/Num.java"
+        ]
+    }
+]

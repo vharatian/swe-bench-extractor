@@ -15,7 +15,7 @@ from itertools import chain
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Hardcoded paths — adjust these constants if your layout differs
-REPORTS_ROOT = Path("../SWE-Bench/log-backup")         # contains many subfolders, each with a report.json
+REPORTS_ROOT = Path("files/log-backup")         # contains many subfolders, each with a report.json
 JSONL_PATH   = Path("files/delivery/batch_5/batch_5-final.jsonl")  # the big JSONL to filter
 OUT_DIR      = Path("files/out_unresolved")
 OUT_DIR.mkdir(parents=True, exist_ok=True)

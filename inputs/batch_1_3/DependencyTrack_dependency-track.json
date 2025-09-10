@@ -1,0 +1,566 @@
+[
+    {
+        "pr_number": 4913,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-05-03T17:56:11Z",
+        "created_at": "2025-05-03T15:23:35Z",
+        "updated_at": "2025-06-08T10:03:39Z",
+        "base_commit": "a5886087f494e0c75be139b7c92856424a39ee7a",
+        "head_commit": "a2c49bc381d34eac804083369759b5d34e9a0325",
+        "merge_commit": "920b723ada6322247f462fff2b1bdbe5bd6c2db0",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/ScheduledNotificationDispatchTaskTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/tasks/ScheduledNotificationDispatchTask.java"
+        ]
+    },
+    {
+        "pr_number": 4910,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-05-03T15:15:20Z",
+        "created_at": "2025-05-03T11:31:21Z",
+        "updated_at": "2025-06-03T10:04:02Z",
+        "base_commit": "c59676aecad803571c92d0b1ce5ab0bbf2bf8ae5",
+        "head_commit": "8e1a38f0bcf44edc6eaedfee2ff58adf311f2bde",
+        "merge_commit": "e53cafd1c91fc50f681e58f79326d5b0c87aa8f6",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/ScheduledNotificationDispatchTaskTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/tasks/ScheduledNotificationDispatchTask.java"
+        ]
+    },
+    {
+        "pr_number": 4905,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-05-06T13:41:04Z",
+        "created_at": "2025-04-30T15:12:56Z",
+        "updated_at": "2025-06-06T10:04:11Z",
+        "base_commit": "e53cafd1c91fc50f681e58f79326d5b0c87aa8f6",
+        "head_commit": "3db9e0031922817c6334af8dd52d55dbb4510e60",
+        "merge_commit": "833a5737f804f2ebf4355bcfd7319cfc58897900",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/BomResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/resources/v1/BomResource.java",
+            "src/main/java/org/dependencytrack/resources/v1/vo/BomSubmitRequest.java"
+        ]
+    },
+    {
+        "pr_number": 4806,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-05-12T12:37:49Z",
+        "created_at": "2025-04-02T10:36:55Z",
+        "updated_at": "2025-06-12T10:04:10Z",
+        "base_commit": "676d1866ff5a815c5baedff85028b0119d132834",
+        "head_commit": "f6db185240119c24e4a0a757e9db2cab0d358e5b",
+        "merge_commit": "de64510eba3e795648a3f4db4d1ddf2ee2461355",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/persistence/ProjectQueryManagerTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/ProjectQueryManager.java"
+        ]
+    },
+    {
+        "pr_number": 4746,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-03-11T13:41:24Z",
+        "created_at": "2025-03-11T13:17:22Z",
+        "updated_at": "2025-04-11T10:03:46Z",
+        "base_commit": "8243345f1eb209fdd74a3c5d90f7cb0a78370f52",
+        "head_commit": "5240db2da5a0f1d0234e36bdad9a76b9f2518305",
+        "merge_commit": "d23632a7d2071bb677333ccd76c6cb90cb8a5939",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/ProjectResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/ProjectQueryManager.java"
+        ]
+    },
+    {
+        "pr_number": 4736,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-03-09T00:53:35Z",
+        "created_at": "2025-03-09T00:17:04Z",
+        "updated_at": "2025-04-08T10:04:17Z",
+        "base_commit": "407952b59174d32528903b28eabcf247d7df3228",
+        "head_commit": "722bcf577222424578d4c4917ae693ee2a401bec",
+        "merge_commit": "f61529e57a8ecb75c95758e1f945a56e96107c34",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/scanners/TrivyAnalysisTaskTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/tasks/scanners/TrivyAnalysisTask.java"
+        ]
+    },
+    {
+        "pr_number": 4685,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-02-23T14:01:36Z",
+        "created_at": "2025-02-23T13:10:05Z",
+        "updated_at": "2025-03-28T10:03:53Z",
+        "base_commit": "37f828d6d7f5e8954221ed4480592e7509838c25",
+        "head_commit": "6f045e9744bc34d30fe0fc7561502f2abb50a509",
+        "merge_commit": "9deccc2e341ac9c3e24c8a5a27ffe9fe7f1de0e9",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/notification/publisher/AbstractPublisherTest.java",
+            "src/test/java/org/dependencytrack/notification/publisher/SendMailPublisherTest.java"
+        ],
+        "modified_source": [
+            "pom.xml",
+            "src/main/java/org/dependencytrack/notification/publisher/AbstractWebhookPublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/ConsolePublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/CsWebexPublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/JiraPublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/MattermostPublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/MsTeamsPublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/SendMailPublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/SlackPublisher.java",
+            "src/main/java/org/dependencytrack/notification/publisher/WebhookPublisher.java"
+        ]
+    },
+    {
+        "pr_number": 4629,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-02-09T18:20:06Z",
+        "created_at": "2025-02-09T17:56:45Z",
+        "updated_at": "2025-03-12T10:03:47Z",
+        "base_commit": "646e6f4d3c6c208b64634a4a7980f1f4451040d4",
+        "head_commit": "355ae82fd48626433e9fcbf23543aa2fd3de8c89",
+        "merge_commit": "d50c185955a461f8e2f76a1bae598558388465fe",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/repositories/MavenMetaAnalyzerTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/tasks/repositories/MavenMetaAnalyzer.java"
+        ]
+    },
+    {
+        "pr_number": 4541,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-01-11T13:08:28Z",
+        "created_at": "2025-01-11T12:20:07Z",
+        "updated_at": "2025-02-11T10:03:55Z",
+        "base_commit": "bcd26514f100f53554a3e35b003ecf9a6c0bdc26",
+        "head_commit": "cb4590f38a259844b5653942e6909bcdb49f86a5",
+        "merge_commit": "a5467632b66ab6f399484d24e6025a87a9be2a8f",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/TagResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/NotificationQueryManager.java",
+            "src/main/java/org/dependencytrack/persistence/PolicyQueryManager.java",
+            "src/main/java/org/dependencytrack/persistence/ProjectQueryManager.java",
+            "src/main/java/org/dependencytrack/persistence/QueryManager.java",
+            "src/main/java/org/dependencytrack/persistence/TagQueryManager.java"
+        ]
+    },
+    {
+        "pr_number": 4511,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2025-01-03T16:24:51Z",
+        "created_at": "2025-01-03T11:33:09Z",
+        "updated_at": "2025-02-03T10:03:41Z",
+        "base_commit": "b70ecc8c8ba28a98de4677294c277707da57af43",
+        "head_commit": "4fc5b2399aefd6852f1b14ff392b740f1e2865c8",
+        "merge_commit": "192702377091c48db380d120d2fdcf1e161a7667",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/ComponentResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/ComponentQueryManager.java"
+        ]
+    },
+    {
+        "pr_number": 4480,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-12-19T18:28:32Z",
+        "created_at": "2024-12-19T17:53:42Z",
+        "updated_at": "2025-01-19T10:03:36Z",
+        "base_commit": "45982a2e1a12a0b0de17f955b856b27008fee02a",
+        "head_commit": "332e0d41a67efe78e310dbcd6d1d416a836e0018",
+        "merge_commit": "ee5cbcefd3e32826cbc9658946b480bc9c948fad",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/ProjectResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/ComponentQueryManager.java"
+        ]
+    },
+    {
+        "pr_number": 4310,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-10-25T11:47:45Z",
+        "created_at": "2024-10-25T10:48:32Z",
+        "updated_at": "2024-11-25T10:04:10Z",
+        "base_commit": "e2934b7c9390562e3eaf682794ab5b935e26c2e8",
+        "head_commit": "d5befb07e39d0c02c98e1abfdce1b6af0ec64360",
+        "merge_commit": "18a4d00b8cc3aafac3e4dffdbb5cf0e50d18fab4",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/util/PersistenceUtilTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/parser/epss/EpssParser.java",
+            "src/main/java/org/dependencytrack/persistence/QueryManager.java",
+            "src/main/java/org/dependencytrack/persistence/listener/L2CacheEvictingInstanceLifecycleListener.java",
+            "src/main/java/org/dependencytrack/tasks/BomUploadProcessingTask.java",
+            "src/main/java/org/dependencytrack/tasks/GitHubAdvisoryMirrorTask.java",
+            "src/main/java/org/dependencytrack/tasks/InternalComponentIdentificationTask.java",
+            "src/main/java/org/dependencytrack/tasks/NistApiMirrorTask.java",
+            "src/main/java/org/dependencytrack/tasks/NistMirrorTask.java",
+            "src/main/java/org/dependencytrack/tasks/OsvDownloadTask.java",
+            "src/main/java/org/dependencytrack/util/PersistenceUtil.java",
+            "src/main/resources/application.properties"
+        ]
+    },
+    {
+        "pr_number": 4258,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-10-15T11:19:23Z",
+        "created_at": "2024-10-15T10:57:47Z",
+        "updated_at": "2024-11-15T10:03:51Z",
+        "base_commit": "91173832062b64d569def0121690e5f74b67e8de",
+        "head_commit": "a15c649275eb2097b88e1c0c2a1d6ce8a7512090",
+        "merge_commit": "09fa478808b4d99e81a6008b2101a00ae8915550",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/scanners/TrivyAnalysisTaskTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/tasks/scanners/TrivyAnalysisTask.java"
+        ]
+    },
+    {
+        "pr_number": 4235,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-10-09T20:48:48Z",
+        "created_at": "2024-10-09T19:43:07Z",
+        "updated_at": "2024-11-09T10:04:23Z",
+        "base_commit": "da44db15ff006f79ae47c9f0b49b33361cb0d445",
+        "head_commit": "d40d3af2adf16bbc337c560b9d15fcafc81bc9e6",
+        "merge_commit": "91173832062b64d569def0121690e5f74b67e8de",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/policy/PolicyEngineTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/PolicyQueryManager.java"
+        ]
+    },
+    {
+        "pr_number": 4234,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-10-09T13:38:51Z",
+        "created_at": "2024-10-09T12:37:10Z",
+        "updated_at": "2024-11-09T10:04:25Z",
+        "base_commit": "e06d0ad5521df66a07c3ff44146900c059d2f289",
+        "head_commit": "d8140ddf4b96b6f4bf840de04f92130462890678",
+        "merge_commit": "da44db15ff006f79ae47c9f0b49b33361cb0d445",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/PolicyResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/PolicyQueryManager.java",
+            "src/main/java/org/dependencytrack/policy/PolicyEngine.java",
+            "src/main/java/org/dependencytrack/tasks/BomUploadProcessingTask.java",
+            "src/main/java/org/dependencytrack/tasks/PolicyEvaluationTask.java",
+            "src/main/java/org/dependencytrack/tasks/VulnerabilityAnalysisTask.java",
+            "src/main/java/org/dependencytrack/util/LockUtil.java"
+        ]
+    },
+    {
+        "pr_number": 4232,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-10-09T13:16:44Z",
+        "created_at": "2024-10-09T12:30:27Z",
+        "updated_at": "2024-11-09T10:04:27Z",
+        "base_commit": "e06d0ad5521df66a07c3ff44146900c059d2f289",
+        "head_commit": "e3d6bb8ced5e4f9e0c78d18be8bb5349db1ef3ec",
+        "merge_commit": "a06f1ce6d2cac4867bcaa2677d0ffa682aeed353",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/UserResourceAuthenticatedTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/resources/v1/UserResource.java"
+        ]
+    },
+    {
+        "pr_number": 4229,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-10-30T13:01:43Z",
+        "created_at": "2024-10-08T17:16:06Z",
+        "updated_at": "2024-11-30T10:06:09Z",
+        "base_commit": "6ac5c106a9d84c5c233c5a3b51cee79408a772a9",
+        "head_commit": "60e7d0f46ad917c43df1a60068bf4bd84e69de04",
+        "merge_commit": "854744776f5e1836d60fbef51584981fa540a01a",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/model/ComponentTest.java",
+            "src/test/java/org/dependencytrack/resources/v1/ComponentResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/model/Component.java"
+        ]
+    },
+    {
+        "pr_number": 3698,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-13T10:00:23Z",
+        "created_at": "2024-05-13T09:26:54Z",
+        "updated_at": "2024-06-12T10:06:24Z",
+        "base_commit": "cb4fbfee5f7238a67780790dfef6b3ade21b9d09",
+        "head_commit": "152035f28ad0a326602fd83a62b260f29667b396",
+        "merge_commit": "ff2d7ff4b8b265261846d8e6cbaa601a3fe6c248",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidatorTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidator.java"
+        ]
+    },
+    {
+        "pr_number": 3697,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-13T09:59:58Z",
+        "created_at": "2024-05-13T09:23:16Z",
+        "updated_at": "2024-06-12T10:06:25Z",
+        "base_commit": "2b9a0a80ea194b4a2390a816f3a39d32d3c8cb4d",
+        "head_commit": "f50463f7ff583a8c6fdb397df81e51acfd5eff46",
+        "merge_commit": "528b8c50d61859637880201d26262f477b22579a",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidatorTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/parser/cyclonedx/CycloneDxValidator.java"
+        ]
+    },
+    {
+        "pr_number": 3691,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-12T16:28:33Z",
+        "created_at": "2024-05-10T01:00:32Z",
+        "updated_at": "2024-06-12T10:06:29Z",
+        "base_commit": "cf4f2d4d9b9341ada5da3691e0fe4e13bf0baf7d",
+        "head_commit": "14fa2eb0d6d4cf3b12d679419f8aaddcaa54f8c1",
+        "merge_commit": "2b9a0a80ea194b4a2390a816f3a39d32d3c8cb4d",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/ProjectResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/model/ProjectVersion.java",
+            "src/main/java/org/dependencytrack/persistence/ProjectQueryManager.java"
+        ]
+    },
+    {
+        "pr_number": 3682,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-07T21:03:06Z",
+        "created_at": "2024-05-07T20:07:08Z",
+        "updated_at": "2024-06-07T10:04:25Z",
+        "base_commit": "b4c9e2052ebef8cccd2d962a419f24a6f528b65e",
+        "head_commit": "63d90210dabb5fcfc2c9262998ed4d59dc674627",
+        "merge_commit": "06e6eba67e67fa173a7b1ea46b46515962e61b13",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/common/ManagedHttpClientFactoryTest.java"
+        ],
+        "modified_source": [
+            ".github/workflows/_meta-build.yaml",
+            ".github/workflows/ci-release.yaml",
+            ".github/workflows/ci-test.yaml",
+            "DEVELOPING.md",
+            "docs/_posts/2024-xx-xx-v4.12.0.md",
+            "pom.xml",
+            "src/main/java/org/dependencytrack/tasks/NistApiMirrorTask.java"
+        ]
+    },
+    {
+        "pr_number": 3678,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-06T17:49:46Z",
+        "created_at": "2024-05-06T16:43:43Z",
+        "updated_at": "2024-06-07T10:04:28Z",
+        "base_commit": "7ed759aeccd2612efe2d0b2deeb4454848741e30",
+        "head_commit": "8e49d25c1bfb98c75012927a687c56241bdeff59",
+        "merge_commit": "6c2d01b8ae6432f2731db90cd1f31ab6b2f559ef",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/persistence/DefaultObjectGeneratorTest.java",
+            "src/test/java/org/dependencytrack/resources/v1/RepositoryResourceTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/persistence/DefaultObjectGenerator.java"
+        ]
+    },
+    {
+        "pr_number": 3667,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-02T21:27:26Z",
+        "created_at": "2024-05-02T19:46:38Z",
+        "updated_at": "2024-06-02T10:03:13Z",
+        "base_commit": "7285d90366859dc81f22c21cc821ddb7189672eb",
+        "head_commit": "7d7f0eda9197a6f28c70e4cbb63aa835ab7f65b8",
+        "merge_commit": "214ca779095a57e6356e22d0cac347042b69dba4",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/NistMirrorTaskTest.java",
+            "src/test/resources/unit/nvd/feed/nvdcve-1.1-2021_duplicate-cpes.json"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/parser/nvd/NvdParser.java",
+            "src/main/java/org/dependencytrack/parser/nvd/api20/ModelConverter.java"
+        ]
+    },
+    {
+        "pr_number": 3662,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-01T18:39:54Z",
+        "created_at": "2024-05-01T18:07:27Z",
+        "updated_at": "2024-06-01T10:03:02Z",
+        "base_commit": "664ee2558f4a240d54dbb869b52519eed98d063f",
+        "head_commit": "acca75f5bd9ca20d98f22c8734a782dfd790fc0a",
+        "merge_commit": "fd82e584258149b412dc5f0f2fa0eb643234e8c2",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/BomUploadProcessingTaskTest.java",
+            "src/test/resources/unit/bom-1.xml"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/model/ComponentProperty.java"
+        ]
+    },
+    {
+        "pr_number": 3661,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-05-01T18:22:01Z",
+        "created_at": "2024-05-01T17:44:20Z",
+        "updated_at": "2024-06-01T10:03:03Z",
+        "base_commit": "664ee2558f4a240d54dbb869b52519eed98d063f",
+        "head_commit": "21af7b219d94f3538d3e8e3e211a7a5fdf0f83b1",
+        "merge_commit": "70a60179ce23036bcfb681554dc2e53c5a42e9a8",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/scanners/OssIndexAnalysisTaskTest.java"
+        ],
+        "modified_source": [
+            "docs/_posts/2024-xx-xx-v4.11.0.md",
+            "src/main/java/org/dependencytrack/tasks/scanners/OssIndexAnalysisTask.java"
+        ]
+    },
+    {
+        "pr_number": 3650,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-04-28T16:17:08Z",
+        "created_at": "2024-04-28T15:43:48Z",
+        "updated_at": "2024-05-29T10:06:24Z",
+        "base_commit": "3efdd24570f16fc6bfb168795e66227cb8fece78",
+        "head_commit": "afb5cca94b99dc9c2b59b901cd00113e24d4466b",
+        "merge_commit": "7404d62857ad22ded3f47bd0c699a65747f834ce",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/model/FindingAttributionTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/model/FindingAttribution.java"
+        ]
+    },
+    {
+        "pr_number": 3620,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-04-16T20:25:48Z",
+        "created_at": "2024-04-15T12:58:15Z",
+        "updated_at": "2024-05-17T10:03:20Z",
+        "base_commit": "8c9a74a4aaa25a0fb58da367527c9ada5f40e2c1",
+        "head_commit": "6a9eadafb18ad4fc3a3b50fe5c0ae4085c9cfd31",
+        "merge_commit": "d1545cfdc10fafbdb123a618fcf85a7ff5961136",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/scanners/TrivyAnalysisTaskIntegrationTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/parser/trivy/model/Package.java",
+            "src/main/java/org/dependencytrack/tasks/scanners/TrivyAnalysisTask.java"
+        ]
+    },
+    {
+        "pr_number": 3556,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-03-17T19:01:49Z",
+        "created_at": "2024-03-17T01:21:24Z",
+        "updated_at": "2024-04-17T10:03:33Z",
+        "base_commit": "4356d0276966b0804736a1aaf87a8c7bf32075e2",
+        "head_commit": "e55e95011a4e26a0ccb485b91a70539bcde9ebd2",
+        "merge_commit": "5ace7dc943c0fc96f5a6e2c717b80464bad0cdaf",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/BomUploadProcessingTaskTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/parser/cyclonedx/util/ModelConverter.java"
+        ]
+    },
+    {
+        "pr_number": 3537,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-03-11T09:43:38Z",
+        "created_at": "2024-03-10T22:49:53Z",
+        "updated_at": "2024-04-10T10:05:11Z",
+        "base_commit": "4d63c2bae37e872a5101529e8ece77834ac2257f",
+        "head_commit": "8d1b9ced6401984320499bcdbfe977a9b1c124f0",
+        "merge_commit": "ce1ae32e6087b9c30b089620a25873fb18f7cc6e",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/resources/v1/TeamResourceTest.java"
+        ],
+        "modified_source": [
+            "docs/_posts/2024-xx-xx-v4.11.0.md",
+            "src/main/java/org/dependencytrack/resources/v1/TeamResource.java"
+        ]
+    },
+    {
+        "pr_number": 3468,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-09-30T13:34:36Z",
+        "created_at": "2024-02-15T05:00:08Z",
+        "updated_at": "2024-10-31T10:04:46Z",
+        "base_commit": "e746db0ccec3c731b65e926d927754152fcb21c6",
+        "head_commit": "b198fb50251b3b90c9e7389be721d00e79403e20",
+        "merge_commit": "8c7d5a9b411582a3d3065ae987de1b94dfadbf7a",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/tasks/repositories/NugetMetaAnalyzerTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/tasks/repositories/NugetMetaAnalyzer.java"
+        ]
+    },
+    {
+        "pr_number": 3408,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-01-25T17:19:59Z",
+        "created_at": "2024-01-24T22:14:54Z",
+        "updated_at": "2024-02-25T10:10:19Z",
+        "base_commit": "ade53f839bb7c641ceaceaeb3d3ca95a115c2e3b",
+        "head_commit": "679de5a11cd6e90e0845b39fd3412e9ea9f1983f",
+        "merge_commit": "a3034b8efe35dd0f510aa251a7440a4a76f7486d",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/model/VulnerabilityTest.java",
+            "src/test/java/org/dependencytrack/notification/publisher/AbstractPublisherTest.java"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/model/Vulnerability.java",
+            "src/main/java/org/dependencytrack/parser/nvd/NvdParser.java",
+            "src/main/java/org/dependencytrack/parser/nvd/api20/ModelConverter.java",
+            "src/main/java/org/dependencytrack/resources/v1/VulnerabilityResource.java",
+            "src/main/java/org/dependencytrack/tasks/scanners/OssIndexAnalysisTask.java",
+            "src/main/java/org/dependencytrack/upgrade/v4110/v4110Updater.java"
+        ]
+    },
+    {
+        "pr_number": 3394,
+        "repo": "DependencyTrack/dependency-track",
+        "merged_at": "2024-01-23T16:45:38Z",
+        "created_at": "2024-01-18T13:11:41Z",
+        "updated_at": "2024-02-23T10:12:40Z",
+        "base_commit": "026b504d27c692674eeca0bad32fcb22428b8b02",
+        "head_commit": "5908d8bb28f5f663ec14c7222c142c5b4d9ad990",
+        "merge_commit": "ade53f839bb7c641ceaceaeb3d3ca95a115c2e3b",
+        "modified_test": [
+            "src/test/java/org/dependencytrack/parser/github/GitHubSecurityAdvisoryParserTest.java",
+            "src/test/resources/unit/github.jsons/GHSA-8v27-2fg9-7h62.json"
+        ],
+        "modified_source": [
+            "src/main/java/org/dependencytrack/parser/github/graphql/GitHubSecurityAdvisoryParser.java"
+        ]
+    }
+]
